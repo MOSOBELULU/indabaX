@@ -2,7 +2,7 @@ import { sponsors } from "../data/DummyData";
 
 export default function Sponsorship() {
   return (
-    <section className="py-16 bg-gray-100 text-center">
+    <section className="py-16  text-center">
       <h2 className="text-3xl font-bold mb-8 text-gray-800">Our Sponsors</h2>
       <div className="flex flex-wrap justify-center gap-8 px-4">
         

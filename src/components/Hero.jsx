@@ -31,7 +31,7 @@ export default function Hero() {
             <span>14 – 16 August 2025</span>
           </div>
 
-          <CountdownTimer className='pt-1' />
+          <CountdownTimer  />
 
           <div className="pt-1">
             <RegisterButton />

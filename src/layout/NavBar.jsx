@@ -1,11 +1,21 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const navItems = [
+    { label: "Home", path: "/" },
+    { label: "About Us", path: "/aboutus" },
+    { label: "Register", path: "/register" },
+    { label: "Contact Us", path: "/contact" },
+  ];
+
+  const isActive = (path) => location.pathname === path;
 
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
@@ -25,38 +35,20 @@ export default function NavBar() {
 
         <nav className="hidden md:flex">
           <ul className="flex flex-wrap gap-3 sm:gap-4 text-gray-800 font-semibold text-sm sm:text-base">
-            <li>
-              <Link
-                to="/"
-                className="px-4 py-2 rounded-md hover:bg-black hover:text-white transition"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/aboutus"
-                className="px-4 py-2 rounded-md hover:bg-yellow-300 hover:text-black transition"
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/register"
-                className="px-4 py-2 rounded-md hover:bg-green-500 hover:text-white transition"
-              >
-                Register
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                className="px-4 py-2 rounded-md hover:bg-red-500 hover:text-white transition"
-              >
-                Contact Us
-              </Link>
-            </li>
+            {navItems.map((item) => (
+              <li key={item.path}>
+                <Link
+                  to={item.path}
+                  className={`px-4 py-2 rounded-md transition ${
+                    isActive(item.path)
+                      ? "bg-black text-white"
+                      : "hover:bg-black hover:text-white"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
 
@@ -70,42 +62,21 @@ export default function NavBar() {
       {isOpen && (
         <nav className="md:hidden bg-white shadow-md px-6 pb-4">
           <ul className="flex flex-col gap-3 text-gray-800 font-semibold text-base">
-            <li>
-              <Link
-                to="/"
-                onClick={toggleMenu}
-                className="block px-4 py-2 hover:bg-black hover:text-white rounded-md"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/aboutus"
-                onClick={toggleMenu}
-                className="block px-4 py-2 hover:bg-yellow-300 hover:text-black rounded-md"
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/register"
-                onClick={toggleMenu}
-                className="block px-4 py-2 hover:bg-green-500 hover:text-white rounded-md"
-              >
-                Register
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                onClick={toggleMenu}
-                className="block px-4 py-2 hover:bg-red-500 hover:text-white rounded-md"
-              >
-                Contact Us
-              </Link>
-            </li>
+            {navItems.map((item) => (
+              <li key={item.path}>
+                <Link
+                  to={item.path}
+                  onClick={toggleMenu}
+                  className={`block px-4 py-2 rounded-md transition ${
+                    isActive(item.path)
+                      ? "bg-black text-white"
+                      : "hover:bg-black hover:text-white"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
       )}
