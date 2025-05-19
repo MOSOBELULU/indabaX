@@ -44,7 +44,7 @@ const CountdownTimer = () => {
           {timeBoxes.map((box, index) => (
            <div
   key={index}
-  className="w-24 h-24 rounded-xl shadow-lg flex flex-col justify-center items-center  text-white"
+  className="w-24 h-24 flex flex-col justify-center items-center  text-white"
 >
 
               <AnimatePresence mode="wait">
