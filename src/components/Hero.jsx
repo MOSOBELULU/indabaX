@@ -25,15 +25,12 @@ export default function Hero() {
             <span>University of São Tomé and Príncipe</span>
           </div>
 
-          
           <div className="flex items-center justify-center space-x-2 text-white text-lg md:text-xl font-light drop-shadow-sm">
             <FaCalendarAlt className="text-white" />
             <span>14 – 16 August 2025</span>
           </div>
-
-          <CountdownTimer  />
-
-          <div className="pt-1">
+          <div className="flex flex-col items-center justify-center space-y-2 pt-1">
+            <CountdownTimer />
             <RegisterButton />
           </div>
         </div>
