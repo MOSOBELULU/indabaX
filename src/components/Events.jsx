@@ -4,7 +4,7 @@ export default function Events() {
   return (
     <div className="py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-center mb-12 text-3xl md:text-4xl font-extrabold text-[#009639] tracking-tight">
+        <h2 className="text-center mb-12 text-3xl md:text-4xl font-extrabold text-black tracking-tight">
           Events Schedule
         </h2>
         <div className="flex flex-wrap gap-8 justify-center">
@@ -19,7 +19,7 @@ export default function Events() {
                 className="w-full h-48 object-cover rounded-t-2xl"
               />
               <div className="p-5 text-center">
-                <h3 className="text-xl font-semibold text-[#009639] mb-1">
+                <h3 className="text-xl font-semibold text-black mb-1">
                   {event.title}
                 </h3>
                 <p className="text-sm text-gray-600 mb-1">

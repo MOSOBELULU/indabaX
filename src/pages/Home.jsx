@@ -1,4 +1,4 @@
-import CountdownTimer from "../components/CountdownTimer"
+// import CountdownTimer from "../components/CountdownTimer"
 import Hero from "../components/Hero"
 import SpeakersSection from "../components/SpeakersSection"
 import Sponsorship from "../components/Sponsorship"
@@ -11,7 +11,7 @@ export default function Home(){
     return (
         <>
           <Hero/>
-          <CountdownTimer/>
+          {/* <CountdownTimer/> */}
           <About/>
           <Events/>
           <SpeakersSection/> 

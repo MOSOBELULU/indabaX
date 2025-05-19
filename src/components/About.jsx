@@ -17,7 +17,7 @@ export default function About() {
 
         
         <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#009639]">
+          <h2 className="text-3xl md:text-4xl font-bold text-black">
             About IndabaX São Tomé and Príncipe
           </h2>
 

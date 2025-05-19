@@ -9,7 +9,7 @@ export default function SpeakersSection() {
   return (
     <section className="py-16" id="speakers">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-[#009639]">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-black">
           Meet the Speakers
         </h2>
 

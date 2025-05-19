@@ -1,27 +1,43 @@
+import { FaCalendarAlt } from "react-icons/fa";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 import RegisterButton from "../components/Register_button";
+import CountdownTimer from "./CountdownTimer";
 
 export default function Hero() {
   return (
-    <div>
-      <div className="relative bg-[url('/images/hero.home.jpg')] bg-cover bg-center h-screen">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+    <section
+      className="relative min-h-screen bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/images/hero.home.jpg')" }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50 z-0"></div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center space-y-4">
-          <h1 className="text-white text-4xl md:text-6xl font-bold">
+      {/* Centered content */}
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 md:px-8 py-32 text-center">
+        <div className="max-w-4xl w-full space-y-6">
+          <h1 className="text-white text-4xl md:text-6xl font-extrabold drop-shadow-lg">
             IndabaX São Tomé and Príncipe 2025
           </h1>
 
-          <h2 className="text-white text-xl md:text-2xl font-medium">
-            University of São Tomé and Príncipe
-          </h2>
+          {/* Location */}
+          <div className="flex items-center justify-center space-x-2 text-white text-xl md:text-2xl font-medium drop-shadow-sm">
+            <HiOutlineLocationMarker className="text-white" />
+            <span>University of São Tomé and Príncipe</span>
+          </div>
 
-          <h2 className="text-white text-lg md:text-xl font-light">
-            14 August 2025 to 16 August 2025
-          </h2>
+          
+          <div className="flex items-center justify-center space-x-2 text-white text-lg md:text-xl font-light drop-shadow-sm">
+            <FaCalendarAlt className="text-white" />
+            <span>14 – 16 August 2025</span>
+          </div>
 
-          <RegisterButton />
+          <CountdownTimer className='pt-1' />
+
+          <div className="pt-1">
+            <RegisterButton />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

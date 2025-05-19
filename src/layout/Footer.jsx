@@ -2,17 +2,17 @@ import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#009639] text-white py-10">
+    <footer className="bg-white text-black py-10">
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         
         
         <div>
           <h4 className="font-bold mb-2">Quick Links</h4>
           <ul className="space-y-1 text-sm">
-            <li><a href="/" className="hover:underline text-yellow-300">Home</a></li>
-            <li><a href="/aboutus" className="hover:underline text-yellow-300">About</a></li>
-            <li><a href="/register" className="hover:underline text-yellow-300">Register</a></li>
-            <li><a href="/contact" className="hover:underline text-yellow-300">Contact</a></li>
+            <li><a href="/" className="hover:underline text-black">Home</a></li>
+            <li><a href="/aboutus" className="hover:underline text-black">About</a></li>
+            <li><a href="/register" className="hover:underline text-black">Register</a></li>
+            <li><a href="/contact" className="hover:underline text-black">Contact</a></li>
           </ul>
         </div>
 
@@ -20,11 +20,11 @@ export default function Footer() {
         <div>
           <h4 className="font-bold mb-2">More Info</h4>
           <ul className="space-y-1 text-sm">
-            <li><a href="/faqs" className="hover:underline text-yellow-300">FAQs</a></li>
-            <li><a href="/careers" className="hover:underline text-yellow-300">Careers</a></li>
-            <li><a href="/gallery" className="hover:underline text-yellow-300">Gallery</a></li>
-            <li><a href="/code-of-conduct" className="hover:underline text-yellow-300">Code of Conduct</a></li>
-            <li><a href="/privacypolicy" className="hover:underline text-yellow-300">Privacy Policy</a></li>
+            <li><a href="/faqs" className="hover:underline text-black">FAQs</a></li>
+            <li><a href="/careers" className="hover:underline text-black">Careers</a></li>
+            <li><a href="/gallery" className="hover:underline text-black">Gallery</a></li>
+            <li><a href="/code-of-conduct" className="hover:underline text-black">Code of Conduct</a></li>
+            <li><a href="/privacypolicy" className="hover:underline text-black">Privacy Policy</a></li>
           </ul>
         </div>
 
@@ -40,7 +40,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-yellow-300 text-[#009639] font-semibold px-4 py-2 rounded-md hover:bg-yellow-400 text-sm"
+              className="bg-black text-white font-semibold px-4 py-2 rounded-md text-sm"
             >
               Subscribe
             </button>
@@ -55,7 +55,7 @@ export default function Footer() {
               href="https://web.facebook.com/deepindaba/?ref=br_rs&_rdc=1&_rdr#"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#FFD100]"
+              className=""
             >
               <FaFacebook />
             </a>
@@ -63,7 +63,7 @@ export default function Footer() {
               href="https://x.com/deepindaba"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#EF3340]"
+              className=""
             >
               <FaTwitter />
             </a>
@@ -71,7 +71,7 @@ export default function Footer() {
               href="https://www.linkedin.com/company/deep-learning-indaba/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-black"
+              className=""
             >
               <FaLinkedin />
             </a>

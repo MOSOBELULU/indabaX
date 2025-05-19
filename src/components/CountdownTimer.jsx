@@ -39,20 +39,12 @@ const CountdownTimer = () => {
   return (
     <section className=" py-12 text-center">
       <div className="max-w-xl mx-auto px-4">
-        <motion.h2
-  initial={{ opacity: 0, y: -20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6, ease: 'easeOut' }}
-  className="text-3xl md:text-4xl mb-10 font-bold text-[#009639]"
->
- Count Down to indabaX
-</motion.h2>
 
         <div className="flex justify-center gap-4 flex-wrap">
           {timeBoxes.map((box, index) => (
            <div
   key={index}
-  className="w-24 h-24 rounded-xl shadow-lg flex flex-col justify-center items-center bg-white text-[#009639] border border-black"
+  className="w-24 h-24 rounded-xl shadow-lg flex flex-col justify-center items-center  text-white"
 >
 
               <AnimatePresence mode="wait">
