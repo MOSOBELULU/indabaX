@@ -78,6 +78,7 @@ export const sponsors = [
   {
     id: 1,
     image: '/images/events/event1.jpg',
+    type: 'Workshop',
     title: "IndabaX São Tomé & Príncipe 2025",
     date: "2025-07-10",
     location: "São Tomé Convention Center",
@@ -89,6 +90,7 @@ export const sponsors = [
     id: 2,
     image: '/images/events/event2.jpg',
     title: "Pre-IndabaX Workshop: Intro to AI Ethics",
+    type: "Keynote",
     date: "2025-07-09",
     location: "Tech Hub, São Tomé",
     description:
@@ -99,6 +101,7 @@ export const sponsors = [
     id: 3,
     image: '/images/events/event3.jpg',
     title: "Post-Conference Networking Dinner",
+    type: "Panel",
     date: "2025-07-11",
     location: "Oceanview Restaurant",
     description:

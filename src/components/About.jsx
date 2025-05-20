@@ -23,7 +23,7 @@ export default function About() {
 
          
           <div className="flex  items-start space-x-4">
-            <FaUsers className="text-2xl text-[#009639] mt-1" />
+            <FaUsers className="text-4xl text-[#12AD2B] mt-1" />
             <div>
               <h3 className="text-xl font-semibold text-gray-800">Who We Are</h3>
               <p className="text-gray-700 text-sm">
@@ -34,7 +34,7 @@ export default function About() {
 
           
           <div className="flex items-start space-x-4">
-            <FaTools className="text-2xl text-[#009639] mt-1" />
+            <FaTools className="text-4xl text-[#12AD2B] mt-1" />
             <div>
               <h3 className="text-xl font-semibold text-gray-800">What We Do</h3>
               <p className="text-gray-700 text-sm">
@@ -45,7 +45,7 @@ export default function About() {
 
           
           <div className="flex items-start space-x-4">
-            <FaHeart className="text-2xl text-[#009639] mt-1" />
+            <FaHeart className="text-4xl text-[#12AD2B] mt-1" />
             <div>
               <h3 className="text-xl font-semibold text-gray-800">Why You Should Care</h3>
               <p className="text-gray-700 text-sm">
@@ -57,7 +57,7 @@ export default function About() {
           
           <a
             href="/aboutus"
-            className="inline-block mt-4 bg-[#009639] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#007f2f] transition duration-200"
+            className="inline-block mt-4 bg-[#12AD2B] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#007f2f] transition duration-200"
           >
             Learn More About Us
           </a>
