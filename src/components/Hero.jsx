@@ -1,4 +1,3 @@
-import { FaCalendarAlt } from "react-icons/fa";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import RegisterButton from "../components/Register_button";
 import CountdownTimer from "./CountdownTimer";
