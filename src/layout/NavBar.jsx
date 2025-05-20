@@ -53,33 +53,34 @@ export default function NavBar() {
         </nav>
 
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-2xl text-gray-800">
+          <button onClick={toggleMenu} className="text-2xl text-gray-800 border-2 border-red-500">
             {isOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
       </div>
 
       {isOpen && (
-        <nav className="md:hidden bg-white shadow-md px-6 pb-4">
-          <ul className="flex flex-col gap-3 text-gray-800 font-semibold text-base">
-            {navItems.map((item) => (
-              <li key={item.path}>
-                <Link
-                  to={item.path}
-                  onClick={toggleMenu}
-                  className={`block px-4 py-2 rounded-md transition ${
-                    isActive(item.path)
-                      ? "bg-black text-white"
-                      : "hover:bg-black hover:text-white"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+  <nav className="md:hidden bg-white shadow-md px-6 pb-4 absolute top-full left-0 w-full z-40">
+    <ul className="flex flex-col gap-3 text-gray-800 font-semibold text-base">
+      {navItems.map((item) => (
+        <li key={item.path}>
+          <Link
+            to={item.path}
+            onClick={toggleMenu}
+            className={`block px-4 py-2 rounded-md transition ${
+              isActive(item.path)
+                ? "bg-black text-white"
+                : "hover:bg-black hover:text-white"
+            }`}
+          >
+            {item.label}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}
+
     </header>
   );
 }

@@ -17,7 +17,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function App() {
   return (
-    <>
+    <div className="pt-20">
       <NavBar />
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -37,6 +37,6 @@ export default function App() {
       </Routes>
     
       <Footer />
-    </>
+    </div>
   );
 }
