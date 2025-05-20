@@ -17,7 +17,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function App() {
   return (
-    <div className="pt-20">
+    <div>
       <NavBar />
       <Routes>
         <Route path='/' element={<Home/>}/>
