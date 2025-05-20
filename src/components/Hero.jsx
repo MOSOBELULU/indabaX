@@ -18,7 +18,7 @@ export default function Hero() {
             IndabaX São Tomé and Príncipe 2025
           </h1>
 
-          <div className="flex items-center justify-center space-x-2 text-white  text-xl md:text-2xl font-medium drop-shadow-sm mb-1 pt-5">
+          <div className="flex items-center justify-center space-x-2 text-white md:text-2xl font-medium drop-shadow-sm mb-1 pt-5">
             <HiOutlineLocationMarker className="text-white  " />
             <span>University of São Tomé and Príncipe</span>
           </div>
