@@ -4,7 +4,11 @@ import { HiOutlineCalendar, HiOutlineClock, HiOutlineLocationMarker } from "reac
 
 export default function EventDetails() {
   const { id } = useParams();
-  const event = events.find((e) => e.id === id);
+  const event = events.find((e) => e.id.toString() === id);
+
+//   const { id} = useParams();
+// const speaker = speakers.find((s) => s.id.toString()=== id)
+// if(!speaker) return <p className="text-center text-red-500">Speaker not found</p>
 
   if (!event) {
     return <div className="text-center mt-20 text-xl text-red-600">Event not found.</div>;

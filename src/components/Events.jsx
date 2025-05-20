@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
 import { events } from "../data/DummyData";
-import {
-  HiOutlineCalendar,
-  HiOutlineLocationMarker,
-} from "react-icons/hi";
+import { HiOutlineCalendar, HiOutlineLocationMarker } from "react-icons/hi";
 
 export default function Events() {
   function getDaysLeft(dateStr) {
@@ -65,11 +62,11 @@ export default function Events() {
                   <p className="text-gray-700 text-sm mb-4">
                     {event.description}
                   </p>
-              <Link to={`/eventdetail/${event.id}`}>
-                  <button className="mt-2 bg-[#12AD2B] hover:bg-[#0f8e23] text-white text-sm font-semibold py-2 px-4 rounded-full transition duration-200">
-                    Learn More
-                  </button>
-              </Link>
+                  <Link to={`/eventdetail/${event.id}`}>
+                    <button className="mt-2 bg-[#12AD2B] hover:bg-[#0f8e23] text-white text-sm font-semibold py-2 px-4 rounded-full transition duration-200">
+                      Learn More
+                    </button>
+                  </Link>
                 </div>
               </div>
             );
