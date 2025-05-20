@@ -10,6 +10,7 @@ import Gallery from "./pages/Gallery";
 import Careers from "./pages/Careers";
 import SpeakersPage from "./pages/Speakers";
 import SpeakerDetail from "./pages/SpeakerDetail";
+import EventDetail from "./pages/EventDetail";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -30,6 +31,8 @@ export default function App() {
         <Route path='/speakerspage' element={< SpeakersPage/>}>
         </Route>
         <Route path='/speakerdetail/:id' element={< SpeakerDetail/>}>
+        </Route>
+        <Route path='/eventdetail/:id' element={< EventDetail/>}>
         </Route>
       </Routes>
     

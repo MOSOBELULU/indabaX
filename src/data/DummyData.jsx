@@ -79,7 +79,7 @@ export const sponsors = [
     id: 1,
     image: '/images/events/event1.jpg',
     type: 'Workshop',
-    title: "IndabaX São Tomé & Príncipe 2025",
+    title: "Tech & Knowledge Exchange",
     date: "2025-07-10",
     location: "São Tomé Convention Center",
     description:
