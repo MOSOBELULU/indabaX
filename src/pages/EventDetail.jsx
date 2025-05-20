@@ -6,10 +6,6 @@ export default function EventDetails() {
   const { id } = useParams();
   const event = events.find((e) => e.id.toString() === id);
 
-//   const { id} = useParams();
-// const speaker = speakers.find((s) => s.id.toString()=== id)
-// if(!speaker) return <p className="text-center text-red-500">Speaker not found</p>
-
   if (!event) {
     return <div className="text-center mt-20 text-xl text-red-600">Event not found.</div>;
   }
@@ -23,7 +19,7 @@ export default function EventDetails() {
         <span className="flex items-center gap-1"><HiOutlineClock /> {event.time}</span>
         <span className="flex items-center gap-1"><HiOutlineLocationMarker /> {event.location}</span>
       </div>
-      <p className="text-gray-700 leading-relaxed">{event.description}</p>
+      <p className="text-gray-700 leading-relaxed">{event.description2}</p>
     </div>
   );
 }

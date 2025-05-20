@@ -74,7 +74,7 @@ export const sponsors = [
         link: "https://ai4d.ai" }
   ];
 
-  export const events = [
+ export const events = [
   {
     id: 1,
     image: '/images/events/event1.jpg',
@@ -84,6 +84,8 @@ export const sponsors = [
     location: "São Tomé Convention Center",
     description:
       "Join Africa’s brightest AI minds for two days of talks, workshops, and networking focused on AI and financial technology innovation.",
+    description2:
+      "This two-day experience will bring together top researchers, developers, students, and entrepreneurs to explore how AI can transform industries across Africa. Expect keynote presentations, panel discussions, and practical workshops on topics like AI in fintech, ethical data handling, and deploying machine learning in low-resource environments. There will also be a start-up showcase and breakout sessions to promote networking and collaboration.",
     registrationLink: "https://indabaxtsaotome.com/register",
   },
   {
@@ -95,6 +97,8 @@ export const sponsors = [
     location: "Tech Hub, São Tomé",
     description:
       "A hands-on workshop on responsible AI development led by Dr. Emily Walsh to prepare attendees for ethical challenges in AI projects.",
+    description2:
+      "This workshop offers a foundational look at AI ethics, covering the importance of fairness, transparency, and accountability in AI systems. Led by Dr. Emily Walsh, the session includes real-world case studies, group exercises, and frameworks for ethical decision-making. Participants will learn how to identify bias in data, evaluate the social impact of their models, and design for inclusion. Great for students, developers, and policy enthusiasts.",
     registrationLink: "https://indabaxtsaotome.com/workshops/ai-ethics",
   },
   {
@@ -106,9 +110,12 @@ export const sponsors = [
     location: "Oceanview Restaurant",
     description:
       "Celebrate the conclusion of IndabaX with speakers and participants over local cuisine and live music.",
+    description2:
+      "An elegant close to the IndabaX experience, this dinner offers attendees a chance to unwind, connect, and reflect. Enjoy a curated menu of São Toméan cuisine while mingling with keynote speakers, tech leaders, and fellow participants. The evening will feature cultural performances, light speeches, and informal networking — the perfect space to build partnerships, friendships, and future collaborations.",
     registrationLink: "https://indabaxtsaotome.com/networking-dinner",
   },
 ];
+
 
 export const testimonials = [
   {
