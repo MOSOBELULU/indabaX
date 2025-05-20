@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
+import { FaCalendarAlt } from "react-icons/fa";
 
 const CountdownTimer = () => {
   const calculateTimeLeft = () => {
@@ -39,12 +40,15 @@ const CountdownTimer = () => {
   return (
     <section className=" py-12 text-center">
       <div className="max-w-xl mx-auto px-4">
-
+         <div className="flex items-center justify-center space-x-2 text-white text-lg md:text-xl font-light drop-shadow-sm mb-6">
+            <FaCalendarAlt className="text-white" />
+            <span>14 – 16 August 2025</span>
+          </div>
         <div className="flex justify-center gap-4 flex-wrap">
           {timeBoxes.map((box, index) => (
            <div
   key={index}
-  className="w-24 h-24 flex flex-col justify-center items-center  text-white"
+  className="w-15 h-15 flex flex-col justify-center items-center  text-white"
 >
 
               <AnimatePresence mode="wait">
