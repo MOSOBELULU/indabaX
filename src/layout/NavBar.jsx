@@ -33,8 +33,9 @@ export default function NavBar() {
           </div>
         </Link>
 
+       
         <nav className="hidden md:flex">
-          <ul className="flex flex-wrap gap-3 sm:gap-4 text-gray-800 font-semibold text-sm sm:text-base">
+          <ul className="flex gap-4 text-gray-800 font-semibold text-sm sm:text-base">
             {navItems.map((item) => (
               <li key={item.path}>
                 <Link
@@ -52,16 +53,21 @@ export default function NavBar() {
           </ul>
         </nav>
 
+        
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-2xl text-gray-800 border-2 border-red-500">
+          <button
+            onClick={toggleMenu}
+            className="text-2xl text-gray-800 focus:outline-none"
+          >
             {isOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
       </div>
 
-      {isOpen && (
-  <nav className="md:hidden bg-white shadow-md px-6 pb-4 absolute top-full left-0 w-full z-40">
-    <ul className="flex flex-col gap-3 text-gray-800 font-semibold text-base">
+      
+ {isOpen && (
+  <nav className="md:hidden bg-white shadow-md absolute top-full left-0 w-full z-40">
+    <ul className="flex flex-col gap-2 py-4 px-6 text-gray-800 font-semibold text-base">
       {navItems.map((item) => (
         <li key={item.path}>
           <Link
