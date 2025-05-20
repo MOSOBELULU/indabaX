@@ -1,78 +1,56 @@
-import { Link } from "react-router-dom";
-import { events } from "../data/DummyData";
-import { HiOutlineCalendar, HiOutlineLocationMarker } from "react-icons/hi";
+import { testimonials } from "../data/DummyData";
+import Slider from "react-slick";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-export default function Events() {
-  function getDaysLeft(dateStr) {
-    const eventDate = new Date(dateStr);
-    const currentDate = new Date();
+function NextArrow({ onClick }) {
+  return (
+    <div
+      onClick={onClick}
+      className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white shadow-lg border rounded-full p-2 cursor-pointer z-10 hover:bg-[#009639] hover:text-white transition"
+    >
+      <IoIosArrowForward size={24} />
+    </div>
+  );
+}
 
-    //reset hours to avoid timezone issues
-    eventDate.setHours(0, 0, 0, 0);
-    currentDate.setHours(0, 0, 0, 0);
+function PrevArrow({ onClick }) {
+  return (
+    <div
+      onClick={onClick}
+      className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white shadow-lg border rounded-full p-2 cursor-pointer z-10 hover:bg-[#009639] hover:text-white transition"
+    >
+      <IoIosArrowBack size={24} />
+    </div>
+  );
+}
 
-    const timediff = eventDate - currentDate;
-    const datediff = Math.ceil(timediff / (1000 * 60 * 60 * 24));
-    return datediff >= 0 ? datediff : 0;
-  }
+export default function Testimonials() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />
+  };
 
   return (
-    <div className="py-16 px-6 bg-[#f8f9fa]">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-center mb-12 text-3xl md:text-4xl font-extrabold text-black tracking-tight">
-          Events Schedule
-        </h2>
+    <div className="relative max-w-4xl mx-auto px-6 py-16 bg-gradient-to-br from-white via-gray-50 to-[#f0fdf4] rounded-xl shadow-lg">
+      <h2 className="text-center mb-10 text-3xl md:text-4xl font-bold text-gray-800 tracking-tight">What People Say</h2>
 
-        <div className="flex flex-wrap gap-8 justify-center">
-          {events.map((event, index) => {
-            const daysLeft = getDaysLeft(event.date);
-            return (
-              <div
-                key={index}
-                className="w-full sm:w-[300px] bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition duration-300"
-              >
-                <img
-                  src={event.image}
-                  alt={event.title}
-                  className="w-full h-48 object-cover rounded-t-2xl"
-                />
-                <div className="p-5 text-center">
-                  <span className="inline-block bg-[#12AD2B]/10 text-[#12AD2B] text-xs font-medium px-3 py-1 rounded-full mb-3">
-                    {event.type || "Session"}
-                  </span>
-
-                  <h3 className="text-xl font-semibold text-black mb-2">
-                    {event.title}
-                  </h3>
-
-                  <p className="text-sm text-gray-600 flex items-center justify-center gap-1 mb-1">
-                    <HiOutlineCalendar className="text-lg" /> {event.date}
-                  </p>
-                  <p className="text-sm text-[#12AD2B] font-medium mb-2">
-                    {daysLeft > 0
-                      ? `${daysLeft} day${daysLeft !== 1 ? "s" : ""} left`
-                      : "Today or past event"}
-                  </p>
-
-                  <p className="text-sm text-gray-500 flex items-center justify-center gap-1 mb-3">
-                    <HiOutlineLocationMarker className="text-lg" />{" "}
-                    {event.location}
-                  </p>
-
-                  <p className="text-gray-700 text-sm mb-4">
-                    {event.description}
-                  </p>
-                  <Link to={`/eventdetail/${event.id}`}>
-                    <button className="mt-2 bg-[#12AD2B] hover:bg-[#0f8e23] text-white text-sm font-semibold py-2 px-4 rounded-full transition duration-200">
-                      Learn More
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      <Slider {...settings}>
+        {testimonials.map((item, index) => (
+          <div
+            key={index}
+            className="p-8 bg-white rounded-xl shadow-md border border-gray-100 text-center transition-all duration-300 hover:shadow-xl"
+          >
+            <p className="text-lg text-gray-600 italic mb-6 leading-relaxed">“{item.message}”</p>
+            <h4 className="font-semibold text-xl text-[#009639]">{item.name}</h4>
+            <p className="text-sm text-gray-500">{item.position}</p>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 }
