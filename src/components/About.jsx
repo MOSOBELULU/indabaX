@@ -1,9 +1,9 @@
-import { FaUsers, FaTools, FaHeart } from "react-icons/fa";
+import { Users, Wrench, HeartHandshake } from "lucide-react";
 
 
 export default function About() {
   return (
-    <section className=" py-16 px-6">
+    <section className=" py-30 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         
        
@@ -23,7 +23,7 @@ export default function About() {
 
          
           <div className="flex  items-start space-x-4">
-            <FaUsers className="text-4xl text-[#12AD2B] mt-1" />
+           <Users className="text-4xl text-[#12AD2B]  h-15 w-15" />
             <div>
               <h3 className="text-xl font-semibold ">Who We Are</h3>
               <p className=" text-sm">
@@ -34,7 +34,7 @@ export default function About() {
 
           
           <div className="flex items-start space-x-4">
-            <FaTools className="text-4xl text-[#12AD2B] mt-1" />
+           <Wrench className="text-4xl text-[#12AD2B]  h-15 w-15" />
             <div>
               <h3 className="text-xl font-semibold">What We Do</h3>
               <p className="text-sm">
@@ -45,7 +45,7 @@ export default function About() {
 
           
           <div className="flex items-start space-x-4">
-            <FaHeart className="text-4xl text-[#12AD2B] mt-1" />
+           <HeartHandshake className="text-xl text-[#12AD2B] h-15 w-15" />
             <div>
               <h3 className="text-xl font-semibold ">Why You Should Care</h3>
               <p className=" text-sm">
