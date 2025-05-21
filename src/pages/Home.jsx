@@ -7,6 +7,7 @@ import Events from "../components/Events"
 import Testimonials from "../components/Testimonials"
 import EventOverview from "../components/EventOverview"
 import EventOrganisers from "../components/EventOrganisers"
+import Faqs from "../components/Faq"
 
 
 export default function Home(){
@@ -19,6 +20,7 @@ export default function Home(){
           <Events/>
           <SpeakersSection/> 
           <Testimonials />
+          <Faqs />
           < Sponsorship />
             </>
           
