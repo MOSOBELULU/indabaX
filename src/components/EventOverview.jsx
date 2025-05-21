@@ -5,7 +5,7 @@ export default function EventOverview() {
             <div className="max-w-4xl mx-auto text-center mb-14">
                 <h2 className="text-3xl md:text-4xl font-bold text-black mb-6"> 
                      Why Attend this Event</h2>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-black leading-relaxed">
                     This event brings together tech enthusiasts, industry leaders, and innovators to explore emerging solutions in tech and connect over meaningful discussions. Whether you're a developer, enterpreneur, or curious learner - there's something here for you!!
                 </p>
             </div>

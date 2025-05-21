@@ -9,9 +9,9 @@ export default function EventOrganisers() {
             <img
               src={person.image}
               alt={person.name}
-              className="w-24 h-24 mx-auto rounded-full object-cover mb-4"
+              className="w-30 h-30 mx-auto rounded-full object-cover mb-4"
             />
-            <h4 className="text-lg font-semibold text-[#009639]">{person.name}</h4>
+            <h4 className="text-lg font-semibold text-black">{person.name}</h4>
             <p className="text-gray-500 text-sm">{person.role}</p>
           </div>
         ))}

@@ -14,7 +14,7 @@ export default function Hero() {
   
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 md:px-8 py-23 text-center">
         <div className="max-w-4xl w-full space-y-6">
-          <h1 className="text-white text-3xl md:text-6xl font-extrabold drop-shadow-lg mb-4">
+          <h1 className="text-white text-3xl md:text-6xl font-bold drop-shadow-lg mb-4">
             IndabaX São Tomé and Príncipe 2025
           </h1>
 

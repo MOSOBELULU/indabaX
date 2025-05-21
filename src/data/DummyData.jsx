@@ -229,7 +229,7 @@ export const testimonials = [
   {
     name: "Kagiso Mthembu",
     role: "AI & Tech Ops Lead",
-    image: "/images/kagiso.jpg",
+    image: "/images/speakers/DrZanele.jpg",
     bio: "Responsible for all technical infrastructure — from real-time demos to streaming to power backups.",
     twitter: "https://twitter.com/kagisotech",
     linkedin: "https://linkedin.com/in/kagisomthembu",
