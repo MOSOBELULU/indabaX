@@ -236,6 +236,44 @@ export const testimonials = [
   },
 ];
 
+export const faqs = [
+  {
+    question: "What is the São Tomé AI Event about?",
+    answer:
+      "It's a community-driven event focused on exploring how artificial intelligence can empower African innovation. Expect talks, panels, workshops, and networking with developers, researchers, entrepreneurs, and enthusiasts.",
+  },
+  {
+    question: "Who can attend the event?",
+    answer:
+      "Anyone interested in AI — whether you're a student, developer, startup founder, researcher, or just curious about technology. Beginners are welcome!",
+  },
+  {
+    question: "Where will the event take place?",
+    answer:
+      "The event will be held in São Tomé City. The exact venue details will be announced soon on our official channels and via email to registered attendees.",
+  },
+  {
+    question: "Is there an entry fee?",
+    answer:
+      "Nope! Entry is completely free, but spots are limited. Registration is required to reserve your seat and access exclusive sessions.",
+  },
+  {
+    question: "Will the event be streamed online?",
+    answer:
+      "Yes! We’ll offer a live stream for selected talks and panels. Remote participants can register online to get the access link.",
+  },
+  {
+    question: "What language will the sessions be in?",
+    answer:
+      "The main language is English. However, some sessions and materials will include Portuguese support for local attendees.",
+  },
+  {
+    question: "Can I volunteer or speak at the event?",
+    answer:
+      "Absolutely! We're always open to volunteers, partners, and speakers. Fill out the form on our website or contact the organizing team directly.",
+  },
+];
+
 
 
 

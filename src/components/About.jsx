@@ -25,8 +25,8 @@ export default function About() {
           <div className="flex  items-start space-x-4">
             <FaUsers className="text-4xl text-[#12AD2B] mt-1" />
             <div>
-              <h3 className="text-xl font-semibold text-gray-800">Who We Are</h3>
-              <p className="text-gray-700 text-sm">
+              <h3 className="text-xl font-semibold ">Who We Are</h3>
+              <p className=" text-sm">
                 We're a local AI community under the Deep Learning Indaba family, passionate about making artificial intelligence education accessible in São Tomé and Príncipe.
               </p>
             </div>
@@ -36,8 +36,8 @@ export default function About() {
           <div className="flex items-start space-x-4">
             <FaTools className="text-4xl text-[#12AD2B] mt-1" />
             <div>
-              <h3 className="text-xl font-semibold text-gray-800">What We Do</h3>
-              <p className="text-gray-700 text-sm">
+              <h3 className="text-xl font-semibold">What We Do</h3>
+              <p className="text-sm">
                 We organize workshops, talks, and hands-on sessions to equip students, researchers, and tech lovers with practical AI skills and global connections.
               </p>
             </div>
@@ -47,8 +47,8 @@ export default function About() {
           <div className="flex items-start space-x-4">
             <FaHeart className="text-4xl text-[#12AD2B] mt-1" />
             <div>
-              <h3 className="text-xl font-semibold text-gray-800">Why You Should Care</h3>
-              <p className="text-gray-700 text-sm">
+              <h3 className="text-xl font-semibold ">Why You Should Care</h3>
+              <p className=" text-sm">
                 AI will shape the future of Africa. Being part of IndabaX helps you learn, network, and contribute to solutions that matter for our communities.
               </p>
             </div>

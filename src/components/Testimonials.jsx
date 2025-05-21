@@ -37,7 +37,7 @@ export default function Testimonials() {
 
   return (
     <div className="relative max-w-4xl mx-auto px-6 py-16 bg-gradient-to-br from-white via-gray-50 to-[#f0fdf4] rounded-xl shadow-lg">
-      <h2 className="text-center mb-10 text-3xl md:text-4xl font-bold text-gray-800 tracking-tight">What People Say</h2>
+      <h2 className="text-center mb-10 text-3xl md:text-4xl font-bold  tracking-tight">What People Say</h2>
 
       <Slider {...settings}>
         {testimonials.map((item, index) => (
@@ -45,8 +45,8 @@ export default function Testimonials() {
             key={index}
             className="p-8 bg-white rounded-xl shadow-md border border-gray-100 text-center transition-all duration-300 hover:shadow-xl"
           >
-            <p className="text-lg text-gray-600 italic mb-6 leading-relaxed">“{item.message}”</p>
-            <h4 className="font-semibold text-xl text-[#009639]">{item.name}</h4>
+            <p className="text-lg italic mb-6 leading-relaxed">“{item.message}”</p>
+            <h4 className="font-semibold text-xl text-black">{item.name}</h4>
             <p className="text-sm text-gray-500">{item.position}</p>
           </div>
         ))}

@@ -1,7 +1,7 @@
 import { features } from "../data/DummyData";
 export default function EventOverview() {
     return(
-        <section className="bg-white py-6 px-6 md:px-12">
+        <section className="py-6 px-6 md:px-12">
             <div className="max-w-4xl mx-auto text-center mb-14">
                 <h2 className="text-3xl md:text-4xl font-bold text-black mb-6"> 
                      Why Attend this Event</h2>
@@ -13,8 +13,8 @@ export default function EventOverview() {
                 {features.map((item, i) => (
                     <div 
                     key={i} className=" bg-[#f9fafb] p-6 rounded-2xl shadow-sm hover:shadow-md transition text-center">
-                        <h4 className="text-xl font-semibold text-black mb-3">{item.title}</h4>
-                        <p className="text-gray-600">{item.desc}</p>
+                        <h4 className="text-xl font-semibold mb-3">{item.title}</h4>
+                        <p >{item.desc}</p>
                     </div>
                 ))}
             </div>

@@ -14,9 +14,9 @@ export default function SpeakerCard({ speaker }) {
       </Link>
       
       <div className="mt-4 pt-4">
-        <h3 className="text-xl font-bold text-gray-800">{speaker.name}</h3>
-        <p className="text-sm text-gray-600">{speaker.profession}</p>
-        <p className="mt-2 text-gray-700 italic">“{speaker.topic}”</p>
+        <h3 className="text-xl font-bold ">{speaker.name}</h3>
+        <p className="text-sm ">{speaker.profession}</p>
+        <p className="mt-2  italic">“{speaker.topic}”</p>
       </div>
 
     

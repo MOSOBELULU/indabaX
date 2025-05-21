@@ -45,7 +45,7 @@ export default function Events() {
                     {event.title}
                   </h3>
 
-                  <p className="text-sm text-gray-600 flex items-center justify-center gap-1 mb-1">
+                  <p className="text-sm flex items-center justify-center gap-1 mb-1">
                     <HiOutlineCalendar className="text-lg" /> {event.date}
                   </p>
                   <p className="text-sm text-[#12AD2B] font-medium mb-2">
@@ -54,12 +54,12 @@ export default function Events() {
                       : "Today or past event"}
                   </p>
 
-                  <p className="text-sm text-gray-500 flex items-center justify-center gap-1 mb-3">
+                  <p className="text-sm flex items-center justify-center gap-1 mb-3">
                     <HiOutlineLocationMarker className="text-lg" />{" "}
                     {event.location}
                   </p>
 
-                  <p className="text-gray-700 text-sm mb-4">
+                  <p className=" text-sm mb-4">
                     {event.description}
                   </p>
                   <Link to={`/eventdetail/${event.id}`}>
