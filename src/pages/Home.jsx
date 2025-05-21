@@ -6,15 +6,16 @@ import About from "../components/About"
 import Events from "../components/Events"
 import Testimonials from "../components/Testimonials"
 import EventOverview from "../components/EventOverview"
+import EventOrganisers from "../components/EventOrganisers"
 
 
 export default function Home(){
     return (
         <>
           <Hero/>
-          {/* <CountdownTimer/> */}
           <About/>
           <EventOverview/>
+          <EventOrganisers/>
           <Events/>
           <SpeakersSection/> 
           <Testimonials />

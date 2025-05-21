@@ -185,6 +185,58 @@ export const testimonials = [
   },
 ];
 
+ export const organisers = [
+  {
+    name: "Luella Sparkling",
+    role: "Lead Organizer",
+    image: "/images/organisers/Luella.jpg",
+    bio: "South African technologist driving African innovation through AI, finance, and community building.",
+    twitter: "https://twitter.com/lulugna",
+    linkedin: "https://linkedin.com/in/lulugna",
+  },
+  {
+    name: "Helder Santos",
+    role: "Local Coordinator – São Tomé",
+    image: "/images/organisers/Santos.jpg",
+    bio: "Helder ensures the heartbeat of São Tomé is reflected in every part of this event. Logistics, local outreach, and venue magic.",
+    twitter: "https://twitter.com/helder_ai",
+    linkedin: "https://linkedin.com/in/heldersantos",
+  },
+  {
+    name: "Neo Motloung",
+    role: "Creative Director",
+    image: "/images/organisers/Neo.jpg",
+    bio: "Neo turns ideas into visuals — shaping the identity of the event from branding to stage design.",
+    twitter: "https://twitter.com/neomotloung",
+    linkedin: "https://linkedin.com/in/neomotloung",
+  },
+  {
+    name: "Thapelo Maseko",
+    role: "Speaker Curator",
+    image: "/images/organisers/thapelo.jpg",
+    bio: "Brings global and African AI voices to the table, curating a speaker lineup that sparks dialogue and impact.",
+    twitter: "https://twitter.com/thapelomaseko",
+    linkedin: "https://linkedin.com/in/thapelo-maseko",
+  },
+  {
+    name: "Zandile Dlamini",
+    role: "Community Lead",
+    image: "/images/organisers/zandile.jpg",
+    bio: "Zanele connects people before, during, and after the event — turning attendees into a community.",
+    twitter: "https://twitter.com/zaneled",
+    linkedin: "https://linkedin.com/in/zaneledlamini",
+  },
+  {
+    name: "Kagiso Mthembu",
+    role: "AI & Tech Ops Lead",
+    image: "/images/kagiso.jpg",
+    bio: "Responsible for all technical infrastructure — from real-time demos to streaming to power backups.",
+    twitter: "https://twitter.com/kagisotech",
+    linkedin: "https://linkedin.com/in/kagisomthembu",
+  },
+];
+
+
 
 
 
