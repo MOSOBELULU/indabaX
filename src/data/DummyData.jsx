@@ -238,7 +238,7 @@ export const testimonials = [
 
 export const faqs = [
   {
-    question: "What is the São Tomé AI Event about?",
+    question: "What is the indabaX São Tomé AI Event about?",
     answer:
       "It's a community-driven event focused on exploring how artificial intelligence can empower African innovation. Expect talks, panels, workshops, and networking with developers, researchers, entrepreneurs, and enthusiasts.",
   },

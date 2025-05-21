@@ -20,7 +20,7 @@ export default function Events() {
     <div className="py-16 px-6 ">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-center mb-12 text-3xl md:text-4xl font-extrabold text-black tracking-tight">
-          Events Schedule
+          Upcoming Events
         </h2>
 
         <div className="flex flex-wrap gap-8 justify-center">

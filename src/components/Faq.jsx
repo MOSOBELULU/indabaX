@@ -15,29 +15,31 @@ export default function Faqs() {
       <h2 className="text-2xl font-bold mb-6 text-center">
         Frequently Asked Questions
       </h2>
-      {faqs.map((item, index) => (
-        <div
-          key={index}
-          className="border-b border-gray-200 py-4 cursor-pointer transition-all duration-300"
-        >
-          <div
-            className="flex justify-between items-center"
-            onClick={() => toggle(index)}
-          >
-            <h3 className="text-lg font-medium text-black">{item.question}</h3>
-            {openIndex === index ? (
-              <IoIosArrowUp className="text-green-600" size={20} />
-            ) : (
-              <IoIosArrowDown className="text-gray-500" size={20} />
-            )}
-            {openIndex === index && (
-              <p className="mt-3 text-gray-700 transition-all duration-200">
-                {item.answer}
-              </p>
-            )}
-          </div>
-        </div>
-      ))}
+    {faqs.map((item, index) => (
+  <div
+    key={index}
+    className="border-b border-gray-200 py-4 cursor-pointer transition-all duration-300"
+  >
+    <div
+      className="flex justify-between items-center"
+      onClick={() => toggle(index)}
+    >
+      <h3 className="text-lg font-medium text-black">{item.question}</h3>
+      {openIndex === index ? (
+        <IoIosArrowUp className="text-green-600" size={20} />
+      ) : (
+        <IoIosArrowDown className="text-green-500" size={20} />
+      )}
+    </div>
+
+    {openIndex === index && (
+      <p className="mt-3 text-gray-700 transition-all duration-200">
+        {item.answer}
+      </p>
+    )}
+  </div>
+))}
+
     </div>
   );
 }
