@@ -7,7 +7,7 @@ export default function About() {
     <section className="py-30 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
-        {/* 👈🏽 Animate Image from Left */}
+       
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -22,7 +22,7 @@ export default function About() {
           />
         </motion.div>
 
-        {/* 👉🏽 Animate Text from Right */}
+       
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}

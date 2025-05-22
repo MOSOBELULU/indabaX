@@ -7,7 +7,7 @@ const navigate = useNavigate();
 return (
     <button
     onClick={() => navigate(-1)}
-    className={`flex items-center text-sm text-green hover:underline ${className}`}
+    className={`flex items-center text-sm text-[#12AD2B]hover:underline ${className}`}
     >
         <ArrowLeft className="w-4 h-5" />
         {label}
