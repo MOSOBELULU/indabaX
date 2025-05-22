@@ -7,7 +7,7 @@ export default function HeroAbout() {
             muted
             playsInline
             className="absolute top-0 left-0 w-full object-cover  brightness-20">
-                <source src="public/videos/aboutHero.mp4" type="video/mp4" />
+                <source src="/videos/aboutHero.mp4" type="video/mp4" />
             </video>
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
                 <h1 className="text-4xl md:text-6xl font-bold mb-4">About IndabaX São Tomé and Príncipe </h1>

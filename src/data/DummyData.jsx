@@ -285,6 +285,20 @@ export const partners = [
   { name: "Google Developer Group", logo: "/images/sponsors/googleresearch_logo.jpg" },
 ];
 
+export const images = [
+    {image: "/images/gallery/Image_fx1.jpg"},
+    {image: "/images/gallery/Image_fx2.jpg"},
+    {image: "/images/gallery/Image_fx3.jpg"},
+    {image: "/images/gallery/Image_fx4.jpg"},
+    {image: "/images/gallery/Image_fx5.jpg"},
+    {image: "/images/gallery/Image_fx6.jpg"},
+    {image: "/images/gallery/Image_fx7.jpg"},
+    {image: "/images/gallery/Image_fx8.jpg"},
+    {image: "/images/gallery/Image_fx9.jpg"},
+    {image: "/images/gallery/Image_fx10.jpg"},
+    
+  ];
+
 
 
 

@@ -9,7 +9,7 @@ export default function Hero() {
       style={{ backgroundImage: "url('/images/hero.home.jpg')" }}
     >
     
-      <div className="absolute inset-0 bg-black/50 z-0"></div>
+      <div className="absolute inset-0 bg-black/85 z-0"></div>
 
   
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 md:px-8 py-23 text-center">
