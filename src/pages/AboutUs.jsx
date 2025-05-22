@@ -1,15 +1,10 @@
+import HeroAbout from "../components/HeroAbout";
+import MissionVision from "../components/MissionVision";
 export default function AboutUs() {
   return (
     <>
-      <h1>about us</h1>
-      <h1>about us</h1>
-      <h1>about us</h1>
-      <h1>about us</h1>
-      <h1>about us</h1>
-      <h1>about us</h1>
-      <h1>about us</h1>
-      <h1>about us</h1>
-      <h1>about us</h1>
+<HeroAbout/>
+<MissionVision/>
     </>
   );
 }
