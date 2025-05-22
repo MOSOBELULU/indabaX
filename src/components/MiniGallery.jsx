@@ -8,7 +8,7 @@ export default function MiniGallery() {
   const showFew = images.slice(0, 3)
 
   return (
-    <section className="py-16 px-6 bg-gray-50">
+    <section className="py-16 px-6 ">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4 text-black">Past Event Highlights</h2>
         <p className="text-gray-600 mb-10">
