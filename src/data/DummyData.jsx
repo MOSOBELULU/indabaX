@@ -278,6 +278,13 @@ export const faqs = [
   },
 ];
 
+export const partners = [
+  { name: "Deep Learning Indaba", logo: "/images/sponsors/indaba_logo.jpg" },
+  { name: "University of São Tomé", logo: "/images/partners/university.jpg" },
+  { name: "AI4D Africa", logo: "/images/sponsors/ai4d_logo.jpg" },
+  { name: "Google Developer Group", logo: "/images/sponsors/googleresearch_logo.jpg" },
+];
+
 
 
 
