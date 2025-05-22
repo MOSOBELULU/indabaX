@@ -74,6 +74,7 @@ export const sponsors = [
         link: "https://ai4d.ai" }
   ];
 
+  
  export const events = [
   {
     id: 1,
@@ -169,19 +170,22 @@ export const testimonials = [
     "message": "Attending IndabaX reminded me that AI is not just for Silicon Valley. We have the talent, we have the problems, and now we have the platform."
   }
 ]
-
+import { Brain, Code2, Users } from "lucide-react";
  export const features = [
   {
     title: "Expert Talks",
     desc: "Learn from leading experts and professionals across tech and innovation spaces.",
+    icon: Brain
   },
   {
     title: "Workshops",
     desc: "Hands-on sessions to deepen your skills and apply knowledge in real time.",
+    icon: Code2
   },
   {
     title: "Networking",
     desc: "Meet founders, developers, and entrepreneurs from all over the region.",
+    icon: Users
   },
 ];
 

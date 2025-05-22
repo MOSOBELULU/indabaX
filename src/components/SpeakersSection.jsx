@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import { speakers } from "../data/DummyData";
 import SpeakerCard from "./SpeakersCard";
 import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function SpeakersSection() {
   const showFewSpeakers = speakers.slice(0, 3);
@@ -15,11 +17,19 @@ export default function SpeakersSection() {
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-8">
           {showFewSpeakers.map((speaker) => (
-            <SpeakerCard key={speaker.id} speaker={speaker} />
+            <motion.div
+              key={speaker.id}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              whileHover={{ scale: 1.05, y: -8,  }}
+            >
+              <SpeakerCard speaker={speaker} />
+            </motion.div>
           ))}
         </div>
 
-        <div className="flex justify-center ml-235">
+        <div className="flex justify-center">
           <Link to="/speakerspage">
             <button className="flex items-center gap-2 px-6 py-2 bg-[#009639] text-white rounded-lg hover:bg-green-700 transition">
               Show More <FaArrowRight />
