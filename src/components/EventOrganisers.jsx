@@ -3,6 +3,10 @@ import { organisers } from "../data/DummyData";
 import { motion } from "framer-motion";
 
 export default function EventOrganisers() {
+
+  const showOrganisers = organisers.slice(0, 3)
+  // const showFewSpeakers = speakers.slice(0, 3);
+
   return (
     <section className="py-16 px-6 md:px-12">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-14 tracking-tight">
@@ -10,7 +14,7 @@ export default function EventOrganisers() {
       </h2>
 
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
-        {organisers.map((person, i) => (
+        {showOrganisers.map((person, i) => (
           <motion.div
             key={i}
             className="flex flex-col items-center text-center"

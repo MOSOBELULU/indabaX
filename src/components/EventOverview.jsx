@@ -3,9 +3,10 @@ import { features } from "../data/DummyData";
 import { motion } from "framer-motion";
 
 export default function EventOverview() {
+  
   return (
     <section className="py-16 px-6 md:px-12 ">
-      <div className="max-w-4xl mx-auto text-center mb-14">
+      <div className="max-w-4xl   mb-14">
         <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 tracking-tight">
           Why Attend this Event
         </h2>
@@ -15,7 +16,7 @@ export default function EventOverview() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-8 max-w-6xl ">
         {features.map((item, i) => {
           const Icon = item.icon;
           return (

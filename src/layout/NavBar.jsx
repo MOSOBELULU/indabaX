@@ -35,15 +35,15 @@ export default function NavBar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-4 text-gray-800 font-semibold text-sm sm:text-base">
+        <nav className="hidden md:flex gap-4 font-semibold text-sm sm:text-base">
           {navItems.map((item) => (
             <Link
               key={item.path}
               to={item.path}
               className={`px-4 py-2 rounded-md transition ${
                 isActive(item.path)
-                  ? "bg-black text-white"
-                  : "hover:bg-black hover:text-white"
+                  ? " text-green-800 underline"
+                  : " hover:text-green-800"
               }`}
             >
               {item.label}

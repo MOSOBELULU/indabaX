@@ -40,9 +40,9 @@ export default function Testimonials() {
         <ul className="flex justify-center mt-6 space-x-2">{dots}</ul>
       </div>
     ),
-    customPaging: () => (
-      <div className="w-3 h-3 bg-gray-300 rounded-full hover:bg-[#12AD2B] transition duration-300"></div>
-    )
+    // customPaging: () => (
+    //   <div className="w-3 h-3  rounded-full transition duration-300"></div>
+    // )
   };
 
   return (
