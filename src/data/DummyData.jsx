@@ -1,3 +1,5 @@
+ import { Brain, Code2, Users, Lightbulb, Rocket, Wrench } from "lucide-react";
+ 
 export const speakers = [
   {
     id: 1,
@@ -170,7 +172,7 @@ export const testimonials = [
     "message": "Attending IndabaX reminded me that AI is not just for Silicon Valley. We have the talent, we have the problems, and now we have the platform."
   }
 ]
-import { Brain, Code2, Users } from "lucide-react";
+
  export const features = [
   {
     title: "Expert Talks",
@@ -299,6 +301,28 @@ export const images = [
     
   ];
 
+ export  const benefits = [
+    {
+      title: "Learn from AI experts",
+      desc: "Gain insights from seasoned professionals and researchers in the AI space.",
+      icon: <Lightbulb className="w-8 h-8" />,
+    },
+    {
+      title: "Network with Africa’s AI community",
+      desc: "Connect with like-minded individuals passionate about technology and innovation.",
+      icon: <Users className="w-8 h-8" />,
+    },
+    {
+      title: "Exposure to real-world projects",
+      desc: "Explore how AI is applied in real scenarios and get inspired to start your own.",
+      icon: <Rocket className="w-8 h-8 " />,
+    },
+    {
+      title: "Hands-on workshops",
+      desc: "Participate in practical sessions that build your technical and creative confidence.",
+      icon: <Wrench className="w-8 h-8 " />,
+    },
+  ];
 
 
 
