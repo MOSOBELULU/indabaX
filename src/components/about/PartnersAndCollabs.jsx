@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion"
-import { partners } from "../data/DummyData"
+import { partners } from "../../data/DummyData"
 
 export default function PartnersAndCollabs() {
   return (

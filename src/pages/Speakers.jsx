@@ -1,7 +1,7 @@
 import {  Link } from 'react-router-dom'
 import {  speakers } from "../data/DummyData";
-import SpeakerCard from "../components/SpeakersCard";
-import RegisterButton from "../components/Register_button";
+import SpeakerCard from "../components/reusable/SpeakersCard";
+import RegisterButton from "../components/reusable/Register_button";
 import {FaArrowLeft} from 'react-icons/fa'
 
 export default function SpeakersPage() {

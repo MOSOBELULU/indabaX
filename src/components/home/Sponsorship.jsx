@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { sponsors } from "../data/DummyData";
+import { sponsors } from "../../data/DummyData";
 import { motion } from "framer-motion";
 
 export default function Sponsorship() {

@@ -1,13 +1,13 @@
 // import CountdownTimer from "../components/CountdownTimer"
-import Hero from "../components/Hero"
-import SpeakersSection from "../components/SpeakersSection"
-import Sponsorship from "../components/Sponsorship"
-import About from "../components/About"
-import Events from "../components/Events"
-import Testimonials from "../components/Testimonials"
-import EventOverview from "../components/EventOverview"
-import EventOrganisers from "../components/EventOrganisers"
-import Faqs from "../components/Faq"
+import Hero from "../components/home/Hero"
+// import SpeakersSection from "../components/SpeakersSection"
+import Sponsorship from "../components/home/Sponsorship"
+import About from "../components/home/About"
+import Events from "../components/home/Events"
+import Testimonials from "../components/home/Testimonials"
+import EventOverview from "../components/home/EventOverview"
+import EventOrganisers from "../components/reusable/EventOrganisers"
+import Faqs from "../components/reusable/Faq"
 
 
 export default function Home(){

@@ -1,6 +1,7 @@
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import RegisterButton from "../components/Register_button";
-import CountdownTimer from "./CountdownTimer";
+import RegisterButton from "../reusable/Register_button";
+import CountdownTimer from "../reusable/CountdownTimer";
+import CurrentYear from "../reusable/CurrentYear";
 
 export default function Hero() {
   return (
@@ -15,7 +16,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 md:px-8 py-23 text-center">
         <div className="max-w-4xl w-full space-y-6">
           <h1 className="text-white text-3xl md:text-6xl font-bold drop-shadow-lg mb-4">
-            IndabaX São Tomé and Príncipe 2025
+            IndabaX São Tomé and Príncipe <CurrentYear/>
           </h1>
 
           <div className="flex items-center justify-center space-x-2 text-white md:text-2xl font-medium drop-shadow-sm mb-1 pt-5">

@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { images } from "../data/DummyData";
+import { images } from "../../data/DummyData";
 
 export default function MiniGallery() {
  

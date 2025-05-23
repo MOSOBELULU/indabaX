@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
-import { faqs } from "../data/DummyData";
+import { faqs } from "../../data/DummyData";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion";
 

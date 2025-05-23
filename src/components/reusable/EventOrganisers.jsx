@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
-import { organisers } from "../data/DummyData";
+import { organisers } from "../../data/DummyData";
 import { motion } from "framer-motion";
 
 export default function EventOrganisers() {
 
   const showOrganisers = organisers.slice(0, 3)
-  // const showFewSpeakers = speakers.slice(0, 3);
+ 
 
   return (
     <section className="py-16 px-6 md:px-12">

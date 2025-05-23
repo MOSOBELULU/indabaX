@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { features } from "../data/DummyData";
+import { features } from "../../data/DummyData";
 import { motion } from "framer-motion";
 
 export default function EventOverview() {

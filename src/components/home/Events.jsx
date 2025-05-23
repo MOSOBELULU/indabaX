@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
-import { events } from "../data/DummyData";
+import { events } from "../../data/DummyData";
 import { HiOutlineCalendar, HiOutlineLocationMarker } from "react-icons/hi";
 import { motion } from "framer-motion";
 

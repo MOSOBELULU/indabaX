@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
-import { speakers } from "../data/DummyData";
-import SpeakerCard from "./SpeakersCard";
+import { speakers } from "../../data/DummyData";
+import SpeakerCard from "..reusable/SpeakersCard";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 

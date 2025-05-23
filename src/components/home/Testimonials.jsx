@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { testimonials } from "../data/DummyData";
+import { testimonials } from "../../data/DummyData";
 import Slider from "react-slick";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { motion } from "framer-motion";

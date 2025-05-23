@@ -1,5 +1,5 @@
-import { images } from "../data/DummyData";
-import BackBtn from "./BackBtn";
+import { images } from "../../data/DummyData";
+import BackBtn from "../reusable/BackBtn";
 
 export default function FullGallery() {
   return (
