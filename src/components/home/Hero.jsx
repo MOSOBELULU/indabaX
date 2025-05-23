@@ -1,36 +1,39 @@
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import RegisterButton from "../reusable/Register_button";
 import CountdownTimer from "../reusable/CountdownTimer";
-import CurrentYear from "../reusable/CurrentYear";
+
 
 export default function Hero() {
   return (
-    <section
-      className="relative min-h-screen bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/images/hero.home.jpg')" }}
-    >
-    
-      <div className="absolute inset-0 bg-black/85 z-0"></div>
+<section
+  className="relative min-h-screen bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/images/hero.home.jpg')" }}
+>
+ 
+  <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/100 via-black/80 to-transparent"></div>
 
   
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 md:px-8 py-23 text-center">
-        <div className="max-w-4xl w-full space-y-6">
-          <h1 className="text-white text-3xl md:text-6xl font-bold drop-shadow-lg mb-4">
-            IndabaX São Tomé and Príncipe <CurrentYear/>
-          </h1>
+  <div className="relative z-10 flex flex-col justify-center items-start min-h-screen px-4 md:px-8 py-23">
+    <div className="max-w-4xl w-full space-y-6">
+      <h1 className="text-white text-3xl md:text-6xl font-bold drop-shadow-lg mb-4">
+        IndabaX São Tomé and Príncipe 
+      </h1>
 
-          <div className="flex items-center justify-center space-x-2 text-white md:text-2xl font-medium drop-shadow-sm mb-1 pt-5">
-            <HiOutlineLocationMarker className="text-white  " />
-            <span>University of São Tomé and Príncipe</span>
-          </div>
-
-         
-          <div className="flex flex-col items-center justify-center space-y-4 pt-1">
-            <CountdownTimer />
-            <RegisterButton />
-          </div>
-        </div>
+      <div className="space-x-2 text-white md:text-2xl font-medium drop-shadow-sm mb-1 pt-5">
+        <h3 className="text-lg md:text-xl font-medium text-white max-w-xl">
+          Be part of a growing movement shaping the future of AI in Africa through collaboration, community, and cutting-edge discussions.
+        </h3>
       </div>
-    </section>
+
+      <div className="flex flex-col items-start space-y-4 pt-1">
+        <CountdownTimer />
+        <RegisterButton />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
   );
 }

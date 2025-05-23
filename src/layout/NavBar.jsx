@@ -20,17 +20,15 @@ export default function NavBar() {
   return (
     <header className="bg-white shadow-md top-0 left-0 w-full z-50 relative">
       <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4 py-3 sm:px-6 md:px-10">
-        {/* Logo */}
+  
         <Link to="/">
           <div className="flex items-center space-x-2">
             <img
               src="/images/indabaX_logo.png"
               alt="indabaLogo"
-              className="h-10 w-auto object-contain"
+              className="h-10 w-auto   object-contain
+             "
             />
-            <span className="bg-gradient-to-r from-green-600 to-yellow-400 bg-clip-text text-transparent font-semibold">
-              São Tomé and Príncipe
-            </span>
           </div>
         </Link>
 

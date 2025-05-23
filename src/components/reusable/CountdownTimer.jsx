@@ -39,39 +39,40 @@ const CountdownTimer = () => {
   ];
 
   return (
-    <section className=" py-12 text-center">
-      <div className="max-w-xl mx-auto px-4">
-         <div className="flex items-center justify-center space-x-2 text-white text-lg md:text-xl font-light drop-shadow-sm mb-6">
-            <FaCalendarAlt className="text-white" />
-            <span>14 – 16 August <CurrentYear/> </span>
-          </div>
-        <div className="flex justify-center gap-4 flex-wrap">
-          {timeBoxes.map((box, index) => (
-           <div
-  key={index}
-  className="w-15 h-15 flex flex-col justify-center items-center  text-white"
->
+    <section className="py-12 text-left">
+  <div className="max-w-xl mx-auto px-4">
+    <div className="flex items-start justify-start space-x-2 text-white text-lg md:text-xl font-light drop-shadow-sm mb-6">
+      <FaCalendarAlt className="text-white" />
+      <span>14 – 16 August <CurrentYear /></span>
+    </div>
 
-              <AnimatePresence mode="wait">
-                <motion.p
-                  key={box.value}
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  transition={{ duration: 0.25 }}
-                  className="text-3xl font-bold"
-                >
-                  {box.value}
-                </motion.p>
-              </AnimatePresence>
-              <p className="text-sm font-medium mt-1 uppercase tracking-wide">
-                {box.label}
-              </p>
-            </div>
-          ))}
+    <div className="flex justify-start gap-4 flex-wrap">
+      {timeBoxes.map((box, index) => (
+        <div
+          key={index}
+          className="w-15 h-15 flex flex-col justify-center items-start text-white"
+        >
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={box.value}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.25 }}
+              className="text-3xl font-bold"
+            >
+              {box.value}
+            </motion.p>
+          </AnimatePresence>
+          <p className="text-sm font-medium mt-1 uppercase tracking-wide">
+            {box.label}
+          </p>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
+
   );
 };
 

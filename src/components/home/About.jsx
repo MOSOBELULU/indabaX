@@ -35,7 +35,7 @@ export default function About() {
           </h2>
 
           <div className="flex items-start space-x-4">
-            <Users className="text-4xl text-[#12AD2B] h-15 w-15" />
+            <Users className="text-4xl  h-15 w-15" />
             <div>
               <h3 className="text-xl font-semibold">Who We Are</h3>
               <p className="text-sm">
@@ -47,7 +47,7 @@ export default function About() {
           </div>
 
           <div className="flex items-start space-x-4">
-            <Wrench className="text-4xl text-[#12AD2B] h-15 w-15" />
+            <Wrench className="text-4xl  h-15 w-15" />
             <div>
               <h3 className="text-xl font-semibold">What We Do</h3>
               <p className="text-sm">
@@ -58,7 +58,7 @@ export default function About() {
           </div>
 
           <div className="flex items-start space-x-4">
-            <HeartHandshake className="text-xl text-[#12AD2B] h-15 w-15" />
+            <HeartHandshake className="text-xl  h-15 w-15" />
             <div>
               <h3 className="text-xl font-semibold">Why You Should Care</h3>
               <p className="text-sm">
