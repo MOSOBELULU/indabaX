@@ -42,8 +42,8 @@ export default function NavBar() {
               to={item.path}
               className={`px-4 py-2 rounded-md transition ${
                 isActive(item.path)
-                  ? " text-green-800 underline"
-                  : " hover:text-green-800"
+                  ? " text-[#12AD2B] underline"
+                  : " hover:text-[#12AD2B]"
               }`}
             >
               {item.label}
@@ -55,7 +55,7 @@ export default function NavBar() {
         <div className="md:hidden relative z-50">
           <button
             onClick={toggleMenu}
-            className=" text-green-800 focus:outline-none"
+            className=" text-[#12AD2B] focus:outline-none"
           >
             {isOpen ? <FiX /> : <FiMenu />}
           </button>
@@ -65,7 +65,7 @@ export default function NavBar() {
       {/* Mobile Nav */}
 {isOpen && (
   <nav className="md:hidden bg-white shadow-md absolute top-full left-0 w-full z-40 overflow-x-hidden">
-    <ul className="flex flex-col gap-2 py-4 px-4 text-gray-800 font-semibold text-base max-w-screen-sm mx-auto">
+    <ul className="flex flex-col gap-2 py-4 px-4  font-semibold text-base max-w-screen-sm mx-auto">
 
 
             {navItems.map((item) => (

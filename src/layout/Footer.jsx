@@ -23,7 +23,7 @@ export default function Footer() {
             <li><a href="/faqs" className="hover:underline text-black">FAQs</a></li>
             <li><a href="/careers" className="hover:underline text-black">Careers</a></li>
             <li><a href="/gallery" className="hover:underline text-black">Gallery</a></li>
-            <li><a href="/code-of-conduct" className="hover:underline text-black">Code of Conduct</a></li>
+            <li><a href="/codeofconduct" className="hover:underline text-black">Code of Conduct</a></li>
             <li><a href="/privacypolicy" className="hover:underline text-black">Privacy Policy</a></li>
           </ul>
         </div>
