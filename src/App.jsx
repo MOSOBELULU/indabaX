@@ -27,13 +27,13 @@ export default function App() {
         <Route path='/privacypolicy' element={< PrivacyPolicy/>} />
         <Route path='/gallerypage' element={< Gallerypage/>} />
         <Route path='careers' element={< Careers/>} />
-        {/* <Route path='/gallery' element={< Gallery/>} /> */}
         <Route path='/speakerspage' element={< SpeakersPage/>}>
         </Route>
         <Route path='/speakerdetail/:id' element={< SpeakerDetail/>}>
         </Route>
         <Route path='/eventdetail/:id' element={< EventDetail/>}>
         </Route>
+        
       </Routes>
     
       <Footer />
