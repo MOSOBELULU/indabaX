@@ -177,16 +177,19 @@ export const testimonials = [
   {
     title: "Expert Talks",
     desc: "Learn from leading experts and professionals across tech and innovation spaces.",
+    image: "/images/eventsOverview/expecttalk.jpg",
     icon: Brain
   },
   {
     title: "Workshops",
     desc: "Hands-on sessions to deepen your skills and apply knowledge in real time.",
+    image: "/images/eventsOverview/skill.jpg",
     icon: Code2
   },
   {
     title: "Networking",
     desc: "Meet founders, developers, and entrepreneurs from all over the region.",
+    image: "/images/eventsOverview/networking.jpg",
     icon: Users
   },
 ];

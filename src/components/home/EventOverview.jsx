@@ -22,7 +22,8 @@ export default function EventOverview() {
           return (
             <motion.div
               key={i}
-              className="bg-[#f9fafb] p-6 rounded-2xl shadow-sm text-center cursor-default"
+              className=" p-6 rounded-2xl shadow-sm text-center cursor-default bg-cover bg-center bg-no-repeat backdrop-brightness-10 text-white"
+              style={{backgroundImage: `url(${item.image})`}}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: i * 0.2 }}
@@ -32,8 +33,8 @@ export default function EventOverview() {
               <div className="flex justify-center mb-4">
                 <Icon size={42} className="text-[#12AD2B]" />
               </div>
-              <h4 className="text-xl font-semibold text-black mb-2">{item.title}</h4>
-              <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+              <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
+              <p className="text-sm leading-relaxed">{item.desc}</p>
             </motion.div>
           );
         })}
