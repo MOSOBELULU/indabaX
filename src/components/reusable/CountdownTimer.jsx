@@ -40,7 +40,7 @@ const CountdownTimer = () => {
 
   return (
     <section className="py-12 text-left">
-  <div className="max-w-xl mx-auto px-4">
+  <div className="max-w-xl mx-auto">
     <div className="flex items-start justify-start space-x-2 text-white text-lg md:text-xl font-light drop-shadow-sm mb-6">
       <FaCalendarAlt className="text-white" />
       <span>14 – 16 August <CurrentYear /></span>

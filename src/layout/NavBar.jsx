@@ -40,7 +40,7 @@ export default function NavBar() {
               to={item.path}
               className={`px-4 py-2 rounded-md transition ${
                 isActive(item.path)
-                  ? " text-[#12AD2B] underline"
+                  ? " text-[#12AD2B]"
                   : " hover:text-[#12AD2B]"
               }`}
             >

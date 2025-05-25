@@ -16,7 +16,7 @@ export default function Events() {
   }
 
   return (
-    <section className="py-16 px-6">
+    <section className="py-16 px-25">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-center mb-12 text-3xl md:text-4xl font-extrabold text-black tracking-tight">
           Upcoming Events
@@ -27,15 +27,16 @@ export default function Events() {
             const daysLeft = getDaysLeft(event.date);
 
             return (
-              <motion.div
-                key={index}
-                className="w-full sm:w-[300px] bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
+        <motion.div
+  key={index}
+  className="w-full sm:w-[300px] md:w-[350px] bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  whileHover={{ scale: 1.02 }}
+  transition={{ duration: 0.4, delay: index * 0.1 }}
+  viewport={{ once: true }}
+>
+
                 <img
                   src={event.image}
                   alt={event.title}

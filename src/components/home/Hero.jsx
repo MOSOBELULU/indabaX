@@ -10,10 +10,10 @@ export default function Hero() {
   style={{ backgroundImage: "url('/images/hero.home.jpg')" }}
 >
  
-  <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/100 via-black/80 to-transparent"></div>
+  <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/100 via-black/90 to-transparent"></div>
 
   
-  <div className="relative z-10 flex flex-col justify-center items-start min-h-screen px-4 md:px-8 py-23">
+  <div className="relative z-10 flex flex-col justify-center items-start min-h-screen px-4 md:px-35 py-15">
     <div className="max-w-4xl w-full space-y-6">
       <h1 className="text-white text-3xl md:text-6xl font-bold drop-shadow-lg mb-4">
         IndabaX São Tomé and Príncipe 
