@@ -20,7 +20,7 @@ export default function RegistrationForm() {
   };
 
   return (
-    <section className="py-16 px-6 bg-gray-50" id="register-form">
+    <section className="py-16 px-6 " id="register-form">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export default function RegistrationForm() {
           Register for IndabaX
         </h2>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6 ">
           <div className="flex flex-wrap gap-4 justify-center mb-6">
             {["Attendee", "Speaker", "Volunteer", "Online participant"].map(
               (type) => (
@@ -52,7 +52,7 @@ export default function RegistrationForm() {
             )}
           </div>
 
-          <div className="flex items-center border rounded-md overflow-hidden bg-white">
+          <div className="flex items-center  border rounded-md overflow-hidden ">
             <div className="px-3">
               <User size={18} />
             </div>
@@ -65,7 +65,7 @@ export default function RegistrationForm() {
             />
           </div>
 
-          <div className="flex items-center border rounded-md overflow-hidden bg-white">
+          <div className="flex items-center border rounded-md overflow-hidden ">
             <div className="px-3">
               <Mail size={18} />
             </div>
@@ -78,7 +78,7 @@ export default function RegistrationForm() {
             />
           </div>
 
-          <div className="flex items-center border rounded-md overflow-hidden bg-white">
+          <div className="flex items-center border rounded-md overflow-hidden ">
             <div className="px-3">
               <Globe size={18} />
             </div>
@@ -91,7 +91,7 @@ export default function RegistrationForm() {
             />
           </div>
 
-          <div className="flex items-center border rounded-md overflow-hidden bg-white">
+          <div className="flex items-center border rounded-md overflow-hidden ">
             <div className="px-3">
               <Briefcase size={18} />
             </div>
@@ -103,7 +103,7 @@ export default function RegistrationForm() {
             />
           </div>
 
-          <div className="flex items-start border rounded-md overflow-hidden bg-white">
+          <div className="flex items-start border rounded-md overflow-hidden ">
             <div className="px-3 pt-3">
               <MessageCircle size={18} />
             </div>
