@@ -1,9 +1,9 @@
 @import "tailwindcss";
 :root {
-  background-image: url("/images/backgroundImg.jpg");
+  /* background-image: url("/images/backgroundImg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 
 html{
   scroll-behavior: smooth;

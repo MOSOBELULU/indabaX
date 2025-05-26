@@ -21,21 +21,35 @@ export default function EventOverview() {
           const Icon = item.icon;
           return (
             <motion.div
-              key={i}
-              className=" p-6 rounded-2xl shadow-sm text-center cursor-default bg-cover bg-center bg-no-repeat backdrop-brightness-10 text-white"
-              style={{backgroundImage: `url(${item.image})`}}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: i * 0.2 }}
-              whileHover={{ scale: 1.05, boxShadow: "0px 8px 24px rgba(0, 0, 0, 0.1)" }}
-              viewport={{ once: true }}
-            >
-              <div className="flex justify-center mb-4">
-                <Icon size={42} className="text-[#12AD2B]" />
-              </div>
-              <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-              <p className="text-sm leading-relaxed">{item.desc}</p>
-            </motion.div>
+  key={i}
+  className="relative rounded-2xl shadow-sm text-center overflow-hidden cursor-default group"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: i * 0.2 }}
+  whileHover={{ scale: 1.03 }}
+  viewport={{ once: true }}
+>
+ 
+  <div
+    className="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500"
+    style={{
+      backgroundImage: `url(${item.image})`,
+    }}
+  ></div>
+
+
+  <div className="absolute inset-0 bg-black/50 z-0" />
+
+ 
+  <div className="relative z-10 p-6 text-white">
+    <div className="flex justify-center mb-4">
+      <Icon size={42} className="text-white" />
+    </div>
+    <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
+    <p className="text-sm leading-relaxed">{item.desc}</p>
+  </div>
+</motion.div>
+
           );
         })}
       </div>

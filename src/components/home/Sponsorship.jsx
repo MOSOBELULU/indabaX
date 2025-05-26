@@ -1,38 +1,40 @@
 /* eslint-disable no-unused-vars */
 import { sponsors } from "../../data/DummyData";
+import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 
 export default function Sponsorship() {
   return (
-    <section className="py-16 text-center" id="sponsors">
-      <h2 className="text-3xl  md:text-4xl font-bold mb-8 ">
-        Our Sponsors
-      </h2>
+    <section className="flex flex-col md:flex-row w-full min-h-[280px]">
+      
+      {/* Left side - Title */}
+      <div className="bg-[#15b110] text-white flex items-center justify-center md:w-1/4 w-full py-12 md:rounded-tr-none rounded-t-lg md:rounded-l-lg">
+        <h2 className="text-3xl md:text-4xl font-bold  text-black transform -rotate-90 ">
+  Sponsors
+</h2>
 
-      <div className="flex flex-wrap justify-center gap-8 px-4">
-        {sponsors.map((sponsor, index) => (
-          <motion.a
-            key={sponsor.name}
-            href={sponsor.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 0.5,
-              ease: "easeOut",
-              delay: index * 0.1,
-            }}
-            className="transition-transform transform hover:scale-105"
-          >
-            <img
-              src={sponsor.logo}
-              alt={sponsor.name}
-              className="h-24 w-24 md:h-35 md:w-35 object-cover rounded-full border-2 border-gray-300 shadow-sm grayscale hover:grayscale-0 transition"
-            />
-          </motion.a>
-        ))}
+      </div>
+
+      {/* Right side - Carousel */}
+      <div className="bg-[#e6d92a] flex-1 flex items-center justify-center px-4 py-6 md:rounded-r-lg rounded-b-lg">
+        <Marquee gradient={false} speed={60} pauseOnHover>
+          {sponsors.map((sponsor, index) => (
+            <motion.div
+              key={sponsor.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="mx-6"
+            >
+              <img
+                src={sponsor.logo}
+                alt={sponsor.name}
+                className="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </motion.div>
+          ))}
+        </Marquee>
       </div>
     </section>
   );
