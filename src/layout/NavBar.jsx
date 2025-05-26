@@ -73,8 +73,8 @@ export default function NavBar() {
                   onClick={toggleMenu}
                   className={`block px-4 py-2 rounded-md transition ${
                     isActive(item.path)
-                      ? "bg-black text-white"
-                      : "hover:bg-black hover:text-white"
+                      ? " text-black"
+                      : " text-black"
                   }`}
                 >
                   {item.label}
