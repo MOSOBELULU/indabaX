@@ -70,7 +70,7 @@ export default function About() {
 
           <a
             href="/aboutus"
-            className="inline-block mt-4 bg-[#12AD2B] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#007f2f] transition duration-200"
+            className="inline-block mt-4 bg-[#007847] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#007f2f] transition duration-200"
           >
             Learn More About Us
           </a>

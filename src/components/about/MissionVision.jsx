@@ -26,7 +26,7 @@ export default function MissionVision() {
           viewport={{ once: true }}
           className=" p-8 rounded-xl shadow-lg"
         >
-          <Target className="text-[#12AD2B] w-10 h-10 mb-4" />
+          <Target className="text-[#007847] w-10 h-10 mb-4" />
           <h3 className="text-xl font-semibold mb-2">Our Mission</h3>
           <p className=" text-sm leading-relaxed">
             To foster a vibrant AI ecosystem by empowering students, developers, and researchers
@@ -43,7 +43,7 @@ export default function MissionVision() {
           viewport={{ once: true }}
           className=" p-8 rounded-xl shadow-lg"
         >
-          <Eye className="text-[#12AD2B] w-10 h-10 mb-4" />
+          <Eye className="text-[#007847] w-10 h-10 mb-4" />
           <h3 className="text-xl font-semibold mb-2">Our Vision</h3>
           <p className=" text-sm leading-relaxed">
             To become a leading platform that sparks innovation and inclusion in Africa’s AI space,

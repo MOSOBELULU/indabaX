@@ -40,8 +40,8 @@ export default function NavBar() {
               to={item.path}
               className={`px-4 py-2 rounded-md transition ${
                 isActive(item.path)
-                  ? " text-[#12AD2B]"
-                  : " hover:text-[#12AD2B]"
+                  ? " text-[#007847]"
+                  : " hover:text-[#007847]"
               }`}
             >
               {item.label}
@@ -53,7 +53,7 @@ export default function NavBar() {
         <div className="md:hidden relative z-50">
           <button
             onClick={toggleMenu}
-            className=" text-[#12AD2B] focus:outline-none"
+            className=" text-[#007847] focus:outline-none"
           >
             {isOpen ? <FiX /> : <FiMenu />}
           </button>

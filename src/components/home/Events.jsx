@@ -56,7 +56,7 @@ export default function Events() {
                     {event.date}
                   </p>
 
-                  <p className="text-sm text-[#12AD2B] font-medium mb-2">
+                  <p className="text-sm text-[#007847] font-medium mb-2">
                     {daysLeft > 0
                       ? `${daysLeft} day${daysLeft !== 1 ? "s" : ""} left`
                       : "Today or past event"}
@@ -72,7 +72,7 @@ export default function Events() {
                   </p>
 
                   <Link to={`/eventdetail/${event.id}`}>
-                    <button className="mt-2 bg-[#12AD2B] hover:bg-[#0f8e23] text-white text-sm font-semibold py-2 px-5 rounded-full transition duration-200">
+                    <button className="mt-2 bg-[#007847]  text-white text-sm font-semibold py-2 px-5 rounded-full transition duration-200">
                       Learn More
                     </button>
                   </Link>

@@ -24,7 +24,7 @@ export default function EventOrganisers() {
             transition={{ duration: 0.5, delay: i * 0.1 }}
             viewport={{ once: true }}
           >
-           <div className="bg-gradient-to-r from-green-600 to-yellow-400 p-[3px] rounded-full">
+           <div className="bg-gradient-to-r from-[#007847] to-yellow-400 p-[3px] rounded-full">
     <img
       src={person.image}
       alt={person.name}

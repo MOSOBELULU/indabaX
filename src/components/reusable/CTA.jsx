@@ -28,7 +28,7 @@ export default function CTA() {
         href="#register-form"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="inline-flex items-center bg-white text-[#12AD2B] font-semibold px-6 py-3 rounded-md shadow-md hover:bg-gray-100 transition"
+        className="inline-flex items-center bg-white text-[#007847] font-semibold px-6 py-3 rounded-md shadow-md hover:bg-gray-100 transition"
       >
         Join the Community
         <ArrowUp className="w-5 h-5 ml-2" />

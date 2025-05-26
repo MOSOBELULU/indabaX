@@ -8,7 +8,7 @@ function NextArrow({ onClick }) {
   return (
     <div
       onClick={onClick}
-      className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white border border-gray-200 rounded-full p-2 cursor-pointer z-10 hover:bg-[#12AD2B] hover:text-white transition"
+      className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white border border-gray-200 rounded-full p-2 cursor-pointer z-10 hover:bg-[#007847] hover:text-white transition"
     >
       <IoIosArrowForward size={22} />
     </div>
@@ -19,7 +19,7 @@ function PrevArrow({ onClick }) {
   return (
     <div
       onClick={onClick}
-      className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white border border-gray-200 rounded-full p-2 cursor-pointer z-10 hover:bg-[#12AD2B] hover:text-white transition"
+      className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white border border-gray-200 rounded-full p-2 cursor-pointer z-10 hover:bg-[#007847] hover:text-white transition"
     >
       <IoIosArrowBack size={22} />
     </div>
