@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 
 export default function Sponsorship() {
   return (
-    <section className=" flex flex-col md:flex-row w-full min-h-[280px]">
+    <section className=" flex flex-col md:flex-row w-full min-h-[280px] px-20">
       
       
-      <div className="bg-[#15b110] text-white flex items-center justify-center md:w-1/2 w-full py-14 md:rounded-tr-none rounded-t-lg md:rounded-l-lg">
+      <div className="bg-[#007847] text-white flex items-center justify-center md15b110:w-1/2 w-full py-14 md:rounded-tr-none rounded-t-lg md:rounded-l-lg">
         <h2 className="text-3xl md:text-4xl font-bold  text-black transform -rotate-90 ">
   Sponsors
 </h2>
@@ -16,7 +16,7 @@ export default function Sponsorship() {
       </div>
 
 
-      <div className="bg-[#e6d92a] flex-1 flex items-center justify-center px-4 py-6 md:rounded-r-lg rounded-b-lg">
+      <div className="bg-[#FCD116] flex-1 flex items-center justify-center px-4 py-6 md:rounded-r-lg rounded-b-lg">
         <Marquee gradient={false} speed={60} pauseOnHover>
           {sponsors.map((sponsor, index) => (
             <motion.div

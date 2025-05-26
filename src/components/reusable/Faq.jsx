@@ -30,9 +30,9 @@ export default function Faqs() {
               {item.question}
             </h3>
             {openIndex === index ? (
-              <IoIosArrowUp className="text-green-600" size={20} />
+              <IoIosArrowUp size={20} />
             ) : (
-              <IoIosArrowDown className="text-green-500" size={20} />
+              <IoIosArrowDown size={20} />
             )}
           </div>
 
