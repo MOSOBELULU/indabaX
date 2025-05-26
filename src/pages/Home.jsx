@@ -8,6 +8,8 @@ import Testimonials from "../components/home/Testimonials"
 import EventOverview from "../components/home/EventOverview"
 import EventOrganisers from "../components/reusable/EventOrganisers"
 import Faqs from "../components/reusable/Faq"
+import CTA from "../components/reusable/CTA"//
+import JoinUs from "../components/about/JoinUs"
 
 
 export default function Home(){
@@ -22,6 +24,7 @@ export default function Home(){
           <Testimonials />
           <Faqs />
           < Sponsorship />
+          <JoinUs />
             </>
           
     )
