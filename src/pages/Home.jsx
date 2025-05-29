@@ -9,6 +9,9 @@ import Faqs from "../components/reusable/Faq";
 import MiniGallery from "../components/about/MiniGallery"
 import AgendaPreview from "../components/home/AgendaPreview";
 import JoinUs from "../components/reusable/JoinUs";
+import SpeakersSection from "../components/home/SpeakersSection";
+import MediaPress from "../components/home/MediaPress";
+import VolunteerOpportunities from "../components/home/VolunteerOpps";
 
 export default function Home() {
   return (
@@ -18,12 +21,16 @@ export default function Home() {
       <EventOverview />
       <EventOrganisers />
       <AgendaPreview />
+      <SpeakersSection />
       <Events />
       <Testimonials />
       <MiniGallery />
+      <MediaPress />
       <Faqs />
       <Sponsorship />
+      <VolunteerOpportunities />
       <JoinUs />
+      
     </>
   );
 }
