@@ -21,7 +21,7 @@ export default function JoinUs() {
            whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.98 }}
           className="inline-flex items-center justify-center gap-2 bg-white text-[#007847] font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition"
-        >Join the community <ArrowRight className="w-5 h-5"/>
+        >Register <ArrowRight className="w-5 h-5"/>
         </motion.a>
             </div>
         </section>

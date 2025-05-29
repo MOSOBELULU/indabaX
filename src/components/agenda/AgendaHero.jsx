@@ -26,9 +26,12 @@ export default function HeroAgendaSection() {
           research showcases, and community moments. Explore the full agenda and
           plan your IndabaX experience.
         </p>
-        <button className="bg-white text-[#007847] font-semibold px-6 py-2 rounded-full hover:bg-gray-200 transition">
+       <a
+          href="#agendaTabs"
+          className="mt-6 bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+        >
           View Full Schedule
-        </button>
+        </a>
       </motion.div>
     </section>
   );
