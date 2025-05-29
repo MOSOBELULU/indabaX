@@ -530,3 +530,24 @@ export const agenda = {
     },
   ],
 };
+
+export const aiInsightsCards = [
+  {
+    title: "AI Foundations for the Future",
+    description:
+      "Focuses on building strong AI infrastructure using models, data pipelines, and scalable systems. Includes ethical AI, cloud integration, and model optimization to prepare organizations for long-term innovation.",
+    image: "/images/agenda/img4.jpg",
+  },
+  {
+    title: "AI-as-a-Service and Platform Innovation",
+    description:
+      "Explores how businesses can integrate AI into products using APIs, no-code tools, and pre-trained models. Covers real-time insights, automation, and accelerating product delivery with AI platforms.",
+    image: "/images/agenda/img3.jpg",
+  },
+  {
+    title: "Navigating the AI Evolution",
+    description:
+      "Covers how industries can stay adaptive in the face of AI disruptions. From evolving regulations to workforce transformation and emerging technologies like AGI, this topic emphasizes resilience and strategic foresight.",
+    image: "/images/agenda/img1.jpg",
+  },
+];
