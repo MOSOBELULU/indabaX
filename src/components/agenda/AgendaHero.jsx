@@ -7,11 +7,11 @@ export default function HeroAgendaSection() {
       className="w-full min-h-screen flex items-center bg-cover bg-center relative"
       style={{ backgroundImage: "url('/images/agenda/hero.jpg')" }}
     >
-      {/* Green gradient overlay */}
-   <div className="absolute inset-0 bg-gradient-to-r from-[#004d31] via-[#00663d] to-transparent"></div>
+     
+   <div className="absolute inset-0 bg-gradient-to-r from-[#007847] via-[#007847] to-transparent"></div>
 
 
-      {/* Content */}
+    
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
