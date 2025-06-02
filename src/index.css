@@ -5,9 +5,11 @@
   background-size: cover;
   background-position: center; */
 
-html{
+html, body{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
 
   font-family: "Space Grotesk", sans-serif;
   font-weight: 400;

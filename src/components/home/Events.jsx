@@ -39,7 +39,7 @@ export default function Events() {
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-full h-48 object-cover rounded-t-xl"
+                  className="w-full max-w-full h-48 object-cover rounded-t-xl"
                 />
 
                 <div className="p-5 text-center">
