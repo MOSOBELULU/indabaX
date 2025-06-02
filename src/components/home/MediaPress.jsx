@@ -4,7 +4,7 @@ import { mediaPress } from "../../data/DummyData";
 
 export default function MediaPress() {
   return (
-    <section className="py-16 bg-gray-50 px-4 sm:px-6 lg:px-12">
+    <section className="py-16  px-4 sm:px-6 lg:px-12">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl font-bold = mb-6">Media & Press</h2>
         <p className=" mb-12">
