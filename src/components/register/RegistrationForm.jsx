@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { toast } from "react-hot-toast";
+import { useState, useEffect } from "react";
 import {
   User,
   Mail,
@@ -10,17 +9,38 @@ import {
   MessageCircle,
   Upload,
 } from "lucide-react";
+import toast from "react-hot-toast";
 
 export default function RegistrationForm() {
   const [participantType, setParticipantType] = useState("");
+  const [countries, setCountries] = useState([]);
+  useEffect(() => {
+    fetch("https://restcountries.com/v3.1/all")
+      .then((res) => res.json())
+      .then((data) => {
+        const countryList = data.map((country) => country.name.common).sort();
+        setCountries(countryList);
+      });
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast.success("Registration submitted successfully!");
+
+    if (!participantType) {
+      toast.error("Please select a participation type.");
+      return;
+    }
+
+    const loadingToast = toast.loading("Submitting...");
+
+    setTimeout(() => {
+      toast.dismiss(loadingToast);
+      toast.success("Registration submitted successfully! ");
+    }, 1500);
   };
 
   return (
-    <section className="py-16 px-6 " id="register-form">
+    <section className="py-16 px-6" id="register-form">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +52,7 @@ export default function RegistrationForm() {
           Register for IndabaX
         </h2>
 
-        <form onSubmit={handleSubmit} className="space-y-6 ">
+        <form onSubmit={handleSubmit} className="space-y-6">
           <div className="flex flex-wrap gap-4 justify-center mb-6">
             {["Attendee", "Speaker", "Volunteer", "Online participant"].map(
               (type) => (
@@ -52,7 +72,7 @@ export default function RegistrationForm() {
             )}
           </div>
 
-          <div className="flex items-center  border rounded-md overflow-hidden ">
+          <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <User size={18} />
             </div>
@@ -65,7 +85,7 @@ export default function RegistrationForm() {
             />
           </div>
 
-          <div className="flex items-center border rounded-md overflow-hidden ">
+          <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <Mail size={18} />
             </div>
@@ -78,20 +98,25 @@ export default function RegistrationForm() {
             />
           </div>
 
-          <div className="flex items-center border rounded-md overflow-hidden ">
+          <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <Globe size={18} />
             </div>
-            <input
-              type="text"
+            <select
               name="country"
-              placeholder="Country"
               required
-              className="w-full p-3 focus:outline-none"
-            />
+              className="w-auto p-3 focus:outline-none bg-white text-gray-700"
+            >
+              <option value="">Select your country</option>
+              {countries.map((country) => (
+                <option key={country} value={country}>
+                  {country}
+                </option>
+              ))}
+            </select>
           </div>
 
-          <div className="flex items-center border rounded-md overflow-hidden ">
+          <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <Briefcase size={18} />
             </div>
@@ -103,7 +128,7 @@ export default function RegistrationForm() {
             />
           </div>
 
-          <div className="flex items-start border rounded-md overflow-hidden ">
+          <div className="flex items-start border rounded-md overflow-hidden">
             <div className="px-3 pt-3">
               <MessageCircle size={18} />
             </div>
