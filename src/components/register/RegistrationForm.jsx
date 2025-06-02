@@ -14,6 +14,7 @@ import toast from "react-hot-toast";
 export default function RegistrationForm() {
   const [participantType, setParticipantType] = useState("");
   const [countries, setCountries] = useState([]);
+
   useEffect(() => {
     fetch("https://restcountries.com/v3.1/all")
       .then((res) => res.json())
@@ -21,46 +22,44 @@ export default function RegistrationForm() {
         const countryList = data.map((country) => country.name.common).sort();
         setCountries(countryList);
       });
-  });
+  }, []); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (!participantType) {
       toast.error("Please select a participation type.");
       return;
     }
-
     const loadingToast = toast.loading("Submitting...");
-
     setTimeout(() => {
       toast.dismiss(loadingToast);
-      toast.success("Registration submitted successfully! ");
+      toast.success("Registration submitted successfully!");
     }, 1500);
   };
 
   return (
-    <section className="py-16 px-6" id="register-form">
+    <section className="py-16 px-4 sm:px-6 md:px-10" id="register-form">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="max-w-4xl mx-auto bg-white p-8 shadow-lg rounded-xl"
+        className="w-full max-w-4xl mx-auto bg-white p-6 sm:p-10 shadow-lg rounded-xl"
       >
-        <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-gray-800">
           Register for IndabaX
         </h2>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="flex flex-wrap gap-4 justify-center mb-6">
+        <form onSubmit={handleSubmit} className="space-y-5">
+          
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
             {["Attendee", "Speaker", "Volunteer", "Online participant"].map(
               (type) => (
                 <button
                   key={type}
                   type="button"
                   onClick={() => setParticipantType(type)}
-                  className={`px-6 py-2 rounded-full border text-sm font-medium transition duration-200 ${
+                  className={`px-5 py-2 text-xs sm:text-sm rounded-full border font-medium transition ${
                     participantType === type
                       ? "bg-black text-white border-black"
                       : "bg-white text-gray-600 border-gray-300 hover:bg-gray-100"
@@ -72,6 +71,7 @@ export default function RegistrationForm() {
             )}
           </div>
 
+        
           <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <User size={18} />
@@ -81,7 +81,7 @@ export default function RegistrationForm() {
               name="name"
               placeholder="Full Name"
               required
-              className="w-full p-3 focus:outline-none"
+              className="w-full p-3 text-sm sm:text-base focus:outline-none"
             />
           </div>
 
@@ -94,7 +94,7 @@ export default function RegistrationForm() {
               name="email"
               placeholder="Email Address"
               required
-              className="w-full p-3 focus:outline-none"
+              className="w-full p-3 text-sm sm:text-base focus:outline-none"
             />
           </div>
 
@@ -105,7 +105,7 @@ export default function RegistrationForm() {
             <select
               name="country"
               required
-              className="w-auto p-3 focus:outline-none bg-white text-gray-700"
+              className="w-full p-3 text-sm sm:text-base focus:outline-none bg-white text-gray-700"
             >
               <option value="">Select your country</option>
               {countries.map((country) => (
@@ -124,7 +124,7 @@ export default function RegistrationForm() {
               type="text"
               name="role"
               placeholder="Your current role (e.g. Student, Developer)"
-              className="w-full p-3 focus:outline-none"
+              className="w-full p-3 text-sm sm:text-base focus:outline-none"
             />
           </div>
 
@@ -136,7 +136,7 @@ export default function RegistrationForm() {
               name="interests"
               placeholder="What are your interests in AI?"
               rows="4"
-              className="w-full p-3 focus:outline-none"
+              className="w-full p-3 text-sm sm:text-base focus:outline-none"
             ></textarea>
           </div>
 
