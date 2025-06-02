@@ -81,14 +81,16 @@ export default function AgendaTabs() {
             transition={{ duration: 0.25 }}
             className="fixed inset-0 z-50 flex items-center justify-center"
           >
-            <div className="relative bg-[#007847] rounded-xl shadow-lg max-w-md w-[90%] p-6">
+           <div className="relative bg-[#007847] rounded-xl shadow-lg max-w-md w-[90%] max-h-screen overflow-y-auto p-6">
+
              
-              <button
-                onClick={() => setSelectedSpeaker(null)}
-                className="absolute top-2 right-2 text-white hover:text-red-600 text-4xl"
-              >
-                &times;
-              </button>
+             <button
+  onClick={() => setSelectedSpeaker(null)}
+  className="sticky top-2 right-2 text-white hover:text-red-600 text-4xl self-end z-10"
+>
+  &times;
+</button>
+
 
               <div className="flex flex-col items-center text-center gap-4">
                 <img
