@@ -28,7 +28,7 @@ function PrevArrow({ onClick }) {
 
 export default function Testimonials() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 600,
     slidesToShow: 1,
@@ -46,7 +46,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6 md:px-12 bg-white">
+    <section className="py-16 px-4 sm:px-6 md:px-12 bg-gradient-to-r from-[#007847] to-[#003d25]">
       <motion.div
         className="max-w-3xl md:max-w-4xl mx-auto text-center"
         initial={{ opacity: 0, y: 60 }}
@@ -54,7 +54,7 @@ export default function Testimonials() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-10 text-black">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-10 text-white">
           What People Say
         </h2>
 
@@ -65,16 +65,16 @@ export default function Testimonials() {
               whileHover={{
                 scale: 1.02,
                 y: -5,
-                boxShadow: "0 8px 16px rgba(0,0,0,0.1)",
+           
               }}
               transition={{ duration: 0.3 }}
               className="px-4 sm:px-6 md:px-10"
             >
-              <p className="text-base sm:text-lg italic text-gray-700 mb-6 leading-relaxed">
+              <p className="text-base sm:text-lg italic text-white mb-6 leading-relaxed">
                 “{item.message}”
               </p>
-              <h4 className="font-semibold text-lg sm:text-xl text-black">{item.name}</h4>
-              <p className="text-sm text-gray-500">{item.position}</p>
+              <h4 className="font-semibold text-lg sm:text-xl text-white">{item.name}</h4>
+              <p className="text-sm text-white">{item.position}</p>
             </motion.div>
           ))}
         </Slider>

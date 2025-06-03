@@ -5,13 +5,22 @@ import { motion } from "framer-motion";
 
 export default function Sponsorship() {
   return (
-    <section className=" flex flex-col md:flex-row w-full min-h-[280px] px-20">
+    <section className="flex flex-col md:flex-row w-full min-h-[280px] px-4 sm:px-8 md:px-20">
+
       
       
-      <div className="bg-[#007847] text-white flex items-center justify-center md15b110:w-1/2 w-full py-14 md:rounded-tr-none rounded-t-lg md:rounded-l-lg">
-        <h2 className="text-3xl md:text-4xl font-bold  text-black transform -rotate-90 ">
+      <div className="md:w-1/2 w-full py-8 md:py-14 flex items-center justify-center 
+  bg-[#007847] text-white 
+  md:rounded-tr-none rounded-t-lg md:rounded-l-lg"
+>
+
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black 
+  md:-rotate-90 rotate-0 
+  md:whitespace-nowrap text-center
+">
   Sponsors
 </h2>
+
 
       </div>
 
