@@ -15,6 +15,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Gallerypage from "./pages/GalleryPage";
 import CodeOfConduct from "./pages/CodeOfConduct";
 import Agenda from "./pages/Agenda";
+import NotFound from "./pages/NotFound";
 
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
     <div>
       <NavBar />
       <Routes>
+          <Route path='*' element={<NotFound/>}/>
         <Route path='/' element={<Home/>}/>
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/agenda" element={<Agenda />} />
