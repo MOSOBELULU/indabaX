@@ -7,7 +7,7 @@ export default function EventOverview() {
   return (
     <section className="py-16 px-6 md:px-35 ">
       <div className="max-w-4xl mb-14">
-        <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 tracking-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black text-left">
           Why Attend this Event
         </h2>
         <p className="text-lg text-gray-700 leading-relaxed">
