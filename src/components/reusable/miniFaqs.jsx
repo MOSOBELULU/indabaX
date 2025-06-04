@@ -27,7 +27,7 @@ export default function MiniFaqs() {
             Questions & Answers
           </h2>
           <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed">
-            Explore the common questions and answers about Celebration
+            Explore the common questions and answers about IndabaX Sao Tome and Principe
           </p>
         </div>
 
