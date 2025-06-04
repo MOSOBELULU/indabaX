@@ -1,40 +1,87 @@
 /* eslint-disable no-unused-vars */
 import { organisers } from "../../data/DummyData";
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 
 export default function EventOrganisers() {
-
-  const showOrganisers = organisers.slice(0, 3)
- 
+  const showOrganisers = organisers.slice(0, 5);
 
   return (
-    <section className="py-16 px-6 md:px-12">
-      <h2 className=" pl-22 py-10 text-2xl sm:text-3xl md:text-4xl font-bold text-black">
-        Meet The Organisers
-      </h2>
+    <section className=" py-16 px-6 md:px-12">
+      <div className="max-w-7xl mx-auto rounded-xl bg-gray-300 p-8 relative">
+        <div className="grid grid-cols-4  ">
+         
+          <div className="col-span-2 row-start-1">
+            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl ">
+              Meet the brains
+            </h2>
+            <p className="mt-4 text-base leading-relaxed max-w-md">
+              Our organisers are a dedicated team of experts and visionaries who work behind the scenes to make this event possible. With diverse skills and passion, they bring creativity, coordination, and care to ensure every detail runs smoothly.
+            </p>
+          </div>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
-        {showOrganisers.map((person, i) => (
-          <motion.div
-            key={i}
-            className="flex flex-col items-center text-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
-            viewport={{ once: true }}
-          >
-           <div className="bg-gradient-to-r from-[#007847] to-yellow-400 p-[3px] rounded-full">
-    <img
-      src={person.image}
-      alt={person.name}
-      className="w-40 h-40 rounded-full object-cover bg-white shadow-md hover:scale-105 transition-transform duration-300"
-    />
-  </div>
-            <h4 className="text-lg font-semibold text-black mt-4">{person.name}</h4>
-            <p className="text-gray-600 text-sm">{person.role}</p>
-          </motion.div>
-        ))}
+     
+          {showOrganisers.slice(0, 2).map((person, i) => (
+            <motion.div
+              key={i}
+              className={`relative col-start-${3 + i} row-start-1 text-center`}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+             
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="relative w-auto h-50 mx-auto  overflow-hidden shadow-md">
+                <img
+                  src={person.image}
+                  alt={person.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 flex flex-col justify-end p-2 text-white bg-gradient-to-t from-black/70 via-black/30 to-transparent">
+
+                  <h4 className="text-sm font-semibold">{person.name}</h4>
+                  <p className="text-xs">{person.role}</p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+
+        
+          <div className="col-span-1 row-start-2 flex items-end pl-2">
+
+            <a
+              href="#"
+              className="inline-flex items-center text-[#007847] font-semibold"
+            >
+              See all members&nbsp;
+              <ArrowUpRight className="w-5 h-5" />
+            </a>
+          </div>
+
+          {showOrganisers.slice(2, 5).map((person, i) => (
+            <motion.div
+              key={i + 2}
+              className={`relative col-start-${2 + i} row-start-2 text-center`}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: (i + 2) * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="relative w-auto h-50 mx-auto  overflow-hidden shadow-md">
+                <img
+                  src={person.image}
+                  alt={person.name}
+                  className="w-full h-full object-cover"
+                />
+               <div className="absolute inset-0 flex flex-col justify-end p-2 text-white bg-gradient-to-t from-black/70 via-black/30 to-transparent">
+
+                  <h4 className="text-sm font-semibold">{person.name}</h4>
+                  <p className="text-xs">{person.role}</p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
