@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+
 import { organisers } from "../../data/DummyData";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
@@ -50,7 +51,7 @@ export default function EventOrganisers() {
           <div className="col-span-1 row-start-2 flex items-end pl-2">
 
             <a
-              href="#"
+              href="/organisers"
               className="inline-flex items-center text-[#007847] font-semibold"
             >
               See all members&nbsp;
