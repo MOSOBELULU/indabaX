@@ -12,6 +12,7 @@ import JoinUs from "../components/reusable/JoinUs";
 import SpeakersSection from "../components/home/SpeakersSection";
 import MediaPress from "../components/home/MediaPress";
 import VolunteerOpportunities from "../components/home/VolunteerOpps";
+import MiniFaqs from "../components/reusable/miniFaqs";
 
 export default function Home() {
   return (
@@ -25,8 +26,8 @@ export default function Home() {
       <Events />
       <Testimonials />
       <MiniGallery />
-      <MediaPress />
-      <Faqs />
+      {/* <MediaPress /> */}
+      <MiniFaqs/>
       <Sponsorship />
       <VolunteerOpportunities />
       <JoinUs />

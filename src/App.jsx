@@ -18,6 +18,7 @@ import Agenda from "./pages/Agenda";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import BackToTopBtn from "./components/reusable/BacktoTopBtn";
+import FaqsPage from "./pages/FaqsPage";
 
 
 
@@ -37,6 +38,7 @@ export default function App() {
         <Route path='/codeofconduct' element={< CodeOfConduct/>} />
         <Route path='/gallerypage' element={< Gallerypage/>} />
         <Route path='careers' element={< Careers/>} />
+        <Route path='faqspage' element={< FaqsPage/>} />
         <Route path='/speakerspage' element={< SpeakersPage/>}>
         </Route>
         <Route path='/speakerdetail/:id' element={< SpeakerDetail/>}>

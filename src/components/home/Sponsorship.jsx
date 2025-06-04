@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Sponsorship() {
   return (
-    <section className="flex flex-col md:flex-row w-full min-h-[280px] px-4 sm:px-8 md:px-20">
+    <section className="flex flex-col md:flex-row w-full min-h-[280px] px-4 mt-30 sm:px-8 md:px-20">
 
       
       
