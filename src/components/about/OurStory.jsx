@@ -14,7 +14,7 @@ export default function OurStory() {
           viewport={{ once: true }}
         >
           <img
-            src="/images/Ourstory.jpg"
+            src="/images/Ourstory.png"
             alt="Community event"
             className="rounded-xl shadow-md object-cover w-full h-full"
           />

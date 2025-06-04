@@ -26,7 +26,7 @@ export default function WhyJoin() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <img
-              src="/images/whyjoin.jpg"
+              src="/images/whyjoin.png"
               alt="Why Join IndabaX"
               className="rounded-2xl shadow-lg object-cover w-full h-[500px] lg:max-w-2xl"
             />

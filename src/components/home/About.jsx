@@ -15,7 +15,7 @@ export default function About() {
           className="w-full md:w-1/2"
         >
           <img
-            src="/images/aboutSec.jpg"
+            src="/images/aboutSec.png"
             alt="AI in Africa"
             className="rounded-xl shadow-lg object-cover w-full h-[300px] md:h-[400px] lg:h-[500px]"
           />

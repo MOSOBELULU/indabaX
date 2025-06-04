@@ -38,7 +38,7 @@ export default function AgendaSection() {
        
         <div className="w-full h-full">
           <img
-            src="/images/agendapre.jpg"
+            src="/images/agendapre.png"
             alt="IndabaX Agenda Preview"
             className="rounded-xl shadow-lg w-full h-[340px] object-cover"
           />

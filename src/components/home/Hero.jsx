@@ -7,7 +7,7 @@ export default function Hero() {
   return (
 <section
   className="relative min-h-screen bg-cover bg-center bg-no-repeat"
-  style={{ backgroundImage: "url('/images/hero.home.jpg')" }}
+  style={{ backgroundImage: "url('/images/hero.home.png')" }}
 >
  
   <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/100 via-black/90 to-transparent"></div>

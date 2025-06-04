@@ -5,7 +5,7 @@ export default function HeroAgendaSection() {
   return (
     <section
       className="w-full min-h-screen flex items-center bg-cover bg-center relative"
-      style={{ backgroundImage: "url('/images/agenda/hero.jpg')" }}
+      style={{ backgroundImage: "url('/images/agenda/hero.png')" }}
     >
      
    <div className="absolute inset-0 bg-gradient-to-r from-[#007847] via-[#007847] to-transparent"></div>

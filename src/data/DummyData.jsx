@@ -137,7 +137,7 @@ export const sponsors = [
 export const events = [
   {
     id: 1,
-    image: "/images/events/event1.jpg",
+    image: "/images/events/event1.png",
     type: "Workshop",
     title: "Tech & Knowledge Exchange",
     date: "2025-07-10",
@@ -150,7 +150,7 @@ export const events = [
   },
   {
     id: 2,
-    image: "/images/events/event2.jpg",
+    image: "/images/events/event2.png",
     title: "Pre-IndabaX Workshop: Intro to AI Ethics",
     type: "Keynote",
     date: "2025-07-09",
@@ -163,7 +163,7 @@ export const events = [
   },
   {
     id: 3,
-    image: "/images/events/event3.jpg",
+    image: "/images/events/event3.png",
     title: "Post-Conference Networking Dinner",
     type: "Panel",
     date: "2025-07-11",
@@ -264,7 +264,7 @@ export const organisers = [
   {
     name: "Luella Sparkling",
     role: "Lead Organizer",
-    image: "/images/organisers/Luella.jpg",
+    image: "/images/organisers/Luella.png",
     bio: "South African technologist driving African innovation through AI, finance, and community building.",
     twitter: "https://twitter.com/lulugna",
     linkedin: "https://linkedin.com/in/lulugna",
@@ -272,7 +272,7 @@ export const organisers = [
   {
     name: "Helder Santos",
     role: "Local Coordinator – São Tomé",
-    image: "/images/organisers/Santos.jpg",
+    image: "/images/organisers/Santos.png",
     bio: "Helder ensures the heartbeat of São Tomé is reflected in every part of this event. Logistics, local outreach, and venue magic.",
     twitter: "https://twitter.com/helder_ai",
     linkedin: "https://linkedin.com/in/heldersantos",
@@ -280,7 +280,7 @@ export const organisers = [
   {
     name: "Neo Motloung",
     role: "Creative Director",
-    image: "/images/organisers/Neo.jpg",
+    image: "/images/organisers/Neo.png",
     bio: "Neo turns ideas into visuals — shaping the identity of the event from branding to stage design.",
     twitter: "https://twitter.com/neomotloung",
     linkedin: "https://linkedin.com/in/neomotloung",
@@ -288,7 +288,7 @@ export const organisers = [
   {
     name: "Thapelo Maseko",
     role: "Speaker Curator",
-    image: "/images/organisers/thapelo.jpg",
+    image: "/images/organisers/thapelo.png",
     bio: "Brings global and African AI voices to the table, curating a speaker lineup that sparks dialogue and impact.",
     twitter: "https://twitter.com/thapelomaseko",
     linkedin: "https://linkedin.com/in/thapelo-maseko",
@@ -296,7 +296,7 @@ export const organisers = [
   {
     name: "Zandile Dlamini",
     role: "Community Lead",
-    image: "/images/organisers/zandile.jpg",
+    image: "/images/organisers/zandile.png",
     bio: "Zanele connects people before, during, and after the event — turning attendees into a community.",
     twitter: "https://twitter.com/zaneled",
     linkedin: "https://linkedin.com/in/zaneledlamini",
@@ -304,7 +304,7 @@ export const organisers = [
   {
     name: "Kagiso Mthembu",
     role: "AI & Tech Ops Lead",
-    image: "/images/speakers/DrZanele.jpg",
+    image: "/images/speakers/DrZanele.png",
     bio: "Responsible for all technical infrastructure — from real-time demos to streaming to power backups.",
     twitter: "https://twitter.com/kagisotech",
     linkedin: "https://linkedin.com/in/kagisomthembu",
