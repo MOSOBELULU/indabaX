@@ -6,7 +6,7 @@ export default function EventOverview() {
   
   return (
     <section className="py-16 px-6 md:px-35 ">
-      <div className="max-w-4xl mb-14">
+      <div className="max-w-4xl mb-14 mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black text-left">
           Why Attend this Event
         </h2>
@@ -16,7 +16,7 @@ export default function EventOverview() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl ">
+      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {features.map((item, i) => {
           const Icon = item.icon;
           return (
