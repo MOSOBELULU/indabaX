@@ -16,12 +16,16 @@ import Gallerypage from "./pages/GalleryPage";
 import CodeOfConduct from "./pages/CodeOfConduct";
 import Agenda from "./pages/Agenda";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
+import BackToTopBtn from "./components/reusable/BacktoTopBtn";
+
 
 
 export default function App() {
   return (
     <div>
       <NavBar />
+      <ScrollToTop/>
       <Routes>
           <Route path='*' element={<NotFound/>}/>
         <Route path='/' element={<Home/>}/>
@@ -42,6 +46,7 @@ export default function App() {
         
       </Routes>
     
+      <BackToTopBtn/>
       <Footer />
     </div>
   );
