@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
 
-          {/* Quick Links */}
+         
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
@@ -17,7 +17,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* More Info */}
+       
           <div>
             <h4 className="text-lg font-semibold mb-4">More Info</h4>
             <ul className="space-y-2 text-sm">
@@ -29,7 +29,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter */}
+          
           <div>
             <h4 className="text-lg font-semibold mb-4">Stay in the Loop</h4>
             <p className="text-sm mb-3">Subscribe to our newsletter to hear about more events and updates.</p>
@@ -48,7 +48,7 @@ export default function Footer() {
             </form>
           </div>
 
-          {/* Socials & Copyright */}
+
           <div className="flex flex-col items-start sm:items-center justify-between h-full">
             <p className="text-sm text-center sm:text-left mb-4 sm:mb-6">
               &copy; {new Date().getFullYear()} IndabaX São Tomé. All rights reserved.
