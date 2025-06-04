@@ -9,7 +9,7 @@ export default function EventOrganisers() {
 
   return (
     <section className="py-16 px-6 md:px-12">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black text-left">
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-14 tracking-tight">
         Meet The Organisers
       </h2>
 
