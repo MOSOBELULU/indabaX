@@ -548,19 +548,19 @@ export const aiInsightsCards = [
     title: "AI Foundations for the Future",
     description:
       "Focuses on building strong AI infrastructure using models, data pipelines, and scalable systems. Includes ethical AI, cloud integration, and model optimization to prepare organizations for long-term innovation.",
-    image: "/images/agenda/img4.jpg",
+    image: "/images/agenda/img4.png",
   },
   {
     title: "AI-as-a-Service and Platform Innovation",
     description:
       "Explores how businesses can integrate AI into products using APIs, no-code tools, and pre-trained models. Covers real-time insights, automation, and accelerating product delivery with AI platforms.",
-    image: "/images/agenda/img3.jpg",
+    image: "/images/agenda/img3.png",
   },
   {
     title: "Navigating the AI Evolution",
     description:
       "Covers how industries can stay adaptive in the face of AI disruptions. From evolving regulations to workforce transformation and emerging technologies like AGI, this topic emphasizes resilience and strategic foresight.",
-    image: "/images/agenda/img1.jpg",
+    image: "/images/agenda/img1.png",
   },
 ];
 
@@ -569,42 +569,42 @@ export const mediaPress = [
     id: 1,
     title: "IndabaX São Tomé Showcases Africa’s AI Future",
     outlet: "TechAfrica Magazine",
-    logo: "/images/techmag.jpg",
+    logo: "/images/techmag.png",
     url: "https://techafrica.com/indabaX-feature",
   },
   {
     id: 2,
     title: "Spotlight on African Innovation: IndabaX 2025",
     outlet: "Global AI News",
-    logo: "/images/techmag.jpg",
+    logo: "/images/techmag.png",
     url: "https://globalainews.com/indabaX-spotlight",
   },
   {
     id: 3,
     title: "How São Tomé Became a Hotspot for Ethical AI",
     outlet: "The AI Times",
-    logo: "/images/techmag.jpg",
+    logo: "/images/techmag.png",
     url: "https://aitimes.org/articles/sao-tome-ai",
   },
   {
     id: 4,
     title: "Voices of the Future: Meet the Women Leading AI in Africa",
     outlet: "SheTech Africa",
-    logo: "/images/techmag.jpg",
+    logo: "/images/techmag.png",
     url: "https://shetech.africa/features/indabaX2025-leaders",
   },
   {
     id: 5,
     title: "IndabaX 2025 Empowers Local Researchers With Global Reach",
     outlet: "African Innovation Daily",
-    logo:"/images/techmag.jpg",
+    logo:"/images/techmag.png",
     url: "https://africaninnovationdaily.org/indabaX-global-impact",
   },
   {
     id: 6,
     title: "São Tomé Welcomes AI Minds from Across the Continent",
     outlet: "NextGen Africa Podcast",
-    logo: "/images/techmag.jpg",
+    logo: "/images/techmag.png",
     url: "https://podcasts.nextgenafrica.org/indabaX2025",
   },
 ];
