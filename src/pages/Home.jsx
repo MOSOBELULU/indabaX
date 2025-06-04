@@ -10,7 +10,6 @@ import MiniGallery from "../components/about/MiniGallery"
 import AgendaPreview from "../components/home/AgendaPreview";
 import JoinUs from "../components/reusable/JoinUs";
 import SpeakersSection from "../components/home/SpeakersSection";
-import MediaPress from "../components/home/MediaPress";
 import VolunteerOpportunities from "../components/home/VolunteerOpps";
 import MiniFaqs from "../components/reusable/miniFaqs";
 
@@ -26,7 +25,6 @@ export default function Home() {
       <Events />
       <Testimonials />
       <MiniGallery />
-      {/* <MediaPress /> */}
       <MiniFaqs/>
       <Sponsorship />
       <VolunteerOpportunities />

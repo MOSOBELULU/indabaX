@@ -59,7 +59,7 @@ export default function MiniFaqs() {
         </motion.div>
 
         <div className="flex items-center justify-center mt-12">
-          <div className="px-8 py-4 text-center bg-[#004d2a] rounded-full">
+          <div className="px-8 py-4 text-center bg-[#007847] rounded-full">
             <p className="text-white">
               Didn’t find the answer you are looking for?{" "}
               <a
