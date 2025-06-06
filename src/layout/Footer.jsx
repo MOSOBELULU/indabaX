@@ -2,12 +2,12 @@ import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black border-t border-gray-200 shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
+    <footer className="bg-gradient-to-r from-[#007847] to-[#003d25] text-black ">
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
 
          
-          <div>
+          <div className='text-white'>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="/" className="hover:underline">Home</a></li>
@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
 
        
-          <div>
+          <div className='text-white'>
             <h4 className="text-lg font-semibold mb-4">More Info</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="/faqs" className="hover:underline">FAQs</a></li>
@@ -30,18 +30,18 @@ export default function Footer() {
           </div>
 
           
-          <div>
+          <div className='text-white'>
             <h4 className="text-lg font-semibold mb-4">Stay in the Loop</h4>
             <p className="text-sm mb-3">Subscribe to our newsletter to hear about more events and updates.</p>
             <form className="flex flex-col sm:flex-row sm:items-center gap-2">
               <input
                 type="email"
                 placeholder="Your email"
-                className="w-full px-3 py-2 border border-black rounded-md text-sm"
+                className="w-full px-3 py-2 border border-white rounded-md text-sm"
               />
               <button
                 type="submit"
-                className="px-4 py-2 bg-black text-white text-sm font-medium rounded-md"
+                className="px-4 py-2 bg-white text-black text-sm font-medium rounded-md"
               >
                 Subscribe
               </button>
@@ -49,22 +49,39 @@ export default function Footer() {
           </div>
 
 
-          <div className="flex flex-col items-start sm:items-center justify-between h-full">
-            <p className="text-sm text-center sm:text-left mb-4 sm:mb-6">
-              &copy; {new Date().getFullYear()} IndabaX São Tomé. All rights reserved.
-            </p>
-            <div className="flex space-x-4 text-xl">
-              <a href="https://web.facebook.com/deepindaba/?ref=br_rs&_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer">
-                <FaFacebook />
-              </a>
-              <a href="https://x.com/deepindaba" target="_blank" rel="noopener noreferrer">
-                <FaTwitter />
-              </a>
-              <a href="https://www.linkedin.com/company/deep-learning-indaba/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin />
-              </a>
-            </div>
-          </div>
+    <div className="text-white flex flex-col gap-4">
+  <p className="text-sm">
+    &copy; {new Date().getFullYear()} IndabaX São Tomé. All rights reserved.
+  </p>
+  <div className="flex items-center gap-4 text-xl">
+    <a
+      href="https://web.facebook.com/deepindaba/?ref=br_rs&_rdc=1&_rdr#"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-gray-300 transition"
+    >
+      <FaFacebook />
+    </a>
+    <a
+      href="https://x.com/deepindaba"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-gray-300 transition"
+    >
+      <FaTwitter />
+    </a>
+    <a
+      href="https://www.linkedin.com/company/deep-learning-indaba/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-gray-300 transition"
+    >
+      <FaLinkedin />
+    </a>
+  </div>
+</div>
+
+
         </div>
       </div>
     </footer>

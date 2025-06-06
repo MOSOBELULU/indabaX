@@ -15,7 +15,7 @@ export default function Hero() {
          
           <div className="flex-1 min-w-[300px] space-y-6">
             <h1 className="text-white text-3xl md:text-6xl font-bold drop-shadow-lg mb-4 text-left">
-              IndabaX São Tomé and Príncipe <CurrentYear />
+              IndabaX São Tomé and <br/> Príncipe <CurrentYear />
             </h1>
 
             <h3 className="text-lg md:text-xl font-medium text-white max-w-xl drop-shadow-sm mb-1 text-left">

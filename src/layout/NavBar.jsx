@@ -11,6 +11,7 @@ export default function NavBar() {
   const navItems = [
     { label: "Home", path: "/" },
     { label: "About Us", path: "/aboutus" },
+    { label: "Events", path: "/events"},
     { label: "Agenda", path: "agenda"},
     { label: "Register", path: "/register" },
     { label: "Contact Us", path: "/contact" },
@@ -19,7 +20,7 @@ export default function NavBar() {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="bg-white shadow-md top-0 left-0 w-full z-50 relative">
+    <header className="bg-white shadow-md top-0 left-0 w-full z-50 fixed">
       <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4 py-3 sm:px-6 md:px-10">
   
         <Link to="/">

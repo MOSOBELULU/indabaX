@@ -46,14 +46,14 @@ export default function Testimonials() {
   };
 
   return (
-   <section className="py-16">
-  <div className="max-w-7xl mx-auto px-6 bg-gradient-to-r from-[#007847] to-[#003d25] rounded-lg">
+    <section className="py-16 bg-gradient-to-r from-[#007847] to-[#003d25]">
+  <div className="max-w-7xl mx-auto px-6">
     <motion.div
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="text-center py-12"
+      className="text-center"
     >
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-10 text-white">
         What People Say
@@ -78,7 +78,6 @@ export default function Testimonials() {
     </motion.div>
   </div>
 </section>
-
 
   );
 }
