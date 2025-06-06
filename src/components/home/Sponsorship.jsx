@@ -24,7 +24,7 @@ export default function Sponsorship() {
         </div>
 
       
-        <div className="bg-gradient-to-r from-[#007847] to-[#003d25] flex-1 flex items-center justify-center px-4 py-6 md:rounded-r-lg rounded-b-lg scrollbar-hide">
+        <div className="bg-gradient-to-r from-[#007847] to-[#003d25] flex-1 flex items-center justify-center px-4 py-6  scrollbar-hide">
           <Marquee gradient={false} speed={40} pauseOnHover>
             {sponsors.map((sponsor, index) => (
               <motion.div
