@@ -8,7 +8,7 @@ export default function Sponsorship() {
     <section className="px-4 mt-30 sm:px-8 md:px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row min-h-[280px]">
 
-        {/* Left Side */}
+        
         <div
           className="md:w-1/2 w-full py-8 md:py-14 flex items-center justify-center 
         bg-[#007847] text-white 
@@ -23,9 +23,9 @@ export default function Sponsorship() {
           </h2>
         </div>
 
-        {/* Right Side */}
-        <div className="bg-[#FCD116] flex-1 flex items-center justify-center px-4 py-6 md:rounded-r-lg rounded-b-lg">
-          <Marquee gradient={false} speed={60} pauseOnHover>
+      
+        <div className="bg-gradient-to-r from-[#007847] to-[#003d25] flex-1 flex items-center justify-center px-4 py-6 md:rounded-r-lg rounded-b-lg scrollbar-hide">
+          <Marquee gradient={false} speed={40} pauseOnHover>
             {sponsors.map((sponsor, index) => (
               <motion.div
                 key={sponsor.name}
