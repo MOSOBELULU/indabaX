@@ -10,7 +10,9 @@ export default function Hero() {
     >
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/100 via-black/90 to-transparent"></div>
 
-      <div className="relative z-10 min-h-screen flex items-center px-4 sm:px-6 md:px-10">
+     <div className="relative z-10 min-h-screen flex items-center px-4 sm:px-6 md:px-10 pt-20 md:pt-32">
+
+
         <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between w-full">
          
           <div className="flex-1 min-w-[300px] space-y-6">
