@@ -1,14 +1,12 @@
 import { agenda } from "../../data/DummyData";
-
 import { ArrowRight } from "lucide-react";
 
 export default function AgendaSection() {
-  const previewItems = agenda.Day1.slice(0, 3); 
+  const previewItems = agenda.Day1.slice(0, 3);
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
-        
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-black">
             What’s Happening at IndabaX?
@@ -35,7 +33,6 @@ export default function AgendaSection() {
           </a>
         </div>
 
-       
         <div className="w-full h-full">
           <img
             src="/images/agendapre.png"

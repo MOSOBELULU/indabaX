@@ -21,10 +21,9 @@ export default function VolunteerOpportunities() {
   };
 
   return (
-    <section className="relative py-16 px-6" id="volunteer">
-     
+    <section className="relative py-16" id="volunteer">
       <div className={`transition-all duration-300 ${isOpen ? "blur-sm scale-95" : ""}`}>
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto px-6">
           <motion.h2
             className="text-3xl font-bold mb-4"
             initial={{ opacity: 0, y: 30 }}
@@ -34,7 +33,7 @@ export default function VolunteerOpportunities() {
             Get Involved with IndabaX São Tomé and Principe
           </motion.h2>
           <motion.p
-            className="text-gray-600 max-w-2xl mx-auto mb-8"
+            className="text-gray-600 max-w-2xl mb-8"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -55,7 +54,6 @@ export default function VolunteerOpportunities() {
         </div>
       </div>
 
-     
       <AnimatePresence>
         {isOpen && (
           <motion.div

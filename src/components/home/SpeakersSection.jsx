@@ -10,7 +10,7 @@ export default function SpeakersSection() {
 
   return (
     <section className="py-16" id="speakers">
-      <div className="max-w-6xl mx-auto px-4 text-center">
+      <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-black">
           Meet the Speakers
         </h2>
@@ -22,7 +22,7 @@ export default function SpeakersSection() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4, ease: "easeOut" }}
-              whileHover={{ scale: 1.05, y: -8,  }}
+              whileHover={{ scale: 1.05, y: -8 }}
             >
               <SpeakerCard speaker={speaker} />
             </motion.div>

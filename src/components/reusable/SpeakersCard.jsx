@@ -12,17 +12,17 @@ export default function SpeakerCard({ speaker }) {
             className="w-full h-72 object-cover transition duration-300 group-hover:scale-105"
           />
 
-          {/* Overlay */}
+        
           <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/20 to-transparent p-4">
            <div className="text-left">
-  {/* Text */}
+
   <div>
     <h3 className="text-white text-lg font-bold">{speaker.name}</h3>
     <p className="text-gray-200 text-sm">{speaker.profession}</p>
     <p className="text-sm italic text-gray-300 mt-1">“{speaker.topic}”</p>
   </div>
 
-  {/* Socials */}
+ 
   <div className="flex gap-3 mt-3">
     {speaker.linkedin && (
       <a href={speaker.linkedin} target="_blank" rel="noopener noreferrer">

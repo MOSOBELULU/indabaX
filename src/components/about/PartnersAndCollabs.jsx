@@ -28,7 +28,7 @@ export default function PartnersAndCollabs() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: i * 0.1 }}
             viewport={{ once: true }}
-            // className=" p-4 rounded-xl shadow-md hover:shadow-lg transition duration-300 ease-in-out flex items-center justify-center"
+           
           >
             <img
               src={partner.logo}

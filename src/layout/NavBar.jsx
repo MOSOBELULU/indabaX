@@ -33,7 +33,6 @@ export default function NavBar() {
           </div>
         </Link>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex gap-4 font-semibold text-sm sm:text-base">
           {navItems.map((item) => (
             <Link
@@ -50,7 +49,7 @@ export default function NavBar() {
           ))}
         </nav>
 
-        {/* Mobile Menu Button */}
+       
         <div className="md:hidden relative z-50">
           <button
             onClick={toggleMenu}
@@ -61,7 +60,7 @@ export default function NavBar() {
         </div>
       </div>
 
-      {/* Mobile Nav */}
+    
 {isOpen && (
   <nav className="md:hidden bg-white shadow-md absolute top-full left-0 w-full z-40 overflow-x-hidden">
     <ul className="flex flex-col gap-2 py-4 px-4  font-semibold text-base max-w-screen-sm mx-auto">

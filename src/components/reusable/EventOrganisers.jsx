@@ -10,7 +10,7 @@ export default function EventOrganisers() {
     <section className="py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto rounded-xl bg-gray-300 p-8 relative">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {/* Text block */}
+        
           <div className="md:col-span-2">
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
               Meet the Organisers
@@ -20,7 +20,7 @@ export default function EventOrganisers() {
             </p>
           </div>
 
-          {/* First two organisers (desktop cols 3 & 4) */}
+        
           {showOrganisers.slice(0, 2).map((person, i) => (
             <motion.div
               key={i}
@@ -44,7 +44,6 @@ export default function EventOrganisers() {
             </motion.div>
           ))}
 
-          {/* Next three organisers */}
           {showOrganisers.slice(2, 5).map((person, i) => (
             <motion.div
               key={i + 2}
@@ -68,7 +67,7 @@ export default function EventOrganisers() {
             </motion.div>
           ))}
 
-          {/* Show all members - visible at bottom on mobile, left on desktop */}
+
           <div className="flex items-end md:col-start-1 md:row-start-2 sm:col-span-2 md:col-span-1">
             <a
               href="/organisers"
