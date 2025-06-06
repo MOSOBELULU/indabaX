@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import toast, { Toaster } from "react-hot-toast"
 
 export default function VolunteerOpportunities() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,12 +17,14 @@ export default function VolunteerOpportunities() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted", formData);
+    toast.success("Thank you for Voluteering!")
     setIsOpen(false);
     setFormData({ name: "", email: "", message: "" });
   };
 
   return (
     <section className="py-35 mb-20 " id="volunteer">
+      <Toaster position="top-center" reverseOrder={false} />
       <div className={`max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 transition-all duration-300 ${isOpen ? "blur-sm scale-95" : ""}`}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-12 items-center">
           
@@ -136,7 +139,7 @@ export default function VolunteerOpportunities() {
                   </button>
                   <button
                     type="submit"
-                    className="bg-[#007847] text-white px-5 py-2 rounded-md hover:bg-yellow-600 transition"
+                    className="bg-[#007847] text-white px-5 py-2 rounded-md  transition"
                   >
                     Submit
                   </button>

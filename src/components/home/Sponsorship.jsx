@@ -15,7 +15,7 @@ export default function Sponsorship() {
         md:rounded-tr-none rounded-t-lg md:rounded-l-lg"
         >
           <h2
-            className="text-2xl sm:text-3xl md:text-4xl font-bold text-black 
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-white 
           md:-rotate-90 rotate-0 
           md:whitespace-nowrap text-center"
           >
