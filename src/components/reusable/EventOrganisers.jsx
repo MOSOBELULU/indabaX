@@ -70,10 +70,10 @@ export default function EventOrganisers() {
 
           <div className="flex items-end md:col-start-1 md:row-start-2 sm:col-span-2 md:col-span-1">
             <a
-              href="/organisers"
+              href="/organiserspage"
               className="inline-flex items-center text-[#007847] font-semibold"
             >
-              See all members&nbsp;
+              See all organisers&nbsp;
               <ArrowUpRight className="w-5 h-5" />
             </a>
           </div>
