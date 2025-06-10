@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section className="py-10 bg-gradient-to-r from-[#007847] to-[#003d25] sm:py-16 lg:py-24">
+    <section className="py-20 bg-gradient-to-r from-[#007847] to-[#003d25] sm:py-16 lg:py-24">
       <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
