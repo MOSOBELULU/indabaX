@@ -4,6 +4,7 @@ import OurStory from "../components/about/OurStory";
 import EventOrganisers from "../components/reusable/EventOrganisers";
 import JoinUs from "../components/reusable/JoinUs";
 import MiniGallery from "../components/about/MiniGallery";
+import Impact from "../components/about/Impact";
 
 
 export default function AboutUs() {
@@ -11,10 +12,10 @@ export default function AboutUs() {
     <>
 <HeroAbout/>
 <MissionVision/>
+<Impact/>
 <OurStory />
 <EventOrganisers/>
 <MiniGallery/>
-{/* <PartnersAndCollabs/> */}
 <JoinUs/>
     </>
   );

@@ -608,3 +608,24 @@ export const mediaPress = [
     url: "https://podcasts.nextgenafrica.org/indabaX2025",
   },
 ];
+
+export const impactData = [
+  {
+    title: "Participants",
+    count: "300",
+    suffix: "+",
+    description: "From students to professionals, we create inclusive spaces for all levels.",
+  },
+  {
+    title: "Local Speakers",
+    count: "15",
+    suffix: "+",
+    description: "We amplify voices from our own communities to lead meaningful conversations.",
+  },
+  {
+    title: "Projects Sparked",
+    count: "10",
+    suffix: "+",
+    description: "From AI in agriculture to education tools — real ideas begin here.",
+  },
+];

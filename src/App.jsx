@@ -9,7 +9,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Careers from "./pages/Careers";
 import SpeakersPage from "./pages/Speakers";
 import SpeakerDetail from "./pages/SpeakerDetail";
-import EventDetail from "./pages/EventDetail";
+
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Gallerypage from "./pages/GalleryPage";
@@ -47,7 +47,6 @@ export default function App() {
         
         <Route path='/speakerdetail/:id' element={< SpeakerDetail/>}/>
        
-        <Route path='/eventdetail/:id' element={< EventDetail/>} />
        
         
       </Routes>
