@@ -2,6 +2,8 @@
 import { Link } from "react-router-dom";
 import { events } from "../../data/DummyData";
 import { HiOutlineCalendar, HiOutlineLocationMarker } from "react-icons/hi";
+import { FaArrowRight } from "react-icons/fa";
+
 import { motion } from "framer-motion";
 
 export default function Events() {
@@ -67,19 +69,20 @@ export default function Events() {
                     {event.location}
                   </p>
 
-                  <p className="text-sm mb-4">{event.description}</p>
-
-                  <Link to={`/eventdetail/${event.id}`}>
-                    <button className="mt-2 bg-[#007847] text-white text-sm font-semibold py-2 px-5 rounded-full hover:bg-[#007f2f] transition duration-200">
-                      Learn More
-                    </button>
-                  </Link>
+                 
                 </div>
               </motion.div>
             );
           })}
         </div>
       </div>
+       <div className="flex justify-center">
+                <Link to="/eventspage">
+                  <button className="flex items-center gap-2 px-6 py-2 mt-10 bg-[#007847] text-white rounded-lg hover:bg-green-700 transition">
+                    Show More <FaArrowRight />
+                  </button>
+                </Link>
+              </div>
     </section>
   );
 }

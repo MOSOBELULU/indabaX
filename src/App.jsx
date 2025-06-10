@@ -20,6 +20,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import BackToTopBtn from "./components/reusable/BacktoTopBtn";
 import FaqsPage from "./pages/FaqsPage";
 import OrganisersPage from "./pages/OrganisersPage";
+import EventsPage from "./pages/EventsPage";
 
 
 
@@ -42,6 +43,7 @@ export default function App() {
         <Route path='faqspage' element={< FaqsPage/>} />
         <Route path='/speakerspage' element={< SpeakersPage/>} />
         <Route path='/organiserspage' element={< OrganisersPage/>} />
+        <Route path='/eventspage' element={< EventsPage/>} />
         
         <Route path='/speakerdetail/:id' element={< SpeakerDetail/>}/>
        
