@@ -629,3 +629,27 @@ export const impactData = [
     description: "From AI in agriculture to education tools — real ideas begin here.",
   },
 ];
+
+export const advisory = [
+  {
+    name: "Carlos Lima",
+    role: "Community Connector",
+    image: "/images/advisory/carlos.png",
+    statement: "We ensure that every innovation is grounded in our community’s needs.",
+    story: "Being on the board lets me represent ideas from youth in remote areas."
+  },
+  {
+    name: "Celina Monteiro",
+    role: "Tech Evangelist",
+    image: "/images/advisory/celina.png",
+    statement: "We push for inclusive and future-ready programming.",
+    story: "I joined to bridge the gap between urban tech and rural access."
+  },
+  {
+    name: "Mateus Neves",
+    role: "Creative Director",
+    image: "/images/advisory/mateus.png",
+    statement: "Youth culture should define how we design these spaces.",
+    story: "This is where I blend creativity with technology for change."
+  }
+];
