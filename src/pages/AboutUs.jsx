@@ -13,13 +13,13 @@ export default function AboutUs() {
   return (
     <>
 <HeroAbout/>
+<OurStory />
 <MissionVision/>
 <Impact/>
-<OurStory />
 <Values/>
 <AdvisoryBoard/>
-<EventOrganisers/>
 <MiniGallery/>
+<EventOrganisers/>
 <JoinUs/>
     </>
   );

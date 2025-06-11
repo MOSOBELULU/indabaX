@@ -11,7 +11,7 @@ export default function MissionVision() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="text-4xl sm:text-5xl font-bold text-[#003d25]"
+          className="text-4xl sm:text-5xl font-bold"
         >
           Our Mission & Vision
         </motion.h2>
