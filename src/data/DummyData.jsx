@@ -1,4 +1,4 @@
-import { Brain, Code2, Users, Lightbulb, Rocket, Wrench } from "lucide-react";
+import { Brain, Code2, Users, Lightbulb, Rocket, Wrench, Mic, Leaf, BarChart4 } from "lucide-react";
 
 export const speakers = [
   {
@@ -651,5 +651,28 @@ export const advisory = [
     image: "/images/advisory/mateus.png",
     statement: "Youth culture should define how we design these spaces.",
     story: "This is where I blend creativity with technology for change."
+  }
+];
+
+export const values = [
+  {
+    icon: <Users className="h-8 w-8" />,
+    title: "Inclusivity",
+    items: ["Diverse Participation", "Empowered Voices", "Community Workshops"]
+  },
+  {
+    icon: <Leaf className="h-8 w-8 " />,
+    title: "Sustainability",
+    items: ["Eco-conscious Events", "Plastic-Free Zones", "Green Partnerships"]
+  },
+  {
+    icon: <Mic className="h-8 w-8 " />,
+    title: "Innovation",
+    items: ["Ethical AI Talks", "Tech for Good Hackathons", "Youth-led Demos"]
+  },
+  {
+    icon: <BarChart4 className="h-8 w-8 " />,
+    title: "Impact",
+    items: ["1200+ Volunteer Hours", "45+ Projects Catalyzed", "10 STEM Bootcamps"]
   }
 ];

@@ -6,6 +6,7 @@ import JoinUs from "../components/reusable/JoinUs";
 import MiniGallery from "../components/about/MiniGallery";
 import Impact from "../components/about/Impact";
 import AdvisoryBoard from "../components/about/AdvisoryBoard";
+import Values from "../components/about/Values";
 
 
 export default function AboutUs() {
@@ -15,6 +16,7 @@ export default function AboutUs() {
 <MissionVision/>
 <Impact/>
 <OurStory />
+<Values/>
 <AdvisoryBoard/>
 <EventOrganisers/>
 <MiniGallery/>

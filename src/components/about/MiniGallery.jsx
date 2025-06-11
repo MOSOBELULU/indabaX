@@ -8,7 +8,7 @@ export default function MiniGallery() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-black">
+        <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl mb-4 ">
           Past Event Highlights
         </h2>
         <p className="text-sm sm:text-base text-gray-600 mb-10">

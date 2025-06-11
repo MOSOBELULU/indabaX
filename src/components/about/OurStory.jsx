@@ -20,7 +20,7 @@ export default function OurStory() {
                 className="object-bottom rounded-md "
               />
               <img
-                className="absolute origin-bottom-right scale-75 rounded-md -bottom-12 -right-12"
+                className="absolute  h-60 origin-bottom-right scale-75 rounded-md -bottom-12 -right-12"
                 src="/images/impact1.png" 
                 alt="Smiling participant"
               />
