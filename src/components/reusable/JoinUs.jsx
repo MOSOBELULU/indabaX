@@ -29,7 +29,7 @@ export default function JoinUs() {
     viewport={{ once: true }}
     className="text-3xl sm:text-4xl font-bold"
   >
-    Ready to be part of the AI movement in São Tomé and Príncipe?
+    Ready to be part of the AI movement in <br></br> São Tomé and Príncipe?
   </motion.h2>
 
   <motion.p
@@ -39,7 +39,7 @@ export default function JoinUs() {
     viewport={{ once: true }}
     className="mt-4 text-base sm:text-lg"
   >
-    Whether you're a student, developer, researcher, or just curious —
+    Whether you're a student, developer, researcher, or just curious <br></br>
     there's a place for you in our community.
   </motion.p>
 
