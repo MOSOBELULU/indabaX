@@ -28,9 +28,9 @@ export default function MissionVision() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
+          className="bg-white p-8 shadow-l hover:shadow-xl"
         >
-          <Target className="text-[#007847] w-12 h-12 mb-4" />
+          <Target className="text-[#007847] rounded-full bg-gray-200 w-12 h-12 mb-4" />
           <h3 className="text-2xl font-semibold mb-3 text-[#003d25]">Our Mission</h3>
           <p className="text-gray-600 leading-relaxed text-sm md:text-base">
             To foster a vibrant AI ecosystem by empowering students, developers,
@@ -45,9 +45,9 @@ export default function MissionVision() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
           viewport={{ once: true }}
-          className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
+          className="bg-white p-8 shadow-l hover:shadow-xl "
         >
-          <Eye className="text-[#007847] w-12 h-12 mb-4" />
+          <Eye className="text-[#007847] rounded-full bg-gray-200 w-12 h-12 mb-4" />
           <h3 className="text-2xl font-semibold mb-3 text-[#003d25]">Our Vision</h3>
           <p className="text-gray-600 leading-relaxed text-sm md:text-base">
             To become a leading platform that sparks innovation and inclusion in Africa’s AI space,

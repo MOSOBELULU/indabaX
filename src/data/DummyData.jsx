@@ -564,51 +564,6 @@ export const aiInsightsCards = [
   },
 ];
 
-export const mediaPress = [
-  {
-    id: 1,
-    title: "IndabaX São Tomé Showcases Africa’s AI Future",
-    outlet: "TechAfrica Magazine",
-    logo: "/images/techmag.png",
-    url: "https://techafrica.com/indabaX-feature",
-  },
-  {
-    id: 2,
-    title: "Spotlight on African Innovation: IndabaX 2025",
-    outlet: "Global AI News",
-    logo: "/images/techmag.png",
-    url: "https://globalainews.com/indabaX-spotlight",
-  },
-  {
-    id: 3,
-    title: "How São Tomé Became a Hotspot for Ethical AI",
-    outlet: "The AI Times",
-    logo: "/images/techmag.png",
-    url: "https://aitimes.org/articles/sao-tome-ai",
-  },
-  {
-    id: 4,
-    title: "Voices of the Future: Meet the Women Leading AI in Africa",
-    outlet: "SheTech Africa",
-    logo: "/images/techmag.png",
-    url: "https://shetech.africa/features/indabaX2025-leaders",
-  },
-  {
-    id: 5,
-    title: "IndabaX 2025 Empowers Local Researchers With Global Reach",
-    outlet: "African Innovation Daily",
-    logo:"/images/techmag.png",
-    url: "https://africaninnovationdaily.org/indabaX-global-impact",
-  },
-  {
-    id: 6,
-    title: "São Tomé Welcomes AI Minds from Across the Continent",
-    outlet: "NextGen Africa Podcast",
-    logo: "/images/techmag.png",
-    url: "https://podcasts.nextgenafrica.org/indabaX2025",
-  },
-];
-
 export const impactData = [
   {
     title: "Participants",
@@ -658,21 +613,25 @@ export const values = [
   {
     icon: <Users className="h-8 w-8" />,
     title: "Inclusivity",
+    image: "images/values/Image1.png",
     items: ["Diverse Participation", "Empowered Voices", "Community Workshops"]
   },
   {
     icon: <Leaf className="h-8 w-8 " />,
     title: "Sustainability",
+     image: "images/values/Image2.png",
     items: ["Eco-conscious Events", "Plastic-Free Zones", "Green Partnerships"]
   },
   {
     icon: <Mic className="h-8 w-8 " />,
     title: "Innovation",
+     image: "images/values/Image3.png",
     items: ["Ethical AI Talks", "Tech for Good Hackathons", "Youth-led Demos"]
   },
   {
     icon: <BarChart4 className="h-8 w-8 " />,
     title: "Impact",
+     image: "images/values/Image4.png",
     items: ["1200+ Volunteer Hours", "45+ Projects Catalyzed", "10 STEM Bootcamps"]
   }
 ];
