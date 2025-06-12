@@ -36,7 +36,7 @@ export default function About() {
          
           <div className="flex gap-4 items-start">
             <div className="min-w-[40px] mt-1">
-              <Users className="w-8 h-8 text-[#007847]" />
+              <Users className="w-8 h-8 text-[#007847] rounded-full bg-gray-200" />
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-semibold">Who We Are</h3>
@@ -51,7 +51,7 @@ export default function About() {
      
           <div className="flex gap-4 items-start">
             <div className="min-w-[40px] mt-1">
-              <Wrench className="w-8 h-8 text-[#007847]" />
+              <Wrench className="w-8 h-8 text-[#007847] rounded-full bg-gray-200" />
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-semibold">What We Do</h3>
@@ -63,8 +63,8 @@ export default function About() {
           </div>
 
           <div className="flex gap-4 items-start">
-            <div className="min-w-[40px] mt-1">
-              <HeartHandshake className="w-8 h-8 text-[#007847]" />
+            <div className="min-w-[40px] mt-1 ">
+              <HeartHandshake className="w-8 h-8 text-[#007847] rounded-full bg-gray-200" />
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-semibold">Why You Should Care</h3>
