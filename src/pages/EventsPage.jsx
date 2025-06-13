@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { events } from "../data/DummyData";
 import EventModal from "../components/events/EventModal";
+import HeroEventsSection from "../components/events/EventsHero";
 
 export default function EventsPage() {
   const [selectedEvent, setSelectedEvent] = useState(null);
 
   return (
+    <>
+    <HeroEventsSection/>
     <section className="px-4 py-20 max-w-6xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-10">All Events</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {events.map((event) => (
@@ -32,5 +34,6 @@ export default function EventsPage() {
         <EventModal event={selectedEvent} onClose={() => setSelectedEvent(null)} />
       )}
     </section>
+    </>
   );
 }

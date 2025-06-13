@@ -278,15 +278,15 @@ export const organisers = [
     linkedin: "https://linkedin.com/in/heldersantos",
   },
   {
-    name: "Neo Motloung",
+    name: "France Main",
     role: "Creative Director",
     image: "/images/organisers/Neo.png",
-    bio: "Neo turns ideas into visuals — shaping the identity of the event from branding to stage design.",
+    bio: "France turns ideas into visuals — shaping the identity of the event from branding to stage design.",
     twitter: "https://twitter.com/neomotloung",
     linkedin: "https://linkedin.com/in/neomotloung",
   },
   {
-    name: "Thapelo Maseko",
+    name: "Sloane Biscuits",
     role: "Speaker Curator",
     image: "/images/organisers/thapelo.png",
     bio: "Brings global and African AI voices to the table, curating a speaker lineup that sparks dialogue and impact.",

@@ -5,11 +5,11 @@ export default function EventOrganisersAbout() {
     <section className="py-12 bg-white sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-gray-900 text-center sm:text-4xl mb-12">
-          Meet the Event Organisers
+          Team Behind The Magic
         </h2>
 
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {organisers.map(({ name, role, image, bio, twitter, linkedin }) => (
+          {organisers.slice(0, 3).map(({ name, role, image, bio, twitter, linkedin }) => (
             <div
               key={name}
               className="bg-gray-50 rounded-lg shadow p-6 flex flex-col items-center text-center"
@@ -20,8 +20,8 @@ export default function EventOrganisersAbout() {
                 className="w-32 h-32 rounded-full object-cover mb-4"
               />
               <h3 className="text-xl font-semibold text-gray-900">{name}</h3>
-              <p className="text-blue-600 mb-2">{role}</p>
-              <p className="text-gray-600 mb-4">{bio}</p>
+              <p className=" mb-2">{role}</p>
+              <p className=" mb-4">{bio}</p>
               <div className="flex space-x-4">
                 <a
                   href={twitter}

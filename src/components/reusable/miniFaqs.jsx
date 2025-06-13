@@ -5,7 +5,7 @@ import { faqs } from "../../data/DummyData";
 
 export default function MiniFaqs() {
   const showFew = faqs.slice(0, 4);
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState();
 
   const toggleOpen = (index) => {
     setOpenIndex(openIndex === index ? null : index);
