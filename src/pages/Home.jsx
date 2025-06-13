@@ -11,6 +11,7 @@ import JoinUs from "../components/reusable/JoinUs";
 import SpeakersSection from "../components/home/SpeakersSection";
 import VolunteerOpportunities from "../components/home/VolunteerOpps";
 import MiniFaqs from "../components/reusable/miniFaqs";
+import NewsLetter from "../components/home/NewsLetter";
 
 export default function Home() {
   return (
@@ -18,15 +19,16 @@ export default function Home() {
       <Hero />
       <About />
       <EventOverview />
-      <EventOrganisers />
+      <EventOrganisers/>
       <AgendaPreview />
       <SpeakersSection />
       <EventsSection />
-      <Testimonials />
       <MiniGallery />
-      <MiniFaqs/>
-      <Sponsorship />
+      <Testimonials />
       <VolunteerOpportunities />
+      <Sponsorship />
+      <MiniFaqs/>
+      <NewsLetter/>
       <JoinUs />
       
     </>

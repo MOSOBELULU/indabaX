@@ -7,6 +7,7 @@ import MiniGallery from "../components/about/MiniGallery";
 import Impact from "../components/about/Impact";
 import AdvisoryBoard from "../components/about/AdvisoryBoard";
 import Values from "../components/about/Values";
+import EventOrganisersAbout from "../components/about/eventOrganisersAbout";
 
 
 export default function AboutUs() {
@@ -19,7 +20,8 @@ export default function AboutUs() {
 <Values/>
 <AdvisoryBoard/>
 <MiniGallery/>
-<EventOrganisers/>
+{/* <EventOrganisers/> */}
+<EventOrganisersAbout/>
 <JoinUs/>
     </>
   );
