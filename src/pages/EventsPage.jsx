@@ -2,6 +2,7 @@ import { useState } from "react";
 import { events } from "../data/DummyData";
 import EventModal from "../components/events/EventModal";
 import HeroEventsSection from "../components/events/EventsHero";
+import JoinUs from "../components/reusable/JoinUs";
 
 export default function EventsPage() {
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -34,6 +35,7 @@ export default function EventsPage() {
         <EventModal event={selectedEvent} onClose={() => setSelectedEvent(null)} />
       )}
     </section>
+    <JoinUs/>
     </>
   );
 }

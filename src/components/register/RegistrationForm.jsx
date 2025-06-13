@@ -9,20 +9,46 @@ import {
   MessageCircle,
   Upload,
 } from "lucide-react";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function RegistrationForm() {
   const [participantType, setParticipantType] = useState("");
   const [countries, setCountries] = useState([]);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    country: "",
+    role: "",
+    interests: "",
+    resume: null,
+  });
 
   useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all")
-      .then((res) => res.json())
-      .then((data) => {
-        const countryList = data.map((country) => country.name.common).sort();
-        setCountries(countryList);
-      });
-  }, []); 
+    async function fetchCountries() {
+      try {
+        const res = await fetch(
+          "https://restcountries.com/v3.1/all?fields=name,cca2"
+        );
+        const data = await res.json();
+        const sorted = data
+          .map((c) => c.name.common)
+          .sort((a, b) => a.localeCompare(b));
+        setCountries(sorted);
+      } catch (error) {
+        console.error("Country fetch error:", error);
+        toast.error("Failed to load countries");
+      }
+    }
+    fetchCountries();
+  }, []);
+
+  const handleChange = (e) => {
+    const { name, value, files } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: files ? files[0] : value,
+    }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,15 +56,30 @@ export default function RegistrationForm() {
       toast.error("Please select a participation type.");
       return;
     }
-    const loadingToast = toast.loading("Submitting...");
+    const loading = toast.loading("Submitting...");
+
+ 
     setTimeout(() => {
-      toast.dismiss(loadingToast);
-      toast.success("Registration submitted successfully!");
+      toast.dismiss(loading);
+      toast.success("Registration submitted!");
+      console.log("Form Data Submitted:", { ...formData, participantType });
+
+   
+      setFormData({
+        name: "",
+        email: "",
+        country: "",
+        role: "",
+        interests: "",
+        resume: null,
+      });
+      setParticipantType("");
     }, 1500);
   };
 
   return (
     <section className="py-16 px-4 sm:px-6 md:px-10" id="register-form">
+      <Toaster position="top-right" />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +92,7 @@ export default function RegistrationForm() {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-5">
-          
+         
           <div className="flex flex-wrap justify-center gap-3 mb-6">
             {["Attendee", "Speaker", "Volunteer", "Online participant"].map(
               (type) => (
@@ -71,7 +112,7 @@ export default function RegistrationForm() {
             )}
           </div>
 
-        
+          
           <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <User size={18} />
@@ -81,10 +122,13 @@ export default function RegistrationForm() {
               name="name"
               placeholder="Full Name"
               required
+              value={formData.name}
+              onChange={handleChange}
               className="w-full p-3 text-sm sm:text-base focus:outline-none"
             />
           </div>
 
+          
           <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <Mail size={18} />
@@ -94,10 +138,13 @@ export default function RegistrationForm() {
               name="email"
               placeholder="Email Address"
               required
+              value={formData.email}
+              onChange={handleChange}
               className="w-full p-3 text-sm sm:text-base focus:outline-none"
             />
           </div>
 
+       
           <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <Globe size={18} />
@@ -105,17 +152,20 @@ export default function RegistrationForm() {
             <select
               name="country"
               required
+              value={formData.country}
+              onChange={handleChange}
               className="w-full p-3 text-sm sm:text-base focus:outline-none bg-white text-gray-700"
             >
               <option value="">Select your country</option>
-              {countries.map((country) => (
-                <option key={country} value={country}>
-                  {country}
+              {countries.map((c) => (
+                <option key={c} value={c}>
+                  {c}
                 </option>
               ))}
             </select>
           </div>
 
+         
           <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <Briefcase size={18} />
@@ -124,10 +174,13 @@ export default function RegistrationForm() {
               type="text"
               name="role"
               placeholder="Your current role (e.g. Student, Developer)"
+              value={formData.role}
+              onChange={handleChange}
               className="w-full p-3 text-sm sm:text-base focus:outline-none"
             />
           </div>
 
+         
           <div className="flex items-start border rounded-md overflow-hidden">
             <div className="px-3 pt-3">
               <MessageCircle size={18} />
@@ -136,21 +189,26 @@ export default function RegistrationForm() {
               name="interests"
               placeholder="What are your interests in AI?"
               rows="4"
+              value={formData.interests}
+              onChange={handleChange}
               className="w-full p-3 text-sm sm:text-base focus:outline-none"
             ></textarea>
           </div>
 
+         
           {participantType === "Speaker" && (
             <div className="border rounded-md p-3 flex items-center gap-3">
               <Upload size={18} />
               <input
                 type="file"
                 name="resume"
+                onChange={handleChange}
                 className="w-full text-sm text-gray-700"
               />
             </div>
           )}
 
+        
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
