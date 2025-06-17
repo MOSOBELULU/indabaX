@@ -68,13 +68,12 @@ export default function Events() {
             <HiOutlineLocationMarker />
             {event.location}
           </p>
-           <Link
-                    to={`/eventdetail/${event.id}`}
-                   
-                    className="inline-block text-sm font-semibold text-[#007847] hover:underline"
-                  >
-                    Learn More 
-                  </Link>
+              <Link
+  to={`/eventdetail/${event.id}`}
+  className="inline-block text-sm font-semibold text-[#007847] border border-[#007847] px-4 py-2 rounded-lg hover:text-white transition"
+>
+  Learn More
+</Link>
         </div>
       </motion.div>
     );
