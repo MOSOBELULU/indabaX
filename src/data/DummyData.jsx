@@ -635,3 +635,40 @@ export const values = [
     items: ["1200+ Volunteer Hours", "45+ Projects Catalyzed", "10 STEM Bootcamps"]
   }
 ];
+
+export const blogPosts = [
+  {
+    id: 1,
+    category: "Community",
+    title: "How IndabaX is Empowering Local AI Innovators",
+    description:
+      "Discover how IndabaX AI events create platforms for local tech enthusiasts to share ideas and build impactful AI projects.",
+    author: "João Silva",
+    avatar:
+      "https://cdn.rareblocks.xyz/collection/celebration/images/blog/3/avatar-1.jpg",
+    link: "#",
+  },
+  {
+    id: 2,
+    category: "Workshops",
+    title: "Top 5 Workshops to Attend at This Year’s IndabaX",
+    description:
+      "A guide to the most hands-on and insightful workshops designed to boost your AI skills and practical knowledge.",
+    author: "Ana Gomes",
+    avatar:
+      "https://cdn.rareblocks.xyz/collection/celebration/images/blog/3/avatar-2.jpg",
+    link: "#",
+  },
+  {
+    id: 3,
+    category: "Speakers",
+    title: "Meet the Inspiring AI Leaders Speaking at IndabaX",
+    description:
+      "Get to know the trailblazers and thought leaders who will be sharing their expertise and experiences at the event.",
+    author: "Carlos Pereira",
+    avatar:
+      "https://cdn.rareblocks.xyz/collection/celebration/images/blog/3/avatar-3.jpg",
+    link: "#",
+  },
+];
+

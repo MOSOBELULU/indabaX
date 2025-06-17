@@ -3,7 +3,7 @@ export default function NewsLetter() {
     <section className=" flex items-center pt-10 sm:pt-16 md:pt-0 bg-gradient-to-r from-[#007847] to-[#003d25]">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-8 2xl:gap-x-20 items-center">
-          {/* Text + Form */}
+          
           <div className="text-center md:py-16 xl:py-24 md:text-left">
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               Stay in the Loop
@@ -28,14 +28,15 @@ export default function NewsLetter() {
             </form>
           </div>
 
-          {/* Image */}
-          <div className="flex items-center justify-center">
-            <img
-              className="md:scale-110 lg:scale-100 2xl:scale-110 2xl:-mt-20 h-auto max-h-[500px]"
-              src="images/newsletter.png"
-              alt="Newsletter illustration"
-            />
-          </div>
+          
+         <div className="flex flex-col justify-end items-center">
+  <img
+    className="md:scale-110 lg:scale-100 2xl:scale-110 h-auto max-h-[500px] mt-11"
+    src="images/newsletter.png"
+    alt="Newsletter illustration"
+  />
+</div>
+
         </div>
       </div>
     </section>

@@ -12,6 +12,7 @@ import SpeakersSection from "../components/home/SpeakersSection";
 import VolunteerOpportunities from "../components/home/VolunteerOpps";
 import MiniFaqs from "../components/reusable/miniFaqs";
 import NewsLetter from "../components/home/NewsLetter";
+// import BlogSection from "../components/home/BlogSection";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <EventsSection />
       <MiniGallery />
       <Testimonials />
+      {/* <BlogSection/> */}
       <VolunteerOpportunities />
       <Sponsorship />
       <MiniFaqs/>
