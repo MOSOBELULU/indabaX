@@ -47,7 +47,9 @@ export default function MissionVision() {
           viewport={{ once: true }}
           className="bg-white p-8 shadow-l hover:shadow-xl "
         >
+          
           <Eye className="text-[#007847] rounded-full bg-gray-200 w-12 h-12 mb-4" />
+        
           <h3 className="text-2xl font-semibold mb-3 text-[#003d25]">Our Vision</h3>
           <p className="text-gray-600 leading-relaxed text-sm md:text-base">
             To become a leading platform that sparks innovation and inclusion in Africa’s AI space,
