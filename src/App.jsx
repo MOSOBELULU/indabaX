@@ -20,7 +20,7 @@ import BackToTopBtn from "./components/reusable/BacktoTopBtn";
 import FaqsPage from "./pages/FaqsPage";
 import OrganisersPage from "./pages/OrganisersPage";
 import EventsPage from "./pages/EventsPage";
-import EventDetail from "./pages/EventDetail";
+import EventDetailPage from "./pages/EventDetailPage";
 
 
 
@@ -46,7 +46,7 @@ export default function App() {
         <Route path='/eventspage' element={< EventsPage/>} />
         
         <Route path='/speakerdetail/:id' element={< SpeakerDetail/>}/>
-        <Route path='/eventdetail/:id' element={< EventDetail/>}/>
+        <Route path='/eventdetailpage/:id' element={< EventDetailPage/>}/>
         
        
        

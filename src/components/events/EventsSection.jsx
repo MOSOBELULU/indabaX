@@ -18,7 +18,7 @@ export default function EventsSection() {
             <h3 className="text-lg font-semibold mb-1">{event.title}</h3>
             <p className="text-sm text-gray-700">{event.description}</p>
              <Link
-  to={`/eventdetail/${event.id}`}
+  to={`/eventdetailpage/${event.id}`}
   className="inline-block text-sm font-semibold text-[#007847] border border-[#007847] px-4 py-2 rounded-lg hover:bg-[#007847] hover:text-white transition"
 >
   Learn More

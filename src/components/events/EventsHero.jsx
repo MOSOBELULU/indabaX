@@ -1,29 +1,28 @@
-/* eslint-disable no-unused-vars */
-import { motion } from "framer-motion";
 
-export default function HeroEventsSection() {
+
+export default function EventHero({ title, date, location, image }) {
   return (
     <section
-      className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
-      style={{ backgroundImage: "url('/images/events/EventsHero.jpg')" }}
+      className="relative h-[60vh] bg-cover bg-center flex items-center justify-center text-white"
+      style={{ backgroundImage: `url(${image})` }}
     >
-    
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent z-0" />
+      
+      <div className="absolute inset-0 bg-opacity-60" />
 
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="relative z-10 text-white px-6 text-center max-w-3xl"
-      >
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-          Explore Our Upcoming Events
+     
+      <div className="relative z-10 text-center px-4">
+        <h1 className="text-3xl sm:text-5xl font-bold leading-tight">
+          {title}
         </h1>
-        <p className="text-base sm:text-lg md:text-xl">
-          Discover where innovation, collaboration, and learning meet. Join
-          us for impactful gatherings across Africa, led by the AI community.
+        <p className="mt-3 text-sm sm:text-lg font-medium">
+          {date} | {location}
         </p>
-      </motion.div>
+
+        {/* Optional CTA Button (future) */}
+        {/* <a href="#" className="inline-block mt-6 px-6 py-3 bg-[#007847] text-white rounded-full">
+          Register Now
+        </a> */}
+      </div>
     </section>
   );
 }
