@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 
 export default function OurStory() {
   return (
-    <section className="py-20 bg-white sm:py-28 lg:py-32">
-      <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 md:gap-y-16 md:gap-x-20">
+   <section className="py-24 bg-white sm:py-32 lg:py-40">
+  <div className="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-y-16 md:gap-y-24 md:gap-x-24">
+
         
          <motion.div
   initial={{ opacity: 0, x: -40 }}
@@ -20,18 +21,19 @@ export default function OurStory() {
       alt="Community event"
       className="object-cover w-full h-full rounded-md"
     />
-    <motion.img
-      src="/images/impact1.png"
-      alt="Smiling participant"
-      initial={{ y: 0 }}
-      animate={{ y: [0, -10, 0] }}
-      transition={{
-        duration: 4,
-        repeat: Infinity,
-        ease: "easeInOut"
-      }}
-      className="hidden md:block absolute h-32 sm:h-40 md:h-48 origin-bottom-right scale-90 rounded-md -bottom-10 -right-10 shadow-xl hover:scale-100 transition-transform duration-500"
-    />
+<motion.img
+  src="/images/impact1.png"
+  alt="Smiling participant"
+  initial={{ y: 0 }}
+  animate={{ y: [0, -10, 0] }}
+  transition={{
+    duration: 4,
+    repeat: Infinity,
+    ease: "easeInOut"
+  }}
+  className="hidden md:block absolute h-48 sm:h-56 md:h-70 origin-bottom-right scale-90 rounded-md -bottom-10 -right-10 shadow-xl hover:scale-100 transition-transform duration-500"
+/>
+
   </div>
 </motion.div>
 

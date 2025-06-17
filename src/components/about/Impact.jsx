@@ -38,10 +38,10 @@ export default function Impact() {
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-semibold text-[#007847]">
+              <h3 className="text-3xl font-semibold text-[#007847]">
                 <CountUp end={item.count} duration={10} />{item.suffix}
               </h3>
-              <h3>{item.title}</h3>
+              <h3 className="text-2xl font-bold">{item.title}</h3>
               <p className="mt-2 text-sm">{item.description}</p>
             </motion.div>
           ))}

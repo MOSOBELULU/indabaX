@@ -1,4 +1,4 @@
-import { Brain, Code2, Users, Lightbulb, Rocket, Wrench, Mic, Leaf, BarChart4 } from "lucide-react";
+import { Brain, Code2, Users, Lightbulb, Rocket, Wrench, ScanSearch, MessageSquareCode, ShieldAlert } from "lucide-react";
 
 export const speakers = [
   {
@@ -609,30 +609,30 @@ export const advisory = [
   }
 ];
 
-export const values = [
+export const aiTopics = [
   {
-    icon: <Users className="h-8 w-8" />,
-    title: "Inclusivity",
-    image: "images/values/Image1.png",
-    items: ["Diverse Participation", "Empowered Voices", "Community Workshops"]
+    icon: <Brain className="h-8 w-8" />,
+    title: "Machine Learning",
+    image: "/images/aitopics/ml.png",
+    items: ["Supervised & Unsupervised Learning", "Model Evaluation", "Real-world ML demos"]
   },
   {
-    icon: <Leaf className="h-8 w-8 " />,
-    title: "Sustainability",
-     image: "images/values/Image2.png",
-    items: ["Eco-conscious Events", "Plastic-Free Zones", "Green Partnerships"]
+    icon: <ScanSearch className="h-8 w-8" />,
+    title: "Computer Vision",
+    image: "/images/aitopics/vision.png",
+    items: ["Image Recognition", "AI for Healthcare", "Hands-on Vision APIs"]
   },
   {
-    icon: <Mic className="h-8 w-8 " />,
-    title: "Innovation",
-     image: "images/values/Image3.png",
-    items: ["Ethical AI Talks", "Tech for Good Hackathons", "Youth-led Demos"]
+    icon: <MessageSquareCode className="h-8 w-8" />,
+    title: "Natural Language Processing",
+    image: "/images/aitopics/nlp.png",
+    items: ["Text Analysis", "Chatbots", "Sentiment Detection"]
   },
   {
-    icon: <BarChart4 className="h-8 w-8 " />,
-    title: "Impact",
-     image: "images/values/Image4.png",
-    items: ["1200+ Volunteer Hours", "45+ Projects Catalyzed", "10 STEM Bootcamps"]
+    icon: <ShieldAlert className="h-8 w-8" />,
+    title: "AI Ethics & Fairness",
+    image: "/images/aitopics/ethics.png",
+    items: ["Bias in Datasets", "Responsible AI", "Privacy & Transparency"]
   }
 ];
 

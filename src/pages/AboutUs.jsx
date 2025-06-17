@@ -1,13 +1,12 @@
 import HeroAbout from "../components/about/HeroAbout";
 import MissionVision from "../components/about/MissionVision";
 import OurStory from "../components/about/OurStory";
-import EventOrganisers from "../components/reusable/EventOrganisers";
 import JoinUs from "../components/reusable/JoinUs";
 import MiniGallery from "../components/about/MiniGallery";
 import Impact from "../components/about/Impact";
 import AdvisoryBoard from "../components/about/AdvisoryBoard";
-import Values from "../components/about/Values";
 import EventOrganisersAbout from "../components/about/eventOrganisersAbout";
+import EventTopics from "../components/about/EventTopics";
 
 
 export default function AboutUs() {
@@ -17,10 +16,9 @@ export default function AboutUs() {
 <OurStory />
 <MissionVision/>
 <Impact/>
-<Values/>
+<EventTopics />
 <AdvisoryBoard/>
 <MiniGallery/>
-{/* <EventOrganisers/> */}
 <EventOrganisersAbout/>
 <JoinUs/>
     </>
