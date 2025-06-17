@@ -38,7 +38,7 @@ export default function EventTopics() {
               whileInView="show"
               viewport={{ once: true }}
             >
-              {/* Hide image on mobile */}
+              
               <div className="w-full lg:w-1/2 h-80 hidden lg:block">
                 <img
                   src={topic.image}
@@ -50,7 +50,7 @@ export default function EventTopics() {
               </div>
 
               <div className="w-full lg:w-1/2 flex flex-col justify-start text-center lg:text-left p-6 space-y-3">
-                <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-black border-b-2 border-green-600 pb-2 w-full break-words">
+                <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-black border-b-2 border-[#007847] pb-2 w-full break-words">
                   {topic.title}
                 </h2>
                 <h3 className="text-sm sm:text-base text-black">
