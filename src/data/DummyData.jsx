@@ -682,30 +682,35 @@ export const advisory = [
 
 export const aiTopics = [
   {
-    icon: <Brain className="h-8 w-8" />,
     title: "Machine Learning",
     image: "/images/aitopics/ml.png",
+    description:
+      "Dive into how machines learn from data using supervised and unsupervised methods. We'll explore key ML concepts, model evaluation techniques, and see how it's applied in real-world scenarios.",
     items: ["Supervised & Unsupervised Learning", "Model Evaluation", "Real-world ML demos"]
   },
   {
-    icon: <ScanSearch className="h-8 w-8" />,
     title: "Computer Vision",
     image: "/images/aitopics/vision.png",
+    description:
+      "Discover how AI interprets visual data to recognize patterns, diagnose health conditions, and even power self-driving technology using cutting-edge vision APIs.",
     items: ["Image Recognition", "AI for Healthcare", "Hands-on Vision APIs"]
   },
   {
-    icon: <MessageSquareCode className="h-8 w-8" />,
     title: "Natural Language Processing",
     image: "/images/aitopics/nlp.png",
+    description:
+      "Learn how machines understand and generate human language to enable chatbots, perform text analysis, and identify sentiment in communication.",
     items: ["Text Analysis", "Chatbots", "Sentiment Detection"]
   },
   {
-    icon: <ShieldAlert className="h-8 w-8" />,
     title: "AI Ethics & Fairness",
     image: "/images/aitopics/ethics.png",
+    description:
+      "Explore the importance of building responsible AI systems that are fair, transparent, and respect user privacy — including tackling bias in datasets and decision-making.",
     items: ["Bias in Datasets", "Responsible AI", "Privacy & Transparency"]
   }
 ];
+
 
 export const blogPosts = [
   {

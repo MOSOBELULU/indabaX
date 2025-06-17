@@ -1,15 +1,6 @@
 import { motion } from "framer-motion";
 import { aiTopics } from "../../data/DummyData";
 
-const containerVariant = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-
 const cardVariant = {
   hidden: { opacity: 0, y: 30 },
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -17,7 +8,7 @@ const cardVariant = {
 
 export default function EventTopics() {
   return (
-    <section className="py-24 px-6 bg-white">
+    <section className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -26,41 +17,54 @@ export default function EventTopics() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold text-black sm:text-4xl lg:text-5xl">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-black break-words">
             Exploring AI at IndabaX
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-gray-700">
-            Our event dives into the most exciting areas of artificial intelligence, through talks, demos, and real-world challenges.
+          <p className="mt-4 max-w-2xl mx-auto text-sm sm:text-base text-gray-700">
+            Our event dives into the most exciting areas of artificial
+            intelligence, through talks, demos, and real-world challenges.
           </p>
         </motion.div>
 
-        <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-10"
-          variants={containerVariant}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-        >
-          {aiTopics.map((topic) => (
+        <div className="space-y-16">
+          {aiTopics.map((topic, index) => (
             <motion.div
               key={topic.title}
-              className="relative rounded-xl overflow-hidden h-64 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-cover bg-center"
-              style={{ backgroundImage: `url(${topic.image})` }}
+              className={`flex flex-col lg:flex-row ${
+                index % 2 === 1 ? "lg:flex-row-reverse" : ""
+              } items-stretch gap-10 border border-gray-300 rounded-2xl shadow-md bg-gray-50`}
               variants={cardVariant}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
             >
-              <div className="absolute inset-0 bg-black/60 z-0" />
-              <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white p-6">
-                <div className="mb-3">{topic.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{topic.title}</h3>
-                <ul className="text-sm space-y-1">
+              {/* Hide image on mobile */}
+              <div className="w-full lg:w-1/2 h-80 hidden lg:block">
+                <img
+                  src={topic.image}
+                  alt={topic.title}
+                  className={`w-full h-full object-cover ${
+                    index % 2 === 1 ? "rounded-r-2xl" : "rounded-l-2xl"
+                  }`}
+                />
+              </div>
+
+              <div className="w-full lg:w-1/2 flex flex-col justify-start text-center lg:text-left p-6 space-y-3">
+                <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-black border-b-2 border-green-600 pb-2 w-full break-words">
+                  {topic.title}
+                </h2>
+                <h3 className="text-sm sm:text-base text-black">
+                  {topic.description}
+                </h3>
+                <ul className="list-disc list-inside text-black text-sm sm:text-base leading-relaxed space-y-1">
                   {topic.items.map((item) => (
-                    <li key={item}>• {item}</li>
+                    <li key={item}>{item}</li>
                   ))}
                 </ul>
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
