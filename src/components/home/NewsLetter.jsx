@@ -12,24 +12,25 @@ export default function NewsLetter() {
               Get event news, speaker announcements, and exclusive updates for IndabaX São Tomé.
             </p>
 
-            <form className="mt-8 sm:flex sm:max-w-lg">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent sm:flex-1"
-                required
-              />
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center px-6 py-3 mt-4 text-base font-semibold text-white bg-black rounded-md sm:mt-0 sm:ml-4 hover:opacity-90 transition-all duration-200"
-              >
-                Subscribe
-              </button>
-            </form>
+        <form className="mt-10 sm:flex sm:max-w-lg">
+  <input
+    type="email"
+    placeholder="Enter your email"
+    className="w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent sm:flex-1"
+    required
+  />
+  <button
+    type="submit"
+    className="inline-flex items-center justify-center px-6 py-3 mb-3 mt-3 sm:mt-0 text-base font-semibold text-white bg-black rounded-md sm:ml-4 hover:opacity-90 transition-all duration-200"
+  >
+    Subscribe
+  </button>
+</form>
+
           </div>
 
           
-         <div className="flex flex-col justify-end items-center">
+       <div className="hidden md:flex flex-col justify-end items-center">
   <img
     className="md:scale-110 lg:scale-100 2xl:scale-110 h-auto max-h-[500px] mt-11"
     src="images/newsletter.png"

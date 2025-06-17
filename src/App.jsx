@@ -9,7 +9,6 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Careers from "./pages/Careers";
 import SpeakersPage from "./pages/Speakers";
 import SpeakerDetail from "./pages/SpeakerDetail";
-
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Gallerypage from "./pages/GalleryPage";
@@ -21,6 +20,7 @@ import BackToTopBtn from "./components/reusable/BacktoTopBtn";
 import FaqsPage from "./pages/FaqsPage";
 import OrganisersPage from "./pages/OrganisersPage";
 import EventsPage from "./pages/EventsPage";
+import EventDetail from "./pages/EventDetail";
 
 
 
@@ -46,6 +46,8 @@ export default function App() {
         <Route path='/eventspage' element={< EventsPage/>} />
         
         <Route path='/speakerdetail/:id' element={< SpeakerDetail/>}/>
+        <Route path='/eventdetail/:id' element={< EventDetail/>}/>
+        
        
        
         

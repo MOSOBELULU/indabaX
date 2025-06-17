@@ -146,35 +146,106 @@ export const events = [
       "Join Africa’s brightest AI minds for two days of talks, workshops, and networking focused on AI and financial technology innovation.",
     description2:
       "This two-day experience will bring together top researchers, developers, students, and entrepreneurs to explore how AI can transform industries across Africa. Expect keynote presentations, panel discussions, and practical workshops on topics like AI in fintech, ethical data handling, and deploying machine learning in low-resource environments. There will also be a start-up showcase and breakout sessions to promote networking and collaboration.",
-    registrationLink: "https://indabaxtsaotome.com/register",
   },
   {
     id: 2,
     image: "/images/events/event2.png",
-    title: "Pre-IndabaX Workshop: Intro to AI Ethics",
     type: "Keynote",
+    title: "Pre-IndabaX Workshop: Intro to AI Ethics",
     date: "2025-07-09",
     location: "Tech Hub, São Tomé",
     description:
       "A hands-on workshop on responsible AI development led by Dr. Emily Walsh to prepare attendees for ethical challenges in AI projects.",
     description2:
-      "This workshop offers a foundational look at AI ethics, covering the importance of fairness, transparency, and accountability in AI systems. Led by Dr. Emily Walsh, the session includes real-world case studies, group exercises, and frameworks for ethical decision-making. Participants will learn how to identify bias in data, evaluate the social impact of their models, and design for inclusion. Great for students, developers, and policy enthusiasts.",
-    registrationLink: "https://indabaxtsaotome.com/workshops/ai-ethics",
+      "This workshop offers a foundational look at AI ethics, covering the importance of fairness, transparency, and accountability in AI systems. Led by Dr. Emily Walsh, the session includes real-world case studies, group exercises, and frameworks for ethical decision-making.",
   },
   {
     id: 3,
     image: "/images/events/event3.png",
-    title: "Post-Conference Networking Dinner",
     type: "Panel",
+    title: "Post-Conference Networking Dinner",
     date: "2025-07-11",
     location: "Oceanview Restaurant",
     description:
       "Celebrate the conclusion of IndabaX with speakers and participants over local cuisine and live music.",
     description2:
-      "An elegant close to the IndabaX experience, this dinner offers attendees a chance to unwind, connect, and reflect. Enjoy a curated menu of São Toméan cuisine while mingling with keynote speakers, tech leaders, and fellow participants. The evening will feature cultural performances, light speeches, and informal networking — the perfect space to build partnerships, friendships, and future collaborations.",
-    registrationLink: "https://indabaxtsaotome.com/networking-dinner",
+      "An elegant close to the IndabaX experience, this dinner offers attendees a chance to unwind, connect, and reflect. Enjoy a curated menu of São Toméan cuisine while mingling with keynote speakers, tech leaders, and fellow participants.",
   },
+  {
+  id: 4,
+  image: "/images/events/event3.png",
+  title: "AI & Climate: Innovation for a Greener Future",
+  type: "Workshop",
+  date: "2025-07-10",
+  location: "GreenTech Hall, São Tomé",
+  description:
+    "Explore how AI is driving climate solutions, from smart agriculture to disaster prediction.",
+  description2:
+    "This workshop dives into the intersection of AI and environmental sustainability. Experts will showcase how machine learning supports conservation, improves energy efficiency, and helps monitor climate change. Participants will engage with tools like satellite imagery analysis, precision agriculture platforms, and AI-powered forecasting models. Interactive demos and group ideation sessions will spark ideas for applying AI to local and continental environmental challenges."
+},
+{
+  id: 5,
+ image: "/images/events/event3.png",
+  title: "AI Start-up Pitch Hour",
+  type: "Showcase",
+  date: "2025-07-11",
+  location: "Innovation Stage, São Tomé Convention Center",
+  description:
+    "Up-and-coming African start-ups present AI-driven solutions across fintech, health, and education.",
+  description2:
+    "This high-energy session will feature a curated line-up of early-stage founders showcasing how they're using AI to tackle real-world problems. Each start-up will have a few minutes to pitch their product, followed by rapid Q&A from judges and the audience. Sectors covered include agriculture, financial inclusion, education access, and health tech. Attendees will gain insight into the African innovation landscape and have a chance to vote for the most promising AI idea."
+},
+{
+  id: 6,
+ image: "/images/events/event3.png",
+  title: "Women in AI Breakfast Forum",
+  type: "Networking",
+  date: "2025-07-11",
+  location: "Sunrise Lounge, Tech Hub",
+  description:
+    "A safe, inclusive space for women and non-binary folks in tech to connect and inspire each other.",
+  description2:
+    "This intimate morning forum is dedicated to amplifying the voices of women and underrepresented genders in AI. Facilitated by community leaders, the event includes fireside chats, personal storytelling, and group discussions on navigating tech careers. Topics include mentorship, leadership, imposter syndrome, and the future of inclusive AI. Expect a relaxed vibe with good food, meaningful connections, and practical takeaways for empowering diversity in tech."
+},
+{
+  id: 7,
+ image: "/images/events/event3.png",
+  title: "Hands-On ML Model Building Lab",
+  type: "Lab Session",
+  date: "2025-07-10",
+  location: "CodeLab Room 2, Tech Hub",
+  description:
+    "Build, train, and test your own ML model in a guided coding session — no advanced experience needed.",
+  description2:
+    "Perfect for developers and data enthusiasts, this lab offers a step-by-step guide to creating a working machine learning model using Python. Participants will explore data preprocessing, algorithm selection, model evaluation, and deployment basics. Coaches will be available to assist in real-time, and everyone will leave with a working notebook and project they can build on. Bring your laptop, curiosity, and appetite for learning!"
+},
+{
+  id: 8,
+  image: "/images/events/event3.png",
+  title: "The Future of AI in Africa Panel",
+  type: "Panel",
+  date: "2025-07-10",
+  location: "Main Hall, São Tomé Convention Center",
+  description:
+    "Leading voices discuss the continent’s AI opportunities, challenges, and ethical road ahead.",
+  description2:
+    "This thought-provoking panel will feature policymakers, researchers, and entrepreneurs unpacking what AI means for Africa’s future. Topics include data sovereignty, language inclusion, infrastructure limitations, and youth empowerment. Each speaker will share insights from their sector, followed by audience Q&A. The goal is to create a collective vision for equitable and sustainable AI development across the continent. Open to all attendees."
+},
+{
+  id: 9,
+image: "/images/events/event3.png",
+  title: "Youth AI Hackathon Awards Ceremony",
+  type: "Closing Ceremony",
+  date: "2025-07-11",
+  location: "Main Hall, São Tomé Convention Center",
+  description:
+    "Celebrate the top teams from our Youth Hackathon as they pitch their projects live on stage.",
+  description2:
+    "The ceremony wraps up the youth hackathon with finalist pitches, live demos, and award announcements. Judges will highlight creativity, technical implementation, and real-world impact. Finalist teams will take the stage to showcase how they applied AI to solve problems in areas like education, local transport, and health. This vibrant event will include sponsor remarks, prize handovers, and a call to action for young innovators across Africa."
+}
+
 ];
+
 
 export const testimonials = [
   {

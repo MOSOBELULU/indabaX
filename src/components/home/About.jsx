@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <section className="py-30 px-4 sm:px-8 md:px-12 lg:px-20 overflow-x-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-center">
-       
+      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row gap-10 items-center">
+        
+        {/* Image Section */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -21,6 +22,7 @@ export default function About() {
           />
         </motion.div>
 
+        {/* Text Section */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -33,8 +35,8 @@ export default function About() {
           </h2>
 
           <div className="flex gap-4 items-start">
-             <div className="min-w-[40px] min-h-[40px] bg-gray-200 rounded-full mt-1 flex items-center justify-center">
-              <Users className="w-8 h-8 text-[#007847]  " />
+            <div className="min-w-[40px] min-h-[40px] bg-gray-200 rounded-full mt-1 flex items-center justify-center">
+              <Users className="w-8 h-8 text-[#007847]" />
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-semibold">Who We Are</h3>
@@ -47,8 +49,8 @@ export default function About() {
           </div>
 
           <div className="flex gap-4 items-start">
-           <div className="min-w-[40px] min-h-[40px] bg-gray-200 rounded-full mt-1 flex items-center justify-center">
-              <Wrench className="w-8 h-8 text-[#007847] " />
+            <div className="min-w-[40px] min-h-[40px] bg-gray-200 rounded-full mt-1 flex items-center justify-center">
+              <Wrench className="w-8 h-8 text-[#007847]" />
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-semibold">What We Do</h3>
@@ -61,8 +63,8 @@ export default function About() {
 
           <div className="flex gap-4 items-start">
             <div className="min-w-[40px] min-h-[40px] bg-gray-200 rounded-full mt-1 flex items-center justify-center">
-    <HeartHandshake className="w-8 h-8 text-[#007847]" />
-  </div>
+              <HeartHandshake className="w-8 h-8 text-[#007847]" />
+            </div>
             <div>
               <h3 className="text-lg sm:text-xl font-semibold">Why You Should Care</h3>
               <p className="text-sm sm:text-base text-gray-700">
