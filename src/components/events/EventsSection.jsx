@@ -17,13 +17,13 @@ export default function EventsSection() {
             />
             <h3 className="text-lg font-semibold mb-1">{event.title}</h3>
             <p className="text-sm text-gray-700">{event.description}</p>
-            <Link to={`/eventdetail/${event.id}`}>
-             <button
-              className="mt-3 text-[#007847] font-medium hover:underline"
-            >
-              Learn More
-            </button>
-            </Link>
+              <Link
+                    to={`/eventdetail/${event.id}`}
+                   
+                    className="inline-block text-sm font-semibold text-[#007847] hover:underline"
+                  >
+                    Learn More 
+                  </Link>
           </div>
         ))}
       </div>
