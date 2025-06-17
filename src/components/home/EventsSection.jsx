@@ -70,7 +70,7 @@ export default function Events() {
           </p>
               <Link
   to={`/eventdetail/${event.id}`}
-  className="inline-block text-sm font-semibold text-[#007847] border border-[#007847] px-4 py-2 rounded-lg hover:text-white transition"
+  className="inline-block text-sm font-semibold text-[#007847] border border-[#007847] px-4 py-2 rounded-lg  transition"
 >
   Learn More
 </Link>
