@@ -1,6 +1,6 @@
 import RegisterButton from "../reusable/Register_button";
 
-export default function EventHero({ title, image }) {
+export default function EventDetailHero({ title, image }) {
   return (
     <section
       className="relative h-[60vh] bg-cover bg-center flex items-center justify-center text-white"
@@ -20,10 +20,7 @@ export default function EventHero({ title, image }) {
         </div>
         
 
-        {/* Optional CTA Button (future) */}
-        {/* <a href="#" className="inline-block mt-6 px-6 py-3 bg-[#007847] text-white rounded-full">
-          Register Now
-        </a> */}
+        
       </div>
     </section>
   );

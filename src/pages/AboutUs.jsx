@@ -5,7 +5,7 @@ import JoinUs from "../components/reusable/JoinUs";
 import MiniGallery from "../components/about/MiniGallery";
 import Impact from "../components/about/Impact";
 import AdvisoryBoard from "../components/about/AdvisoryBoard";
-import EventOrganisersAbout from "../components/about/eventOrganisersAbout";
+import EventOrganisersAbout from "../components/about/EventOrganisersAbout"
 import EventTopics from "../components/about/EventTopics";
 
 

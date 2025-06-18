@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { events } from "../data/DummyData";
-import EventHero from "../components/events/EventsHero";
+import EventDetailHero from "../components/events/EventDetailHero";
 import EventDetailSection from "../components/events/EventDetailSection";
 
 export default function EventDetailPage() {
@@ -11,7 +11,7 @@ export default function EventDetailPage() {
 
   return(
     <>
-     <EventHero
+     <EventDetailHero
         title={event.title}
         date={event.date}
         location={event.location}
