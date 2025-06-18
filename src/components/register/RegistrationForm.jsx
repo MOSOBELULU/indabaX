@@ -10,10 +10,13 @@ import {
   Upload,
 } from "lucide-react";
 import toast, { Toaster } from "react-hot-toast";
+import { useLocation } from "react-router-dom";
 
 export default function RegistrationForm() {
   const [participantType, setParticipantType] = useState("");
   const [countries, setCountries] = useState([]);
+  const location = useLocation();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,13 +30,17 @@ export default function RegistrationForm() {
   });
 
   useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const typeFromURL = params.get("type");
+    if (typeFromURL) setParticipantType(typeFromURL);
+  }, [location.search]);
+
+  useEffect(() => {
     async function fetchCountries() {
       try {
         const res = await fetch("https://restcountries.com/v3.1/all?fields=name,cca2");
         const data = await res.json();
-        const sorted = data
-          .map((c) => c.name.common)
-          .sort((a, b) => a.localeCompare(b));
+        const sorted = data.map((c) => c.name.common).sort((a, b) => a.localeCompare(b));
         setCountries(sorted);
       } catch (error) {
         console.error("Country fetch error:", error);
@@ -51,58 +58,48 @@ export default function RegistrationForm() {
     }));
   };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  if (!participantType) {
-    toast.error("Please select a participation type.");
-    return;
-  }
-
-  const loading = toast.loading("Submitting your registration...");
-
-  const submission = {
-    ...formData,
-    participantType,
-  };
-
-  try {
-    const response = await fetch("YOUR_WEB_APP_URL", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(submission),
-    });
-
-    if (response.ok) {
-      toast.dismiss(loading);
-      toast.success(`Thank you for registering as ${participantType}! 🎉`);
-
-      console.log("Submitted to Google Sheet:", submission);
-      // Reset form
-      setFormData({
-        name: "",
-        email: "",
-        country: "",
-        role: "",
-        interests: "",
-        resume: null,
-        motivation: "",
-        organization: "",
-        partnershipNotes: "",
-      });
-      setParticipantType("");
-    } else {
-      throw new Error("Server responded with error");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!participantType) {
+      toast.error("Please select a participation type.");
+      return;
     }
-  } catch (error) {
-    toast.dismiss(loading);
-    toast.error("Oops! Something went wrong. Please try again.");
-    console.error("Submission error:", error);
-  }
-};
 
+    const loading = toast.loading("Submitting your registration...");
+    const submission = { ...formData, participantType };
 
+    try {
+      const response = await fetch("YOUR_WEB_APP_URL", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(submission),
+      });
+
+      if (response.ok) {
+        toast.dismiss(loading);
+        toast.success(`Thank you for registering as ${participantType}! 🎉`);
+        console.log("Submitted to Google Sheet:", submission);
+        setFormData({
+          name: "",
+          email: "",
+          country: "",
+          role: "",
+          interests: "",
+          resume: null,
+          motivation: "",
+          organization: "",
+          partnershipNotes: "",
+        });
+        setParticipantType("");
+      } else {
+        throw new Error("Server responded with error");
+      }
+    } catch (error) {
+      toast.dismiss(loading);
+      toast.error("Oops! Something went wrong. Please try again.");
+      console.error("Submission error:", error);
+    }
+  };
 
   return (
     <section className="py-16 px-4 sm:px-6 md:px-10" id="register-form">
@@ -119,13 +116,15 @@ const handleSubmit = async (e) => {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-5">
-          <div className="flex flex-wrap justify-center gap-3 mb-6">
-            {["Attendee", "Speaker", "Volunteer", "Sponsor/Partner"].map((type) => (
+
+        
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-3 mb-6">
+            {["Attendee", "Speaker", "Volunteer", "Sponsor"].map((type) => (
               <button
                 key={type}
                 type="button"
                 onClick={() => setParticipantType(type)}
-                className={`px-5 py-2 text-xs sm:text-sm rounded-full border font-medium transition ${
+                className={`px-4 py-2 text-xs sm:text-sm rounded-full border font-medium transition text-center ${
                   participantType === type
                     ? "bg-black text-white border-black"
                     : "bg-white text-gray-600 border-gray-300 hover:bg-gray-100"
@@ -136,7 +135,7 @@ const handleSubmit = async (e) => {
             ))}
           </div>
 
-          {/* Full Name */}
+          
           <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <User size={18} />
@@ -152,7 +151,6 @@ const handleSubmit = async (e) => {
             />
           </div>
 
-          {/* Email */}
           <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <Mail size={18} />
@@ -168,7 +166,6 @@ const handleSubmit = async (e) => {
             />
           </div>
 
-          {/* Country */}
           <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <Globe size={18} />
@@ -189,47 +186,43 @@ const handleSubmit = async (e) => {
             </select>
           </div>
 
-          {/* Role - all types except Sponsor */}
           {participantType !== "Sponsor/Partner" && (
-            <div className="flex items-center border rounded-md overflow-hidden">
-              <div className="px-3">
-                <Briefcase size={18} />
+            <>
+              <div className="flex items-center border rounded-md overflow-hidden">
+                <div className="px-3">
+                  <Briefcase size={18} />
+                </div>
+                <input
+                  type="text"
+                  name="role"
+                  placeholder="Your current role"
+                  value={formData.role}
+                  onChange={handleChange}
+                  className="w-full p-3 text-sm sm:text-base focus:outline-none"
+                />
               </div>
-              <input
-                type="text"
-                name="role"
-                placeholder="Your current role (e.g. Student, Developer)"
-                value={formData.role}
-                onChange={handleChange}
-                className="w-full p-3 text-sm sm:text-base focus:outline-none"
-              />
-            </div>
+
+              <div className="flex items-start border rounded-md overflow-hidden">
+                <div className="px-3 pt-3">
+                  <MessageCircle size={18} />
+                </div>
+                <textarea
+                  name="interests"
+                  placeholder="What are your interests in AI?"
+                  rows="4"
+                  value={formData.interests}
+                  onChange={handleChange}
+                  className="w-full p-3 text-sm sm:text-base focus:outline-none"
+                ></textarea>
+              </div>
+            </>
           )}
 
-          {/* Interests in AI - All types except Sponsor */}
-          {participantType !== "Sponsor/Partner" && (
-            <div className="flex items-start border rounded-md overflow-hidden">
-              <div className="px-3 pt-3">
-                <MessageCircle size={18} />
-              </div>
-              <textarea
-                name="interests"
-                placeholder="What are your interests in AI?"
-                rows="4"
-                value={formData.interests}
-                onChange={handleChange}
-                className="w-full p-3 text-sm sm:text-base focus:outline-none"
-              ></textarea>
-            </div>
-          )}
-
-         
           {participantType === "Speaker" && (
             <div className="border rounded-md p-3 flex items-center gap-3">
               <Upload size={18} />
               <input
                 type="file"
-                placeholder="Upload your resume"
                 name="resume"
                 onChange={handleChange}
                 className="w-full text-sm text-gray-700"
@@ -237,7 +230,6 @@ const handleSubmit = async (e) => {
             </div>
           )}
 
-          
           {participantType === "Volunteer" && (
             <div className="flex items-start border rounded-md overflow-hidden">
               <div className="px-3 pt-3">
@@ -254,7 +246,6 @@ const handleSubmit = async (e) => {
             </div>
           )}
 
-         
           {participantType === "Sponsor/Partner" && (
             <>
               <div className="flex items-center border rounded-md overflow-hidden">
@@ -287,7 +278,6 @@ const handleSubmit = async (e) => {
             </>
           )}
 
-          {/* Submit */}
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
