@@ -5,7 +5,7 @@ import CurrentYear from "../components/reusable/CurrentYear";
 
 export default function PrivacyPolicy() {
   return (
-    <section className="bg-gradient-to-tr from-white via-yellow-50 to-white min-h-screen py-14 px-4">
+    <section className="bg-gradient-to-tr from-white via-yellow-50 to-white min-h-screen py-28 px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

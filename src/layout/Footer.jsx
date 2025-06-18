@@ -21,7 +21,7 @@ export default function Footer() {
           <div className='text-white'>
             <h4 className="text-lg font-semibold mb-4">More Info</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="/faqs" className="hover:underline">FAQs</a></li>
+              <li><a href="/faqspage" className="hover:underline">FAQs</a></li>
               <li><a href="/careers" className="hover:underline">Careers</a></li>
               <li><a href="/gallery" className="hover:underline">Gallery</a></li>
               <li><a href="/codeofconduct" className="hover:underline">Code of Conduct</a></li>

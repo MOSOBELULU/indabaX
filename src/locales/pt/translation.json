@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre nós",
+    "events": "Eventos",
+    "agenda": "Agenda",
+    "register": "Inscrever-se",
+    "contact": "Contate-nos"
+  },
+  "language": "Idioma"
+}

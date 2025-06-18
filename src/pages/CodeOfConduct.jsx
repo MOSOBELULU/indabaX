@@ -25,7 +25,7 @@ export default function CodeOfConduct() {
   ];
 
   return (
-    <section className="px-6 py-12 max-w-5xl mx-auto">
+    <section className="px-6 py-28 max-w-5xl mx-auto">
       <motion.h2
         className="text-4xl font-bold text-center mb-10"
         initial={{ opacity: 0, y: -20 }}
