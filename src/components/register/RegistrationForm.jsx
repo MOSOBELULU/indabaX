@@ -51,19 +51,35 @@ export default function RegistrationForm() {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!participantType) {
-      toast.error("Please select a participation type.");
-      return;
-    }
-    const loading = toast.loading("Submitting...");
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  if (!participantType) {
+    toast.error("Please select a participation type.");
+    return;
+  }
 
-    setTimeout(() => {
+  const loading = toast.loading("Submitting your registration...");
+
+  const submission = {
+    ...formData,
+    participantType,
+  };
+
+  try {
+    const response = await fetch("YOUR_WEB_APP_URL", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(submission),
+    });
+
+    if (response.ok) {
       toast.dismiss(loading);
-      toast.success("Registration submitted!");
-      console.log("Form Data Submitted:", { ...formData, participantType });
+      toast.success(`Thank you for registering as ${participantType}! 🎉`);
 
+      console.log("Submitted to Google Sheet:", submission);
+      // Reset form
       setFormData({
         name: "",
         email: "",
@@ -76,8 +92,17 @@ export default function RegistrationForm() {
         partnershipNotes: "",
       });
       setParticipantType("");
-    }, 1500);
-  };
+    } else {
+      throw new Error("Server responded with error");
+    }
+  } catch (error) {
+    toast.dismiss(loading);
+    toast.error("Oops! Something went wrong. Please try again.");
+    console.error("Submission error:", error);
+  }
+};
+
+
 
   return (
     <section className="py-16 px-4 sm:px-6 md:px-10" id="register-form">
