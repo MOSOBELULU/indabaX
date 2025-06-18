@@ -12,20 +12,22 @@ export default function NewsLetter() {
               Get event news, speaker announcements, and exclusive updates for IndabaX São Tomé.
             </p>
 
-        <form className="mt-10 sm:flex sm:max-w-lg">
+       <form className="mt-12 py-10 flex w-full max-w-lg gap-0">
   <input
     type="email"
     placeholder="Enter your email"
-    className="w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent sm:flex-1"
+    className="flex-1 px-1  py-3 text-sm sm:text-base text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
     required
   />
   <button
     type="submit"
-    className="inline-flex items-center justify-center px-6 py-3 mb-3 mt-3 sm:mt-0 text-base font-semibold text-white bg-black rounded-md sm:ml-4 hover:opacity-90 transition-all duration-200"
+    className="px-5 sm:px-6 py-3 text-sm sm:text-base font-semibold text-white bg-black rounded-r-md hover:opacity-90 transition-all duration-200"
   >
     Subscribe
   </button>
 </form>
+
+
 
           </div>
 

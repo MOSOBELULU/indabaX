@@ -1,6 +1,7 @@
 import { events } from "../../data/DummyData";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import BackBtn from "../reusable/BackBtn";
 
 export default function EventsSection() {
   return (
@@ -41,6 +42,7 @@ export default function EventsSection() {
 
         ))}
       </div>
+      <BackBtn className="mt-2"/>
     </motion.section>
   );
 }

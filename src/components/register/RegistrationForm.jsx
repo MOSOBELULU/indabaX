@@ -21,14 +21,15 @@ export default function RegistrationForm() {
     role: "",
     interests: "",
     resume: null,
+    motivation: "",
+    organization: "",
+    partnershipNotes: "",
   });
 
   useEffect(() => {
     async function fetchCountries() {
       try {
-        const res = await fetch(
-          "https://restcountries.com/v3.1/all?fields=name,cca2"
-        );
+        const res = await fetch("https://restcountries.com/v3.1/all?fields=name,cca2");
         const data = await res.json();
         const sorted = data
           .map((c) => c.name.common)
@@ -58,13 +59,11 @@ export default function RegistrationForm() {
     }
     const loading = toast.loading("Submitting...");
 
- 
     setTimeout(() => {
       toast.dismiss(loading);
       toast.success("Registration submitted!");
       console.log("Form Data Submitted:", { ...formData, participantType });
 
-   
       setFormData({
         name: "",
         email: "",
@@ -72,6 +71,9 @@ export default function RegistrationForm() {
         role: "",
         interests: "",
         resume: null,
+        motivation: "",
+        organization: "",
+        partnershipNotes: "",
       });
       setParticipantType("");
     }, 1500);
@@ -92,27 +94,24 @@ export default function RegistrationForm() {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-5">
-         
           <div className="flex flex-wrap justify-center gap-3 mb-6">
-            {["Attendee", "Speaker", "Volunteer", "Online participant"].map(
-              (type) => (
-                <button
-                  key={type}
-                  type="button"
-                  onClick={() => setParticipantType(type)}
-                  className={`px-5 py-2 text-xs sm:text-sm rounded-full border font-medium transition ${
-                    participantType === type
-                      ? "bg-black text-white border-black"
-                      : "bg-white text-gray-600 border-gray-300 hover:bg-gray-100"
-                  }`}
-                >
-                  {type}
-                </button>
-              )
-            )}
+            {["Attendee", "Speaker", "Volunteer", "Sponsor/Partner"].map((type) => (
+              <button
+                key={type}
+                type="button"
+                onClick={() => setParticipantType(type)}
+                className={`px-5 py-2 text-xs sm:text-sm rounded-full border font-medium transition ${
+                  participantType === type
+                    ? "bg-black text-white border-black"
+                    : "bg-white text-gray-600 border-gray-300 hover:bg-gray-100"
+                }`}
+              >
+                {type}
+              </button>
+            ))}
           </div>
 
-          
+          {/* Full Name */}
           <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <User size={18} />
@@ -128,7 +127,7 @@ export default function RegistrationForm() {
             />
           </div>
 
-          
+          {/* Email */}
           <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <Mail size={18} />
@@ -144,7 +143,7 @@ export default function RegistrationForm() {
             />
           </div>
 
-       
+          {/* Country */}
           <div className="flex items-center border rounded-md overflow-hidden">
             <div className="px-3">
               <Globe size={18} />
@@ -165,35 +164,39 @@ export default function RegistrationForm() {
             </select>
           </div>
 
-         
-          <div className="flex items-center border rounded-md overflow-hidden">
-            <div className="px-3">
-              <Briefcase size={18} />
+          {/* Role - all types except Sponsor */}
+          {participantType !== "Sponsor/Partner" && (
+            <div className="flex items-center border rounded-md overflow-hidden">
+              <div className="px-3">
+                <Briefcase size={18} />
+              </div>
+              <input
+                type="text"
+                name="role"
+                placeholder="Your current role (e.g. Student, Developer)"
+                value={formData.role}
+                onChange={handleChange}
+                className="w-full p-3 text-sm sm:text-base focus:outline-none"
+              />
             </div>
-            <input
-              type="text"
-              name="role"
-              placeholder="Your current role (e.g. Student, Developer)"
-              value={formData.role}
-              onChange={handleChange}
-              className="w-full p-3 text-sm sm:text-base focus:outline-none"
-            />
-          </div>
+          )}
 
-         
-          <div className="flex items-start border rounded-md overflow-hidden">
-            <div className="px-3 pt-3">
-              <MessageCircle size={18} />
+          {/* Interests in AI - All types except Sponsor */}
+          {participantType !== "Sponsor/Partner" && (
+            <div className="flex items-start border rounded-md overflow-hidden">
+              <div className="px-3 pt-3">
+                <MessageCircle size={18} />
+              </div>
+              <textarea
+                name="interests"
+                placeholder="What are your interests in AI?"
+                rows="4"
+                value={formData.interests}
+                onChange={handleChange}
+                className="w-full p-3 text-sm sm:text-base focus:outline-none"
+              ></textarea>
             </div>
-            <textarea
-              name="interests"
-              placeholder="What are your interests in AI?"
-              rows="4"
-              value={formData.interests}
-              onChange={handleChange}
-              className="w-full p-3 text-sm sm:text-base focus:outline-none"
-            ></textarea>
-          </div>
+          )}
 
          
           {participantType === "Speaker" && (
@@ -201,6 +204,7 @@ export default function RegistrationForm() {
               <Upload size={18} />
               <input
                 type="file"
+                placeholder="Upload your resume"
                 name="resume"
                 onChange={handleChange}
                 className="w-full text-sm text-gray-700"
@@ -208,7 +212,57 @@ export default function RegistrationForm() {
             </div>
           )}
 
-        
+          
+          {participantType === "Volunteer" && (
+            <div className="flex items-start border rounded-md overflow-hidden">
+              <div className="px-3 pt-3">
+                <MessageCircle size={18} />
+              </div>
+              <textarea
+                name="motivation"
+                placeholder="Why do you want to volunteer?"
+                rows="4"
+                value={formData.motivation}
+                onChange={handleChange}
+                className="w-full p-3 text-sm sm:text-base focus:outline-none"
+              ></textarea>
+            </div>
+          )}
+
+         
+          {participantType === "Sponsor/Partner" && (
+            <>
+              <div className="flex items-center border rounded-md overflow-hidden">
+                <div className="px-3">
+                  <Briefcase size={18} />
+                </div>
+                <input
+                  type="text"
+                  name="organization"
+                  placeholder="Organization Name"
+                  value={formData.organization}
+                  onChange={handleChange}
+                  className="w-full p-3 text-sm sm:text-base focus:outline-none"
+                />
+              </div>
+
+              <div className="flex items-start border rounded-md overflow-hidden">
+                <div className="px-3 pt-3">
+                  <MessageCircle size={18} />
+                </div>
+                <textarea
+                  name="partnershipNotes"
+                  placeholder="Tell us more about your sponsorship/partnership interest"
+                  rows="4"
+                  value={formData.partnershipNotes}
+                  onChange={handleChange}
+                  className="w-full p-3 text-sm sm:text-base focus:outline-none"
+                ></textarea>
+              </div>
+            </>
+          )}
+
+          {/* Submit */}
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}

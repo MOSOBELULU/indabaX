@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { events } from "../../data/DummyData";
 import { motion } from "framer-motion";
+import BackBtn from "../reusable/BackBtn"
 
 export default function EventDetailSection() {
   const { id } = useParams();
@@ -14,9 +15,9 @@ export default function EventDetailSection() {
 
   return (
     <div className="py-20 bg-gradient-to-r from-[#007847] to-[#003d25] text-white">
+ <BackBtn/>
   <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-4 md:px-10 lg:px-20">
 
-    {/* Calendar Box */}
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
@@ -30,7 +31,7 @@ export default function EventDetailSection() {
       <span className="text-xs">{parsedDate.getFullYear()}</span>
     </motion.div>
 
-    {/* Event Info */}
+   
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
@@ -45,8 +46,8 @@ export default function EventDetailSection() {
         {event.description2}
       </p>
     </motion.div>
-
   </div>
+
 </div>
   )
 }

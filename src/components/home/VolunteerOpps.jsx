@@ -1,45 +1,17 @@
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import toast, { Toaster } from "react-hot-toast";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function VolunteerOpportunities() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
-
-  const handleChange = (e) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted", formData);
-    toast.success("Thank you for volunteering!");
-    setIsOpen(false);
-    setFormData({ name: "", email: "", message: "" });
-  };
-
   return (
     <section
       className="py-16 sm:py-20 md:py-28 lg:py-32 px-4 sm:px-6 md:px-10"
       id="volunteer"
     >
-      <Toaster position="top-center" reverseOrder={false} />
-
-      <div
-        className={`max-w-7xl mx-auto transition-all duration-300 ${
-          isOpen ? "blur-sm scale-95" : ""
-        }`}
-      >
+      <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16 items-center">
-          {/* Left Text */}
+          
+          {/* Text Content */}
           <div>
             <motion.p
               className="text-sm font-semibold tracking-widest text-gray-500 uppercase mb-2"
@@ -56,7 +28,7 @@ export default function VolunteerOpportunities() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Volunteer with IndabaX São Tomé and Principe
+              Volunteer with IndabaX São Tomé and Príncipe
             </motion.h2>
 
             <motion.p
@@ -71,105 +43,38 @@ export default function VolunteerOpportunities() {
               unforgettable experience.
             </motion.p>
 
-            <motion.button
-              onClick={openModal}
-              className="bg-[#007847] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-base sm:text-lg transition"
+            <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Become a Volunteer
-            </motion.button>
+              <Link
+                to="/register"
+                className="bg-[#007847] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-base sm:text-lg transition inline-block"
+              >
+                Become a Volunteer
+              </Link>
+            </motion.div>
           </div>
 
-          {/* Right Image */}
-          {/* Right Image - Hidden on small screens */}
-<div className="relative h-64 sm:h-80 md:h-96 lg:h-auto hidden lg:block">
-  <div className="absolute w-full h-full -mb-12 overflow-hidden bg-[#007847] top-12 left-12 xl:left-16 lg:top-0 lg:scale-y-105 lg:origin-top rounded-lg">
-    <img
-      className="object-cover object-right w-full h-full scale-150 rounded-lg"
-      src="https://cdn.rareblocks.xyz/collection/celebration/images/content/2/lines.svg"
-      alt="Decorative lines"
-    />
-  </div>
-  <div className="relative lg:-top-12 rounded-lg overflow-hidden shadow-lg">
-    <img
-      src="/images/volunteer.png"
-      alt="Volunteer"
-      className="w-full h-full object-cover object-center"
-    />
-  </div>
-</div>
-
+          {/* Image Section */}
+          <div className="relative h-64 sm:h-80 md:h-96 lg:h-auto hidden lg:block">
+            <div className="absolute w-full h-full -mb-12 overflow-hidden bg-[#007847] top-12 left-12 xl:left-16 lg:top-0 lg:scale-y-105 lg:origin-top rounded-lg">
+              <img
+                className="object-cover object-right w-full h-full scale-150 rounded-lg"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/content/2/lines.svg"
+                alt="Decorative lines"
+              />
+            </div>
+            <div className="relative lg:-top-12 rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="/images/volunteer.png"
+                alt="Volunteer"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+          </div>
         </div>
       </div>
-
-      {/* Modal */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50 px-4 py-6 sm:px-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <motion.div
-              className="bg-white p-6 sm:p-8 rounded-xl shadow-xl w-full max-w-md"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              <h2 className="text-xl font-bold mb-6 text-[#007847]">
-                Volunteer Sign-Up
-              </h2>
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="Name"
-                  className="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#007847]"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="Email"
-                  className="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#007847]"
-                  required
-                />
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Why do you want to volunteer?"
-                  rows={4}
-                  className="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#007847]"
-                  required
-                />
-                <div className="flex justify-end gap-4 mt-4">
-                  <button
-                    type="button"
-                    onClick={closeModal}
-                    className="bg-gray-300 px-5 py-2 rounded-md hover:bg-gray-400 transition"
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    type="submit"
-                    className="bg-[#007847] text-white px-5 py-2 rounded-md transition"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </section>
   );
 }

@@ -2,7 +2,7 @@ import CurrentYear from "../reusable/CurrentYear";
 
 export default function RegisterHero(){
     return (
-    <section className="relative h-[80vh] w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover brightness-35"
         src="/videos/registerHero.mp4"
