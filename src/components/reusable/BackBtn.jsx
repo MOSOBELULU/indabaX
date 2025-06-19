@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeftCircle } from "lucide-react";
 
-export default function BackBtn({ label = "Go Back", className =""}) {
+export default function BackBtn({ className =""}) {
 const navigate = useNavigate();
 
 return (
@@ -9,8 +9,8 @@ return (
     onClick={() => navigate(-1)}
     className={`flex items-center text-sm hover:underline ${className}`}
     >
-        <ArrowLeft className="w-4 h-5" />
-        {label}
+        <ArrowLeftCircle className="w-10 h-10" />
+        
     </button>
 )
 }

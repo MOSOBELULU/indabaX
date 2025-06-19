@@ -11,6 +11,7 @@ export default function EventsSection() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
+       <BackBtn className="mt-6"/>
     <h1 className="text-3xl font-bold mb-8 text-center">
   <span className="border-b-5 border-[#007847]">Upcoming Events</span>
 </h1>
@@ -33,7 +34,7 @@ export default function EventsSection() {
     <p className="text-sm text-gray-700">{event.description}</p>
     <Link
       to={`/eventdetailpage/${event.id}`}
-      className="inline-block text-sm font-semibold text-[#007847] border border-[#007847] px-4 py-2 rounded-lg hover:bg-[#007847] hover:text-white transition"
+      className="inline-block text-sm font-semibold text-[#007847] border border-[#007847] px-4 py-2 mt-5 rounded-lg hover:bg-[#007847] hover:text-white transition"
     >
       Learn More
     </Link>
@@ -42,7 +43,7 @@ export default function EventsSection() {
 
         ))}
       </div>
-      <BackBtn className="mt-2"/>
+     
     </motion.section>
   );
 }
