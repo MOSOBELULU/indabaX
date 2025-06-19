@@ -7,11 +7,11 @@ export default function EventDetailHero({ title, image }) {
       style={{ backgroundImage: `url(${image})` }}
     >
       
-      <div className="absolute inset-0  bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+      <div className="absolute inset-0  bg-gradient-to-t from-black/70 via-black/80 to-transparent" />
 
      
       <div className="relative z-10 text-center px-4">
-        <h1 className="text-3xl sm:text-5xl font-bold leading-tight">
+        <h1 className="text-3xl sm:text-5xl font-bold leading-tight mt-20">
           {title}
         </h1>
         <div className="mt-10">
