@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function RegisterButton() {
+  const {t} = useTranslation()
     return(
         <>
         <Link to="/register">
@@ -8,7 +10,7 @@ export default function RegisterButton() {
               bg-white
               text-black
               transition-all duration-300 ease-in-out transform hover:scale-110">
-              Register
+             {t("register_button")}
             </button>
           </Link>
         </>

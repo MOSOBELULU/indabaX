@@ -7,5 +7,18 @@
     "register": "Inscrever-se",
     "contact": "Contate-nos"
   },
-  "language": "Idioma"
+  "language": "Idioma",
+   "hero": {
+    "title": "IndabaX São Tomé e Príncipe",
+    "subtitle": "Faça parte de um movimento crescente que molda o futuro da IA em África através de colaboração, comunidade e discussões inovadoras."
+  },
+  "countdown": {
+    "date": "14 – 16 Agosto",
+    "days": "Dias",
+    "hours": "Horas",
+    "minutes": "Minutos",
+    "seconds": "Segundos"
+  },
+   "register_button": "Registrar"
+
 }

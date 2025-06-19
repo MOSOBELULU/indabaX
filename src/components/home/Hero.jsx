@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
 import CurrentYear from "../reusable/CurrentYear";
 import RegisterButton from "../reusable/Register_button";
 import CountdownTimer from "../reusable/CountdownTimer";
 
+
 export default function Hero() {
+  const { t} = useTranslation()
   return (
     <section
       className="relative min-h-screen bg-cover bg-center bg-no-repeat"
@@ -17,11 +20,11 @@ export default function Hero() {
          
           <div className="flex-1 min-w-[300px] space-y-6">
             <h1 className="text-white text-3xl md:text-6xl font-bold drop-shadow-lg mb-4 text-left">
-              IndabaX São Tomé and <br/> Príncipe <CurrentYear />
+            {t("hero.title")}  <CurrentYear /> 
             </h1>
 
             <h3 className="text-lg md:text-xl font-medium text-white max-w-xl drop-shadow-sm mb-1 text-left">
-              Be part of a growing movement shaping the future of AI in Africa through collaboration, community, and cutting-edge discussions.
+           {t("hero.subtitle")}
             </h3>
 
             <div className="flex flex-col items-start space-y-4 pt-1">

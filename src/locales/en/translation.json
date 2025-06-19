@@ -7,5 +7,19 @@
     "register": "Register",
     "contact": "Contact Us"
   },
-  "language": "Language"
+  "language": "Language",
+  
+  "hero": {
+    "title": "IndabaX São Tomé and Príncipe",
+    "subtitle": "Be part of a growing movement shaping the future of AI in Africa through collaboration, community, and cutting-edge discussions."
+},
+ "countdown": {
+    "date": "14 – 16 August",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+   "register_button": "Register"
+
 }

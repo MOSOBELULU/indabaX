@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
 // eslint-disable-next-line no-unused-vars
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaCalendarAlt } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import CurrentYear from "../reusable/CurrentYear"
 
 const CountdownTimer = () => {
+  const {t} = useTranslation();
   const calculateTimeLeft = () => {
     const eventDate = new Date("2025-08-15T00:00:00");
     const now = new Date();
@@ -31,11 +33,11 @@ const CountdownTimer = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const timeBoxes = [
-    { label: "Days", value: timeLeft.days ?? 0 },
-    { label: "Hours", value: timeLeft.hours ?? 0 },
-    { label: "Minutes", value: timeLeft.minutes ?? 0 },
-    { label: "Seconds", value: timeLeft.seconds ?? 0 },
+   const timeBoxes = [
+    { label: t("countdown.days"), value: timeLeft.days ?? 0 },
+    { label: t("countdown.hours"), value: timeLeft.hours ?? 0 },
+    { label: t("countdown.minutes"), value: timeLeft.minutes ?? 0 },
+    { label: t("countdown.seconds"), value: timeLeft.seconds ?? 0 },
   ];
 
   return (
@@ -43,7 +45,7 @@ const CountdownTimer = () => {
   <div className="max-w-xl mx-auto">
     <div className="flex items-start justify-start space-x-2 text-white text-lg md:text-xl font-light drop-shadow-sm mb-6">
       <FaCalendarAlt className="text-white" />
-      <span>14 – 16 August <CurrentYear /></span>
+      <span>{t("countdown.date")} <CurrentYear /></span>
     </div>
 
     <div className="flex justify-start gap-4 flex-wrap">
