@@ -3,7 +3,6 @@ export default function NewsLetter() {
     <section className="flex items-end bg-gradient-to-r from-[#007847] to-[#003d25]">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 items-end">
-          {/* TEXT + FORM */}
           <div className="text-center md:text-left py-12 md:py-20 xl:py-24">
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               Stay in the Loop
@@ -29,7 +28,6 @@ export default function NewsLetter() {
             </form>
           </div>
 
-          {/* IMAGE */}
           <div className="hidden md:flex justify-end items-end h-full">
             <img
               className="w-full max-h-[500px] object-contain"
