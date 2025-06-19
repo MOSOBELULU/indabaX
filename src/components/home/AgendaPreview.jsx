@@ -1,9 +1,7 @@
 import { agenda } from "../../data/DummyData";
 import { ArrowRight } from "lucide-react";
-import { useTranslation } from "react-i18next";
 
 export default function AgendaSection() {
-  const {t} = useTranslation();
   const previewItems = agenda.Day1.slice(0, 3);
 
   return (
@@ -11,16 +9,16 @@ export default function AgendaSection() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-black">
-           {t("agenda.sectionTitle")}
+            What’s Happening at IndabaX?
           </h2>
 
           <div className="space-y-4 mb-6">
             {previewItems.map((item, index) => (
               <div key={index} className="border-l-4 border-[#007847] pl-4">
                 <p className="text-sm text-gray-500">{item.time}</p>
-                <h4 className="text-lg font-semibold">                {t(`agenda.preview.Day1.${index}.title`, item.title)}</h4>
+                <h4 className="text-lg font-semibold">{item.title}</h4>
                 <span className="text-xs uppercase text-[#007847] font-bold">
-                  {t(`agenda.types.${item.type}`, item.type)}
+                  {item.type}
                 </span>
               </div>
             ))}
@@ -30,7 +28,7 @@ export default function AgendaSection() {
             href="/agenda"
             className="inline-flex items-center text-[#007847] font-semibold hover:underline"
           >
-             {t("agenda.seeFull")}
+            See Full Agenda
             <ArrowRight className="ml-2 w-4 h-4" />
           </a>
         </div>
