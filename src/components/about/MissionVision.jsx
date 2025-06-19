@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function MissionVision() {
   return (
-    <section className=" px-6 bg-gradient-to-b from-white to-gray-50">
+    <section className=" -mt-10  px-6 bg-gradient-to-b from-white to-gray-50">
      
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-4 sm:px-0">
@@ -14,7 +14,7 @@ export default function MissionVision() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="bg-white p-8 shadow-l hover:shadow-xl"
+          className="bg-white p-8 shadow-l  border border-[#007847]"
         >
           <Target className="text-[#007847] rounded-full bg-gray-200 w-12 h-12 mb-4" />
           <h3 className="text-2xl font-semibold mb-3 text-[#003d25]">Our Mission</h3>
@@ -31,7 +31,7 @@ export default function MissionVision() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
           viewport={{ once: true }}
-          className="bg-white p-8 shadow-l hover:shadow-xl "
+          className="bg-white p-8 shadow-l border border-[#007847]  "
         >
           
           <Eye className="text-[#007847] rounded-full bg-gray-200 w-12 h-12 mb-4" />
