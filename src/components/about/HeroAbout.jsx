@@ -2,7 +2,7 @@ export default function HeroAbout() {
   return (
     <section className="relative w-full h-[500px] sm:h-[600px] lg:h-[700px] overflow-hidden">
      
-      <div className="sm:hidden absolute inset-0">
+      <div className=" absolute inset-0">
         <img
           src="/images/impact1.png"
           alt="About IndabaX São Tomé"
@@ -11,17 +11,6 @@ export default function HeroAbout() {
       </div>
 
       
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="none"
-        poster="/images/aboutHeroFallback.jpg"
-        className="hidden sm:block absolute top-0 left-0 w-full h-full object-cover brightness-[0.2]"
-      >
-        <source src="/videos/aboutHero.mp4" type="video/mp4" />
-      </video>
 
      
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4 sm:px-6 md:px-10">
