@@ -20,6 +20,83 @@
     "minutes": "Minutes",
     "seconds": "Seconds"
   },
-   "register_button": "Register"
-
+   "register_button": "Register",
+    "about": {
+    "title": "About IndabaX São Tomé and Príncipe",
+    "who_title": "Who We Are",
+    "who_desc": "We're a local AI community under the Deep Learning Indaba family, passionate about making artificial intelligence education accessible in São Tomé and Príncipe.",
+    "what_title": "What We Do",
+    "what_desc": "We organize workshops, talks, and hands-on sessions to equip students, researchers, and tech lovers with practical AI skills and global connections.",
+    "why_title": "Why You Should Care",
+    "why_desc": "AI will shape the future of Africa. Being part of IndabaX helps you learn, network, and contribute to solutions that matter for our communities.",
+    "learn_more": "Learn More About Us"
+  },
+    
+    "eventOverview": {
+    "title": "Why Attend this Event",
+    "description": "This event brings together tech enthusiasts, industry leaders, and innovators to explore emerging solutions in tech and connect over meaningful discussions. Whether you're a developer, entrepreneur, or curious learner — there's something here for you!",
+    "features": {
+      "expert_talks": {
+        "title": "Expert Talks",
+        "desc": "Learn from leading experts and professionals across tech and innovation spaces."
+      },
+      "workshops": {
+        "title": "Workshops",
+        "desc": "Hands-on sessions to deepen your skills and apply knowledge in real time."
+      },
+      "networking": {
+        "title": "Networking",
+        "desc": "Meet founders, developers, and entrepreneurs from all over the region."
+      }
+    }
+  },
+  "organisers": {
+    "sectionTitle": "Meet the Organisers",
+    "sectionDescription": "Our organisers are a dedicated team of experts and visionaries who work behind the scenes to make this event possible. With diverse skills and passion, they bring creativity, coordination, and care to ensure every detail runs smoothly.",
+    "luella": {
+      "role": "Lead Organizer",
+      "bio": "South African technologist driving African innovation through AI, finance, and community building."
+    },
+    "santos": {
+      "role": "Local Coordinator – São Tomé",
+      "bio": "Helder ensures the heartbeat of São Tomé is reflected in every part of this event. Logistics, local outreach, and venue magic."
+    },
+    "france": {
+      "role": "Creative Director",
+      "bio": "France turns ideas into visuals — shaping the identity of the event from branding to stage design."
+    },
+    "sloane": {
+      "role": "Speaker Curator",
+      "bio": "Brings global and African AI voices to the table, curating a speaker lineup that sparks dialogue and impact."
+    },
+    "zandile": {
+      "role": "Community Lead",
+      "bio": "Zanele connects people before, during, and after the event — turning attendees into a community."
+    },
+    "seeAll": "See all Organisers"
+  },
+  "agenda": {
+  "sectionTitle": "What’s Happening at IndabaX?",
+  "seeFull": "See Full Agenda",
+  "types": {
+    "talk": "Talk",
+    "keynote": "Keynote",
+    "social": "Social",
+    "workshop": "Workshop",
+    "panel": "Panel",
+    "poster": "Poster",
+    "chat": "Fireside Chat",
+    "showcase": "Showcase",
+    "logistics": "Logistics"
+  },
+  "preview": {
+    "Day1": [
+      { "title": "Welcome Drinks & Registration" },
+      { "title": "Opening Remarks by Organizers" },
+      { "title": "AI in Africa: Vision & Strategy" }
+    ]
+  }
 }
+
+  }
+

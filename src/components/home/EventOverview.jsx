@@ -1,26 +1,26 @@
-/* eslint-disable no-unused-vars */
 import { features } from "../../data/DummyData";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function EventOverview() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-16 px-6">
       <div className="max-w-7xl mx-auto">
-      
         <div className="mb-14">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black text-left">
-            Why Attend this Event
+            {t("eventOverview.title")}
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mt-4">
-            This event brings together tech enthusiasts, industry leaders, and innovators to explore emerging solutions in tech and connect over meaningful discussions.
-            Whether you're a developer, entrepreneur, or curious learner — there's something here for you!
+            {t("eventOverview.description")}
           </p>
         </div>
 
-        
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((item, i) => {
             const Icon = item.icon;
+
             return (
               <motion.div
                 key={i}
@@ -44,8 +44,12 @@ export default function EventOverview() {
                   <div className="flex justify-center mb-4">
                     <Icon size={42} className="text-white" />
                   </div>
-                  <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-                  <p className="text-sm leading-relaxed">{item.desc}</p>
+                  <h4 className="text-xl font-semibold mb-2">
+                    {t(`eventOverview.features.${item.id}.title`)}
+                  </h4>
+                  <p className="text-sm leading-relaxed">
+                    {t(`eventOverview.features.${item.id}.desc`)}
+                  </p>
                 </div>
               </motion.div>
             );

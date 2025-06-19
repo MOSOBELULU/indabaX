@@ -1,13 +1,16 @@
 /* eslint-disable no-unused-vars */
 import { Users, Wrench, HeartHandshake } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const {t} = useTranslation();
+
   return (
     <section className="py-30 px-4 sm:px-8 md:px-12 lg:px-20 overflow-x-hidden">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row gap-10 items-center">
         
-        {/* Image Section */}
+      
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -22,7 +25,7 @@ export default function About() {
           />
         </motion.div>
 
-        {/* Text Section */}
+        
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -31,7 +34,7 @@ export default function About() {
           className="w-full md:w-1/2 space-y-6 min-w-0 break-words"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">
-            About IndabaX São Tomé and Príncipe
+              {t("about.title")}
           </h2>
 
           <div className="flex gap-4 items-start">
@@ -39,11 +42,9 @@ export default function About() {
               <Users className="w-8 h-8 text-[#007847]" />
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold">Who We Are</h3>
+              <h3 className="text-lg sm:text-xl font-semibold">{t("about.who_title")}</h3>
               <p className="text-sm sm:text-base text-gray-700">
-                We're a local AI community under the Deep Learning Indaba family,
-                passionate about making artificial intelligence education accessible
-                in São Tomé and Príncipe.
+               {t("about.who_desc")}
               </p>
             </div>
           </div>
@@ -53,10 +54,9 @@ export default function About() {
               <Wrench className="w-8 h-8 text-[#007847]" />
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold">What We Do</h3>
+              <h3 className="text-lg sm:text-xl font-semibold">W{t("about.what_title")}</h3>
               <p className="text-sm sm:text-base text-gray-700">
-                We organize workshops, talks, and hands-on sessions to equip students,
-                researchers, and tech lovers with practical AI skills and global connections.
+               {t("about.what_desc")}
               </p>
             </div>
           </div>
@@ -66,10 +66,9 @@ export default function About() {
               <HeartHandshake className="w-8 h-8 text-[#007847]" />
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold">Why You Should Care</h3>
+              <h3 className="text-lg sm:text-xl font-semibold">{t("about.why_title")}</h3>
               <p className="text-sm sm:text-base text-gray-700">
-                AI will shape the future of Africa. Being part of IndabaX helps you learn,
-                network, and contribute to solutions that matter for our communities.
+                {t("about.why_desc")}
               </p>
             </div>
           </div>
@@ -78,7 +77,7 @@ export default function About() {
             href="/aboutus"
             className="inline-block mt-4 bg-[#007847] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#007f2f] transition duration-200 text-sm sm:text-base"
           >
-            Learn More About Us
+             {t("about.learn_more")}
           </a>
         </motion.div>
       </div>

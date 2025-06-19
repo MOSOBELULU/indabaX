@@ -266,75 +266,71 @@ export const testimonials = [
 
 export const features = [
   {
-    title: "Expert Talks",
-    desc: "Learn from leading experts and professionals across tech and innovation spaces.",
+    id: "expert_talks",
     image: "/images/eventsOverview/expecttalk.jpg",
     icon: Brain,
   },
   {
-    title: "Workshops",
-    desc: "Hands-on sessions to deepen your skills and apply knowledge in real time.",
+    id: "workshops",
     image: "/images/eventsOverview/skill.jpg",
     icon: Code2,
   },
   {
-    title: "Networking",
-    desc: "Meet founders, developers, and entrepreneurs from all over the region.",
+    id: "networking",
     image: "/images/eventsOverview/networking.jpg",
     icon: Users,
   },
 ];
 
+
 export const organisers = [
   {
+    id: "luella",
     name: "Luella Sparkling",
-    role: "Lead Organizer",
+    roleKey: "luella.role",
+    bioKey: "luella.bio",
     image: "/images/organisers/Luella.png",
-    bio: "South African technologist driving African innovation through AI, finance, and community building.",
     twitter: "https://twitter.com/lulugna",
     linkedin: "https://linkedin.com/in/lulugna",
   },
   {
+    id: "santos",
     name: "Helder Santos",
-    role: "Local Coordinator – São Tomé",
+    roleKey: "santos.role",
+    bioKey: "santos.bio",
     image: "/images/organisers/Santos.png",
-    bio: "Helder ensures the heartbeat of São Tomé is reflected in every part of this event. Logistics, local outreach, and venue magic.",
     twitter: "https://twitter.com/helder_ai",
     linkedin: "https://linkedin.com/in/heldersantos",
   },
   {
+    id: "france",
     name: "France Main",
-    role: "Creative Director",
+    roleKey: "france.role",
+    bioKey: "france.bio",
     image: "/images/organisers/Neo.png",
-    bio: "France turns ideas into visuals — shaping the identity of the event from branding to stage design.",
     twitter: "https://twitter.com/neomotloung",
     linkedin: "https://linkedin.com/in/neomotloung",
   },
   {
+    id: "sloane",
     name: "Sloane Biscuits",
-    role: "Speaker Curator",
+    roleKey: "sloane.role",
+    bioKey: "sloane.bio",
     image: "/images/organisers/thapelo.png",
-    bio: "Brings global and African AI voices to the table, curating a speaker lineup that sparks dialogue and impact.",
     twitter: "https://twitter.com/thapelomaseko",
     linkedin: "https://linkedin.com/in/thapelo-maseko",
   },
   {
+    id: "zandile",
     name: "Zandile Dlamini",
-    role: "Community Lead",
+    roleKey: "zandile.role",
+    bioKey: "zandile.bio",
     image: "/images/organisers/zandile.png",
-    bio: "Zanele connects people before, during, and after the event — turning attendees into a community.",
     twitter: "https://twitter.com/zaneled",
     linkedin: "https://linkedin.com/in/zaneledlamini",
   },
-  {
-    name: "Kagiso Mthembu",
-    role: "AI & Tech Ops Lead",
-    image: "/images/speakers/DrZanele.png",
-    bio: "Responsible for all technical infrastructure — from real-time demos to streaming to power backups.",
-    twitter: "https://twitter.com/kagisotech",
-    linkedin: "https://linkedin.com/in/kagisomthembu",
-  },
 ];
+
 
 export const faqs = [
   {

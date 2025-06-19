@@ -1,25 +1,23 @@
 import { organisers } from "../../data/DummyData";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function EventOrganisers({ variant = "home" }) {
+  const { t } = useTranslation();
   const showOrganisers = organisers.slice(0, 5);
 
   if (variant === "home") {
-    // Your existing home page layout
     return (
       <section className="py-16 px-6 md:px-12">
         <div className="max-w-7xl mx-auto rounded-xl bg-gray-300 p-8 relative">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             <div className="md:col-span-2">
               <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-                Meet the Organisers
+                {t("organisers.sectionTitle")}
               </h2>
               <p className="mt-4 text-base leading-relaxed max-w-md">
-                Our organisers are a dedicated team of experts and visionaries who
-                work behind the scenes to make this event possible. With diverse
-                skills and passion, they bring creativity, coordination, and care
-                to ensure every detail runs smoothly.
+                {t("organisers.sectionDescription")}
               </p>
             </div>
 
@@ -40,7 +38,7 @@ export default function EventOrganisers({ variant = "home" }) {
                   />
                   <div className="absolute inset-0 flex flex-col justify-end p-2 text-white bg-gradient-to-t from-black/70 via-black/30 to-transparent">
                     <h4 className="text-sm font-semibold">{person.name}</h4>
-                    <p className="text-xs">{person.role}</p>
+                    <p className="text-xs">{t(`organisers.${person.id}.role`)}</p>
                   </div>
                 </div>
               </motion.div>
@@ -63,7 +61,7 @@ export default function EventOrganisers({ variant = "home" }) {
                   />
                   <div className="absolute inset-0 flex flex-col justify-end p-2 text-white bg-gradient-to-t from-black/70 via-black/30 to-transparent">
                     <h4 className="text-sm font-semibold">{person.name}</h4>
-                    <p className="text-xs">{person.role}</p>
+                    <p className="text-xs">{t(`organisers.${person.id}.role`)}</p>
                   </div>
                 </div>
               </motion.div>
@@ -74,8 +72,7 @@ export default function EventOrganisers({ variant = "home" }) {
                 href="/organiserspage"
                 className="inline-flex items-center text-[#007847] font-semibold"
               >
-                See all organisers&nbsp;
-                <ArrowUpRight className="w-5 h-5" />
+                {t("organisers.seeAll")} <ArrowUpRight className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -83,13 +80,12 @@ export default function EventOrganisers({ variant = "home" }) {
       </section>
     );
   } else if (variant === "about") {
-    // About page layout - testimonial style cards
     return (
       <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
-              Meet the <span className="text-blue-600">Organisers</span>
+              {t("organisers.sectionTitle")}
             </h2>
           </div>
 
@@ -118,14 +114,10 @@ export default function EventOrganisers({ variant = "home" }) {
                     </div>
                   </div>
                   <blockquote className="mt-7">
-                    <p className="text-lg text-black">
-                      “{person.bio}”
-                    </p>
+                    <p className="text-lg text-black">“{t(`organisers.${person.id}.bio`)}”</p>
                   </blockquote>
-                  <p className="text-base font-semibold text-black mt-9">
-                    {person.name}
-                  </p>
-                  <p className="mt-1 text-base text-gray-600">{person.role}</p>
+                  <p className="text-base font-semibold text-black mt-9">{person.name}</p>
+                  <p className="mt-1 text-base text-gray-600">{t(`organisers.${person.id}.role`)}</p>
                 </div>
               </div>
             ))}
@@ -135,6 +127,5 @@ export default function EventOrganisers({ variant = "home" }) {
     );
   }
 
-  // fallback: just render nothing or something basic
   return null;
 }
