@@ -8,7 +8,7 @@ export default function Register() {
     return (
         <>
         <RegisterHero/>
-        <WhyJoin/>
+       
         <RegistrationForm ref={formRef}/>
         <CTA formRef={formRef}/>
         </>
