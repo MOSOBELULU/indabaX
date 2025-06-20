@@ -56,7 +56,10 @@ export default function EventTopics() {
                 <h3 className="text-sm sm:text-base text-black">
                   {topic.description}
                 </h3>
-                <ul className="list-disc list-inside text-black text-sm sm:text-base leading-relaxed space-y-1">
+              <ul className="list-disc list-inside pl-2 text-left text-black text-sm sm:text-base leading-relaxed space-y-1">
+
+
+
                   {topic.items.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
