@@ -1,5 +1,5 @@
 import RegisterHero from "../components/register/RegisterHero"
-import WhyJoin from "../components/register/WhyJoin"
+import WhyJoin from "../components/reusable/CTA"
 import RegistrationForm from "../components/register/RegistrationForm"
 import CTA from "../components/reusable/CTA"
 import { useRef } from "react"

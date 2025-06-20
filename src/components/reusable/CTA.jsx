@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
-import { Users, ArrowUp } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function CTA() {
   return (
   <motion.section
-  className="relative text-black py-12 px-6 sm:px-10 md:px-20 max-w-5xl mx-auto my-12 rounded-2xl overflow-hidden"
+  className="relative py-12 px-6 sm:px-10 md:px-20 max-w-5xl mx-auto my-12  overflow-hidden"
   initial={{ opacity: 0, y: 40 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8, ease: "easeOut" }}
@@ -19,7 +19,7 @@ export default function CTA() {
  
   <div className="relative z-10 text-white">
     <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 mb-6">
-      <Users className="w-10 h-10 text-white" />
+      
       <h2 className="text-2xl sm:text-3xl font-semibold tracking-wide">
         Join Our Growing AI Community
       </h2>

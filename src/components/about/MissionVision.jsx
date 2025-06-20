@@ -14,7 +14,9 @@ export default function MissionVision() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="bg-white p-8 shadow-l  border border-[#007847]"
+className="bg-white p-8 shadow-l border border-[#007847] w-[90vw] -ml-5 md:w-auto"
+
+
         >
           <Target className="text-[#007847] rounded-full bg-gray-200 w-12 h-12 mb-4" />
           <h3 className="text-2xl font-semibold mb-3 text-[#003d25]">Our Mission</h3>
@@ -31,7 +33,7 @@ export default function MissionVision() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
           viewport={{ once: true }}
-          className="bg-white p-8 shadow-l border border-[#007847]  "
+          className="bg-white p-8 shadow-l border border-[#007847] w-[90vw] -ml-5 md:w-auto "
         >
           
           <Eye className="text-[#007847] rounded-full bg-gray-200 w-12 h-12 mb-4" />
