@@ -26,7 +26,7 @@ export default function EventsSection() {
       </h1>
 
     
-  <div className="grid grid-cols-2 gap-4 mb-10 max-w-xs mx-auto">
+ <div className="grid grid-cols-2 gap-4 mb-10 max-w-sm mx-auto md:flex md:justify-center md:items-center md:gap-4 md:max-w-none">
   {categories.map((category) => (
     <button
       key={category}
@@ -41,6 +41,7 @@ export default function EventsSection() {
     </button>
   ))}
 </div>
+
 
      
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

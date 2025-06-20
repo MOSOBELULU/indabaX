@@ -1,4 +1,12 @@
-import { Brain, Code2, Users, Lightbulb, Rocket, Wrench, ScanSearch, MessageSquareCode, ShieldAlert } from "lucide-react";
+import {
+  Brain,
+  Code2,
+  Users,
+  Lightbulb,
+  Rocket,
+  Wrench,
+ 
+} from "lucide-react";
 
 export const speakers = [
   {
@@ -10,7 +18,7 @@ export const speakers = [
       "Dr. Sandra Catarina is a pioneering AI researcher whose work focuses on using advanced data science and artificial intelligence to tackle critical issues in African agriculture. With over a decade of experience, she has led research teams to develop predictive models that help farmers anticipate climate-related challenges, optimize planting schedules, and improve crop yields. Her groundbreaking project on using drone imagery and AI to detect crop diseases has been adopted in four Southern African countries. Beyond her technical expertise, she serves as a mentor to young female scientists, advocating for more inclusive participation in STEM. She regularly speaks at international conferences and collaborates with global agri-tech think tanks, pushing for AI tools that are tailored to the unique conditions of African farming communities.",
     image: "/images/speakers/DrZanele.png",
     linkedin: "https://linkedin.com/in/Sandra",
-  twitter: "https://twitter.com/Sandra"
+    twitter: "https://twitter.com/Sandra",
   },
   {
     id: 2,
@@ -21,7 +29,7 @@ export const speakers = [
       "Diago Osvaldo is an accomplished machine learning engineer working at the forefront of ethical AI development in Ghana. At Google Ghana, he leads initiatives focused on making AI systems more inclusive, especially for African users. His contributions include building tools that process African languages, ensuring dialects are properly represented in speech and text recognition systems. Michael is also the founder of the Ethical AI Lab Africa, where he conducts workshops and open forums on algorithmic bias, responsible data use, and fairness in automated systems. He holds multiple patents in adaptive AI and frequently partners with universities to drive local research. His vision is to create tech solutions that empower rather than exploit, and he’s a strong voice in the global discussion on AI fairness.",
     image: "/images/speakers/Michael.png",
     linkedin: "https://linkedin.com/in/Diago",
-  twitter: "https://twitter.com/Diago"
+    twitter: "https://twitter.com/Diago",
   },
   {
     id: 3,
@@ -32,7 +40,7 @@ export const speakers = [
       "Dr. Kenji Tanaka is a visionary educator and data scientist dedicated to bridging the digital divide in African education. Originally from Japan and now based in Nairobi, he has spent the last seven years traveling across the continent to bring AI literacy to classrooms. Through his nonprofit, Code4AfricaEd, Kenji has trained thousands of teachers and students in introductory AI, robotics, and coding. His approach focuses on making complex ideas accessible, using visual learning, local stories, and practical exercises. His curriculum is now part of national programs in Kenya and Uganda. Dr. Kenji believes that every child deserves to understand the technologies shaping their future, and he works tirelessly to make that vision a reality by supporting community-based tech hubs and education policy reform.",
     image: "/images/speakers/DrKenji.png",
     linkedin: "https://linkedin.com/in/Rui",
-  twitter: "https://twitter.com/Rui"
+    twitter: "https://twitter.com/Rui",
   },
   {
     id: 4,
@@ -43,7 +51,7 @@ export const speakers = [
       "Prof. João Fernandes is a trailblazer in the academic AI landscape, advocating for greater inclusion of African research in the global AI narrative. As Dean of Computer Science at São Tomé University, he has transformed the institution into a regional hub for AI innovation. His work centers on the ethical use of local data, ensuring that African cultural, economic, and environmental nuances are considered in tech solutions. He has published extensively on data sovereignty and AI policy, and has spearheaded collaborations between Lusophone countries to create shared AI datasets and infrastructure. Prof. Fernandes is passionate about building systems that reflect African realities, and he often challenges Western-centric AI models at international forums. His vision is a decentralized AI future where African researchers lead in both theory and application.",
     image: "/images/speakers/prof.png",
     linkedin: "https://linkedin.com/in/lulu",
-  twitter: "https://twitter.com/lulu_dev"
+    twitter: "https://twitter.com/lulu_dev",
   },
   {
     id: 5,
@@ -54,7 +62,7 @@ export const speakers = [
       "Lúcia Vânia is a highly respected fintech developer whose mission is to extend the reach of financial services to Africa’s unbanked populations using AI-powered platforms. She designs intuitive mobile-first apps that use machine learning to personalize financial advice, provide micro-loan recommendations, and educate users on budgeting and savings. Her products are already making a difference in rural Botswana, Namibia, and Zimbabwe. Beyond tech, Nandi works closely with local communities to understand cultural barriers to digital banking and advocates for regulatory frameworks that support fintech startups. She’s a mentor to many young African women in tech, and her impact stretches from coding bootcamps to international panels on financial inclusion. Nandi believes technology should level the playing field and not deepen the gap.",
     image: "/images/speakers/Nandi.png",
     linkedin: "https://linkedin.com/in/Lúcia",
-  twitter: "https://twitter.com/Lúcia"
+    twitter: "https://twitter.com/Lúcia",
   },
   {
     id: 6,
@@ -65,7 +73,7 @@ export const speakers = [
       "Dr. Zita Natália is an international AI ethics expert whose work influences how governments, companies, and developers think about fairness in artificial intelligence. At the University of Oxford, she leads the Global AI Ethics Consortium, a research body that examines how AI systems affect marginalized communities worldwide. Her recent projects involve collaborations with African governments and universities to develop ethical AI standards tailored to local values and challenges. Emily’s research explores algorithmic accountability, transparency in automated decisions, and how to address systemic bias in training data. She often travels across Africa conducting policy workshops and has contributed to AI legislation in Kenya, Nigeria, and Rwanda. Her belief is simple: AI must serve everyone, not just those who design it.",
     image: "/images/speakers/DrEmily.png",
     linkedin: "https://linkedin.com/in/Zita",
-  twitter: "https://twitter.com/Zita"
+    twitter: "https://twitter.com/Zita",
   },
 ];
 
@@ -85,14 +93,12 @@ export const sponsors = [
     logo: "/images/sponsors/etihuku_logo.png",
     link: "https://etihuku.com/",
   },
-  
 ];
 
 export const events = [
   {
     id: 1,
     image: "/images/events/event1.png",
-    type: "Workshop",
     title: "Tech & Knowledge Exchange",
     date: "2025-07-10",
     location: "São Tomé Convention Center",
@@ -105,7 +111,6 @@ export const events = [
   {
     id: 2,
     image: "/images/events/event2.png",
-    type: "Keynote",
     title: "Pre-IndabaX Workshop: Intro to AI Ethics",
     date: "2025-07-09",
     location: "Tech Hub, São Tomé",
@@ -118,7 +123,6 @@ export const events = [
   {
     id: 3,
     image: "/images/events/event3.png",
-    type: "Panel",
     title: "Post-Conference Networking Dinner",
     date: "2025-07-11",
     location: "Oceanview Restaurant",
@@ -132,7 +136,6 @@ export const events = [
     id: 4,
     image: "/images/events/event3.png",
     title: "AI & Climate: Innovation for a Greener Future",
-    type: "Workshop",
     date: "2025-07-10",
     location: "GreenTech Hall, São Tomé",
     category: "Workshops",
@@ -145,7 +148,6 @@ export const events = [
     id: 5,
     image: "/images/events/event3.png",
     title: "AI Start-up Pitch Hour",
-    type: "Showcase",
     date: "2025-07-11",
     location: "Innovation Stage, São Tomé Convention Center",
     category: "Hackathon",
@@ -158,7 +160,6 @@ export const events = [
     id: 6,
     image: "/images/events/event3.png",
     title: "Women in AI Breakfast Forum",
-    type: "Networking",
     date: "2025-07-11",
     location: "Sunrise Lounge, Tech Hub",
     category: "Workshops",
@@ -171,7 +172,6 @@ export const events = [
     id: 7,
     image: "/images/events/event3.png",
     title: "Hands-On ML Model Building Lab",
-    type: "Lab Session",
     date: "2025-07-10",
     location: "CodeLab Room 2, Tech Hub",
     category: "Hackathon",
@@ -184,7 +184,6 @@ export const events = [
     id: 8,
     image: "/images/events/event3.png",
     title: "The Future of AI in Africa Panel",
-    type: "Panel",
     date: "2025-07-10",
     location: "Main Hall, São Tomé Convention Center",
     category: "Talks",
@@ -197,7 +196,6 @@ export const events = [
     id: 9,
     image: "/images/events/event3.png",
     title: "Youth AI Hackathon Awards Ceremony",
-    type: "Closing Ceremony",
     date: "2025-07-11",
     location: "Main Hall, São Tomé Convention Center",
     category: "Hackathon",
@@ -205,10 +203,8 @@ export const events = [
       "Celebrate the top teams from our Youth Hackathon as they pitch their projects live on stage.",
     description2:
       "The ceremony wraps up the youth hackathon with finalist pitches, live demos, and award announcements. Judges will highlight creativity, technical implementation, and real-world impact. Finalist teams will take the stage to showcase how they applied AI to solve problems in areas like education, local transport, and health. This vibrant event will include sponsor remarks, prize handovers, and a call to action for young innovators across Africa.",
-  }
+  },
 ];
-
-
 
 export const testimonials = [
   {
@@ -291,7 +287,6 @@ export const features = [
   },
 ];
 
-
 export const organisers = [
   {
     id: "luella",
@@ -339,7 +334,6 @@ export const organisers = [
     linkedin: "https://linkedin.com/in/zaneledlamini",
   },
 ];
-
 
 export const faqs = [
   {
@@ -599,19 +593,22 @@ export const impactData = [
     title: "Participants",
     count: "300",
     suffix: "+",
-    description: "From students to professionals, we create inclusive spaces for all levels.",
+    description:
+      "From students to professionals, we create inclusive spaces for all levels.",
   },
   {
     title: "Local Speakers",
     count: "15",
     suffix: "+",
-    description: "We amplify voices from our own communities to lead meaningful conversations.",
+    description:
+      "We amplify voices from our own communities to lead meaningful conversations.",
   },
   {
     title: "Projects Sparked",
     count: "10",
     suffix: "+",
-    description: "From AI in agriculture to education tools — real ideas begin here.",
+    description:
+      "From AI in agriculture to education tools — real ideas begin here.",
   },
 ];
 
@@ -620,23 +617,25 @@ export const advisory = [
     name: "Carlos Lima",
     role: "Community Connector",
     image: "/images/advisory/carlos.png",
-    statement: "We ensure that every innovation is grounded in our community’s needs.",
-    story: "Being on the board lets me represent ideas from youth in remote areas."
+    statement:
+      "We ensure that every innovation is grounded in our community’s needs.",
+    story:
+      "Being on the board lets me represent ideas from youth in remote areas.",
   },
   {
     name: "Celina Monteiro",
     role: "Tech Evangelist",
     image: "/images/advisory/celina.png",
     statement: "We push for inclusive and future-ready programming.",
-    story: "I joined to bridge the gap between urban tech and rural access."
+    story: "I joined to bridge the gap between urban tech and rural access.",
   },
   {
     name: "Mateus Neves",
     role: "Creative Director",
     image: "/images/advisory/mateus.png",
     statement: "Youth culture should define how we design these spaces.",
-    story: "This is where I blend creativity with technology for change."
-  }
+    story: "This is where I blend creativity with technology for change.",
+  },
 ];
 
 export const aiTopics = [
@@ -645,31 +644,34 @@ export const aiTopics = [
     image: "/images/aitopics/ml.png",
     description:
       "Dive into how machines learn from data using supervised and unsupervised methods. We'll explore key ML concepts, model evaluation techniques, and see how it's applied in real-world scenarios.",
-    items: ["Supervised & Unsupervised Learning", "Model Evaluation", "Real-world ML demos"]
+    items: [
+      "Supervised & Unsupervised Learning",
+      "Model Evaluation",
+      "Real-world ML demos",
+    ],
   },
   {
     title: "Computer Vision",
     image: "/images/aitopics/vision.png",
     description:
       "Discover how AI interprets visual data to recognize patterns, diagnose health conditions, and even power self-driving technology using cutting-edge vision APIs.",
-    items: ["Image Recognition", "AI for Healthcare", "Hands-on Vision APIs"]
+    items: ["Image Recognition", "AI for Healthcare", "Hands-on Vision APIs"],
   },
   {
     title: "Natural Language Processing",
     image: "/images/aitopics/nlp.png",
     description:
       "Learn how machines understand and generate human language to enable chatbots, perform text analysis, and identify sentiment in communication.",
-    items: ["Text Analysis", "Chatbots", "Sentiment Detection"]
+    items: ["Text Analysis", "Chatbots", "Sentiment Detection"],
   },
   {
     title: "AI Ethics & Fairness",
     image: "/images/aitopics/ethics.png",
     description:
       "Explore the importance of building responsible AI systems that are fair, transparent, and respect user privacy — including tackling bias in datasets and decision-making.",
-    items: ["Bias in Datasets", "Responsible AI", "Privacy & Transparency"]
-  }
+    items: ["Bias in Datasets", "Responsible AI", "Privacy & Transparency"],
+  },
 ];
-
 
 export const blogPosts = [
   {
@@ -706,4 +708,3 @@ export const blogPosts = [
     link: "#",
   },
 ];
-

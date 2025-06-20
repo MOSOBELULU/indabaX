@@ -15,7 +15,7 @@ export default function EventDetailSection() {
 
   return (
     <div className="py-20 bg-gradient-to-r from-[#007847] to-[#003d25] text-white">
- <BackBtn/>
+ <BackBtn className="mb-6"/>
   <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-4 md:px-10 lg:px-20">
 
     <motion.div
@@ -38,9 +38,7 @@ export default function EventDetailSection() {
       transition={{ duration: 0.8, delay: 0.2 }}
       className="max-w-xl space-y-4 text-center md:text-left"
     >
-      <p className="uppercase text-sm tracking-wide font-semibold bg-white text-black inline-block px-3 py-1 rounded-full">
-        {event.type}
-      </p>
+    
       <p className="text-base font-medium">{event.location}</p>
       <p className="leading-relaxed text-sm sm:text-base text-white/90">
         {event.description2}
