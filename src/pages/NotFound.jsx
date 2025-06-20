@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function NotFound() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-6 bg-white text-center">
-      {/* Animated 404 Bouncing */}
+      
       <motion.h1
         initial={{ y: -10 }}
         animate={{ y: [0, -20, 0] }}
