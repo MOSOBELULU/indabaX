@@ -11,11 +11,13 @@ import {
 } from "lucide-react";
 import toast, { Toaster } from "react-hot-toast";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function RegistrationForm() {
   const [participantType, setParticipantType] = useState("");
   const [countries, setCountries] = useState([]);
   const location = useLocation();
+  const {t} = useTranslation();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -112,7 +114,7 @@ export default function RegistrationForm() {
         className="w-full max-w-4xl mx-auto bg-white p-6 sm:p-10 shadow-lg rounded-xl"
       >
         <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-gray-800">
-          Register for IndabaX
+          <h2>{t("registerTitle")}</h2>
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-5">
@@ -130,7 +132,7 @@ export default function RegistrationForm() {
                     : "bg-white text-gray-600 border-gray-300 hover:bg-gray-100"
                 }`}
               >
-                {type}
+                {t(`participantTypes.${type}`)}
               </button>
             ))}
           </div>
@@ -143,7 +145,7 @@ export default function RegistrationForm() {
             <input
               type="text"
               name="name"
-              placeholder="Full Name"
+              placeholder={t("form.name")} 
               required
               value={formData.name}
               onChange={handleChange}
@@ -158,7 +160,7 @@ export default function RegistrationForm() {
             <input
               type="email"
               name="email"
-              placeholder="Email Address"
+              placeholder={t("form.email")}
               required
               value={formData.email}
               onChange={handleChange}
@@ -177,7 +179,7 @@ export default function RegistrationForm() {
               onChange={handleChange}
               className="w-full p-3 text-sm sm:text-base focus:outline-none bg-white text-gray-700"
             >
-              <option value="">Select your country</option>
+              <option value="">{t("form.country")}</option>
               {countries.map((c) => (
                 <option key={c} value={c}>
                   {c}
@@ -195,7 +197,7 @@ export default function RegistrationForm() {
                 <input
                   type="text"
                   name="role"
-                  placeholder="Your current role"
+                  placeholder={t("form.role")} 
                   value={formData.role}
                   onChange={handleChange}
                   className="w-full p-3 text-sm sm:text-base focus:outline-none"
@@ -208,7 +210,7 @@ export default function RegistrationForm() {
                 </div>
                 <textarea
                   name="interests"
-                  placeholder="What are your interests in AI?"
+                  placeholder={t("form.interests")} 
                   rows="4"
                   value={formData.interests}
                   onChange={handleChange}
@@ -237,7 +239,7 @@ export default function RegistrationForm() {
               </div>
               <textarea
                 name="motivation"
-                placeholder="Why do you want to volunteer?"
+                placeholder={t("form.motivation")} 
                 rows="4"
                 value={formData.motivation}
                 onChange={handleChange}
@@ -255,7 +257,7 @@ export default function RegistrationForm() {
                 <input
                   type="text"
                   name="organization"
-                  placeholder="Organization Name"
+                  placeholder={t("form.organization")} 
                   value={formData.organization}
                   onChange={handleChange}
                   className="w-full p-3 text-sm sm:text-base focus:outline-none"
@@ -272,7 +274,7 @@ export default function RegistrationForm() {
                   rows="4"
                   value={formData.partnershipNotes}
                   onChange={handleChange}
-                  className="w-full p-3 text-sm sm:text-base focus:outline-none"
+                  className={t("form.partnershipNotes")} 
                 ></textarea>
               </div>
             </>
@@ -284,7 +286,7 @@ export default function RegistrationForm() {
             type="submit"
             className="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition"
           >
-            Submit Registration
+           {t("form.submit")} 
           </motion.button>
         </form>
       </motion.div>

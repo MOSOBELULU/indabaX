@@ -584,7 +584,29 @@
   "contactSubmit": "Enviar",
   "registerHeroTitle": "Participe do IndabaX IA",
   "registerHeroSubtitle": "Participe. Aprenda. Conecte-se. Junte-se à principal comunidade de IA da África.",
-  "registerHeroButton": "Inscreva-se Agora"
+  "registerHeroButton": "Inscreva-se Agora",
+  
+  "registerTitle": "Inscreva-se para o IndabaX",
+  "participantTypes": {
+    "Attendee": "Participante",
+    "Speaker": "Palestrante",
+    "Volunteer": "Voluntário",
+    "Sponsor": "Patrocinador"
+  },
+  "form": {
+    "name": "Nome completo",
+    "email": "Endereço de e-mail",
+    "country": "Selecione seu país",
+    "role": "Sua função atual",
+    "interests": "Quais são seus interesses em IA?",
+    "resume": "Carregar currículo",
+    "motivation": "Por que você quer ser voluntário?",
+    "organization": "Nome da organização",
+    "partnershipNotes": "Conte-nos mais sobre seu interesse em patrocinar/parceiro",
+    "submit": "Enviar inscrição"
+  }
+
+
 
 
 

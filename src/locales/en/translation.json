@@ -559,7 +559,28 @@
   "contactSubmit": "Submit",
    "registerHeroTitle": "Be Part of IndabaX AI",
   "registerHeroSubtitle": "Engage. Learn. Network. Join Africa's leading AI community.",
-  "registerHeroButton": "Register Now"
+  "registerHeroButton": "Register Now",
+
+
+  "registerTitle": "Register for IndabaX",
+  "participantTypes": {
+    "Attendee": "Attendee",
+    "Speaker": "Speaker",
+    "Volunteer": "Volunteer",
+    "Sponsor": "Sponsor"
+  },
+  "form": {
+    "name": "Full Name",
+    "email": "Email Address",
+    "country": "Select your country",
+    "role": "Your current role",
+    "interests": "What are your interests in AI?",
+    "resume": "Upload Resume",
+    "motivation": "Why do you want to volunteer?",
+    "organization": "Organization Name",
+    "partnershipNotes": "Tell us more about your sponsorship/partnership interest",
+    "submit": "Submit Registration"
+  }
 
 
 

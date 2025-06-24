@@ -16,9 +16,12 @@ export default function RegisterHero(){
         <p className="text-lg md:text-xl text-gray-200 mt-4 max-w-2xl">
           {t("registerHeroSubtitle")}
         </p>
-        <div className="mt-10">
-        <Register_button />
-        </div>
+         <a
+          href="#register-form"
+          className="mt-6 bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+        >
+          {t("registerHeroButton")}
+        </a>
       </div>
     </section>
   );
