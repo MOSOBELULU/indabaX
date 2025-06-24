@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { ArrowUp } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function CTA() {
+  const {t} = useTranslation()
   return (
   <motion.section
   className="relative py-12 px-6 sm:px-10 md:px-20 max-w-5xl mx-auto my-12  overflow-hidden"
@@ -21,16 +23,15 @@ export default function CTA() {
     <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 mb-6">
       
       <h2 className="text-2xl sm:text-3xl font-semibold tracking-wide">
-        Join Our Growing AI Community
+         {t("cta.title")}
       </h2>
     </div>
 
     <p className="text-base sm:text-lg max-w-2xl mb-8">
-      Connect with like-minded innovators, share ideas, and stay updated on the
-      latest in AI across São Tomé and beyond.
+      {t("cta.paragraph")}
       <br />
       <span className="font-semibold">
-        Be part of the movement—let’s shape the future together!
+       {t("cta.highlight")}
       </span>
     </p>
 
@@ -40,7 +41,7 @@ export default function CTA() {
       whileTap={{ scale: 0.95 }}
       className="inline-flex items-center bg-white text-[#007847] font-semibold px-6 py-3 rounded-md shadow-md hover:bg-gray-100 transition"
     >
-      Join the Community
+          {t("cta.button")}
       <ArrowUp className="w-5 h-5 ml-2" />
     </motion.a>
   </div>

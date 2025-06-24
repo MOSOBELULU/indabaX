@@ -604,8 +604,13 @@
     "organization": "Nome da organização",
     "partnershipNotes": "Conte-nos mais sobre seu interesse em patrocinar/parceiro",
     "submit": "Enviar inscrição"
+  },
+ "cta": {
+    "title": "Junte-se à nossa comunidade de IA em crescimento",
+    "paragraph": "Conecte-se com inovadores com ideias semelhantes, compartilhe ideias e fique por dentro das novidades em IA em São Tomé e além.",
+    "highlight": "Faça parte do movimento—vamos moldar o futuro juntos!",
+    "button": "Junte-se à Comunidade"
   }
-
 
 
 

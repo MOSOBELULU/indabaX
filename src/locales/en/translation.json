@@ -580,6 +580,12 @@
     "organization": "Organization Name",
     "partnershipNotes": "Tell us more about your sponsorship/partnership interest",
     "submit": "Submit Registration"
+  },
+  "cta": {
+    "title": "Join Our Growing AI Community",
+    "paragraph": "Connect with like-minded innovators, share ideas, and stay updated on the latest in AI across São Tomé and beyond.",
+    "highlight": "Be part of the movement—let’s shape the future together!",
+    "button": "Join the Community"
   }
 
 
