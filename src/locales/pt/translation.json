@@ -448,6 +448,51 @@
   "title": "Momentos de Eventos Passados",
   "description": "Uma visão geral dos nossos workshops, palestras e momentos comunitários.",
   "viewMore": "Ver Mais"
+},
+"testimonialsSection": {
+  "title": "O Que Dizem as Pessoas",
+  "testimonials": {
+    "0": {
+      "message": "O IndabaX me deu meu primeiro contato real com a IA em África. Saí profundamente inspirada e conectada a uma rede de pessoas construindo o futuro da tecnologia no continente.",
+      "position": "Estudante de Ciência da Computação, Universidade de São Tomé e Príncipe"
+    },
+    "1": {
+      "message": "Fiquei impressionado com a profundidade dos conhecimentos partilhados. As palestras sobre processamento de linguagem natural e IA na agricultura foram extremamente relevantes para o meu trabalho.",
+      "position": "Assistente de Pesquisa, INE São Tomé"
+    },
+    "2": {
+      "message": "Trabalhando em fintech, ver a fusão entre ciência de dados e realidades econômicas africanas foi ao mesmo tempo revigorante e empoderador.",
+      "position": "Analista de Dados, M-Pesa África"
+    },
+    "3": {
+      "message": "Foi mais que uma conferência — foi uma comunidade. As oficinas foram práticas e os mentores acessíveis. Nunca vivi algo assim.",
+      "position": "Desenvolvedor Júnior, Freelancer / Projetos Independentes"
+    },
+    "4": {
+      "message": "O IndabaX me ajudou a fazer a transição do desenvolvimento de software para a área de IA. Agora estou construindo modelos para startups agrícolas.",
+      "position": "Entusiasta de IA & Graduada de Bootcamp"
+    },
+    "5": {
+      "message": "A diversidade de tópicos — de ética em machine learning até uso de IA na conservação — fez o evento parecer globalmente consciente, mas com raízes locais.",
+      "position": "Engenheiro Ambiental, Comissão Florestal de São Tomé"
+    },
+    "6": {
+      "message": "Vim como uma estudante curiosa e saí como futura pesquisadora em IA. O IndabaX mudou completamente meu rumo acadêmico.",
+      "position": "Bacharel em Estatística, Universidade Lusíada de São Tomé"
+    },
+    "7": {
+      "message": "Do networking com os palestrantes ao aprendizado sobre TensorFlow em português, o IndabaX foi feito para a nossa região com qualidade mundial.",
+      "position": "Engenheiro de Software, Google Developer Group (GDG) São Tomé"
+    },
+    "8": {
+      "message": "A feira de carreiras e as oficinas de currículos me deram confiança para me candidatar a um estágio internacional. Hoje integro uma startup global de saúde digital.",
+      "position": "Estagiária, MedTech AI Solutions"
+    },
+    "9": {
+      "message": "Participar do IndabaX me lembrou que IA não é só para o Vale do Silício. Temos o talento, os problemas e agora também temos a plataforma.",
+      "position": "Organizador Comunitário de Tecnologia & Palestrante"
+    }
+  }
 }
 
 

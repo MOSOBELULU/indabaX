@@ -3,6 +3,7 @@ import { testimonials } from "../../data/DummyData";
 import Slider from "react-slick";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function NextArrow({ onClick }) {
   return (
@@ -16,6 +17,7 @@ function NextArrow({ onClick }) {
 }
 
 function PrevArrow({ onClick }) {
+
   return (
     <div
       onClick={onClick}
@@ -27,6 +29,7 @@ function PrevArrow({ onClick }) {
 }
 
 export default function Testimonials() {
+    const {t} = useTranslation()
   const settings = {
     dots: false,
     infinite: true,
@@ -56,7 +59,7 @@ export default function Testimonials() {
       className="text-center"
     >
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-10 text-white">
-        What People Say
+       {t("testimonialsSection.title")}
       </h2>
 
       <Slider {...settings}>
@@ -68,10 +71,10 @@ export default function Testimonials() {
             className="px-4 sm:px-6 md:px-10"
           >
             <p className="text-base sm:text-lg italic text-white mb-6 leading-relaxed">
-              “{item.message}”
+              “{t(`testimonialsSection.testimonials.${index}.message`)}”
             </p>
             <h4 className="font-semibold text-lg sm:text-xl text-white">{item.name}</h4>
-            <p className="text-sm text-white">{item.position}</p>
+            <p className="text-sm text-white">{t(`testimonialsSection.testimonials.${index}.position`)}</p>
           </motion.div>
         ))}
       </Slider>

@@ -455,7 +455,53 @@
   "title": "Past Event Highlights",
   "description": "A glimpse into our workshops, talks, and community moments.",
   "viewMore": "View More"
+},
+"testimonialsSection": {
+  "title": "What People Say",
+  "testimonials": {
+    "0": {
+      "message": "IndabaX gave me my first real exposure to AI in Africa. I left feeling deeply inspired and connected to a network of people building the future of tech on the continent.",
+      "position": "Computer Science Student, Universidade de São Tomé e Príncipe"
+    },
+    "1": {
+      "message": "I was amazed by the depth of knowledge shared. The talks on natural language processing and agriculture AI were incredibly relevant to my work.",
+      "position": "Research Assistant, INE São Tomé"
+    },
+    "2": {
+      "message": "As someone working in fintech, seeing the fusion of data science and African economic realities was both refreshing and empowering.",
+      "position": "Data Analyst, M-Pesa Africa"
+    },
+    "3": {
+      "message": "This was more than a conference — it was a community. The workshops were hands-on and the mentors were accessible. I’ve never experienced anything like it.",
+      "position": "Junior Developer, Freelance / Indie Projects"
+    },
+    "4": {
+      "message": "IndabaX helped me pivot from pure software development into the AI field. I’m now building models for agriculture-based startups.",
+      "position": "AI Enthusiast & Bootcamp Graduate"
+    },
+    "5": {
+      "message": "The diversity of topics — from machine learning ethics to using AI in conservation — made the whole event feel globally aware but locally grounded.",
+      "position": "Environmental Engineer, São Tomé Forestry Commission"
+    },
+    "6": {
+      "message": "I came as a curious student and left as a future AI researcher. IndabaX changed my academic direction entirely.",
+      "position": "BSc Statistics, Universidade Lusíada de São Tomé"
+    },
+    "7": {
+      "message": "From networking with speakers to learning about TensorFlow in Portuguese, IndabaX was tailored for our region but world-class in quality.",
+      "position": "Software Engineer, Google Developer Group (GDG) São Tomé"
+    },
+    "8": {
+      "message": "The career fair and resume workshops gave me the confidence to apply for an international internship. I’ve since joined a global healthtech startup.",
+      "position": "Intern, MedTech AI Solutions"
+    },
+    "9": {
+      "message": "Attending IndabaX reminded me that AI is not just for Silicon Valley. We have the talent, we have the problems, and now we have the platform.",
+      "position": "Community Tech Organizer & Speaker"
+    }
+  }
 }
+
 
 
 
