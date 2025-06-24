@@ -18,13 +18,11 @@ export default function HeroAgendaSection() {
             className="flex-1 min-w-[300px] space-y-6"
           >
             <h1 className="text-white text-3xl md:text-6xl font-bold drop-shadow-lg mb-4 text-left">
-              Discover What’s Coming
+              {t("agendaHero.title")}
             </h1>
 
             <p className="text-lg md:text-xl font-medium text-white max-w-xl drop-shadow-sm mb-1 text-left">
-              Dive into three impactful days of hands-on workshops, inspiring talks,
-              research showcases, and community moments. Explore the full agenda and
-              plan your IndabaX experience.
+              {t("agendaHero.description")}
             </p>
 
             <div className="pt-1">
@@ -32,7 +30,7 @@ export default function HeroAgendaSection() {
                 href="#agendaTabs"
                 className="inline-block mt-4 bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
               >
-                View Full Schedule
+                  {t("agendaHero.button")}
               </a>
             </div>
           </motion.div>
