@@ -493,8 +493,15 @@
       "position": "Organizador Comunitário de Tecnologia & Palestrante"
     }
   }
-}
-
+},
+"volunteerSection": {
+    "subtitle": "Envolva-se",
+    "title": "Seja Voluntário no IndabaX São Tomé e Príncipe",
+    "description": "Faça parte do movimento! Se você é apaixonado por tecnologia, gosta de organizar eventos ou quer fazer networking com especialistas em IA — precisamos da sua energia. Junte-se como voluntário e ajude a criar uma experiência inesquecível.",
+    "button": "Torne-se um Voluntário",
+    "altDecorativeLines": "Linhas decorativas",
+    "altVolunteerImage": "Voluntário"
+  }
 
 
 

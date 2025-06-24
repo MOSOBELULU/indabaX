@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function VolunteerOpportunities() {
+  const {t} = useTranslation()
   return (
     <section
       className="py-16 sm:py-20 md:py-28 lg:py-32 px-4 sm:px-6 md:px-10"
@@ -11,7 +13,7 @@ export default function VolunteerOpportunities() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16 items-center">
           
-          {/* Text Content */}
+          
           <div>
             <motion.p
               className="text-sm font-semibold tracking-widest text-gray-500 uppercase mb-2"
@@ -19,7 +21,7 @@ export default function VolunteerOpportunities() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
             >
-              Get Involved
+               {t("volunteerSection.subtitle")}
             </motion.p>
 
             <motion.h2
@@ -28,7 +30,7 @@ export default function VolunteerOpportunities() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Volunteer with IndabaX São Tomé and Príncipe
+               {t("volunteerSection.title")}
             </motion.h2>
 
             <motion.p
@@ -37,10 +39,7 @@ export default function VolunteerOpportunities() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Be part of the movement! Whether you're passionate about tech,
-              love organizing events, or want to network with AI experts — we
-              need your energy. Join as a volunteer and help shape an
-              unforgettable experience.
+               {t("volunteerSection.description")}
             </motion.p>
 
             <motion.div
@@ -51,12 +50,12 @@ export default function VolunteerOpportunities() {
                 to="/register"
                 className="bg-[#007847] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-base sm:text-lg transition inline-block"
               >
-                Become a Volunteer
+                 {t("volunteerSection.button")}
               </Link>
             </motion.div>
           </div>
 
-          {/* Image Section */}
+         
           <div className="relative h-64 sm:h-80 md:h-96 lg:h-auto hidden lg:block">
             <div className="absolute w-full h-full -mb-12 overflow-hidden bg-[#007847] top-12 left-12 xl:left-16 lg:top-0 lg:scale-y-105 lg:origin-top rounded-lg">
               <img

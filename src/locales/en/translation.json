@@ -500,7 +500,17 @@
       "position": "Community Tech Organizer & Speaker"
     }
   }
-}
+},
+  "volunteerSection": {
+    "subtitle": "Get Involved",
+    "title": "Volunteer with IndabaX São Tomé and Príncipe",
+    "description": "Be part of the movement! Whether you're passionate about tech, love organizing events, or want to network with AI experts — we need your energy. Join as a volunteer and help shape an unforgettable experience.",
+    "button": "Become a Volunteer",
+    "altDecorativeLines": "Decorative lines",
+    "altVolunteerImage": "Volunteer"
+  }
+
+
 
 
 
