@@ -450,6 +450,11 @@
   "7": "CodeLab Room 2, Tech Hub",
   "8": "Main Hall, São Tomé Convention Center",
   "9": "Main Hall, São Tomé Convention Center"
+},
+"miniGallery": {
+  "title": "Past Event Highlights",
+  "description": "A glimpse into our workshops, talks, and community moments.",
+  "viewMore": "View More"
 }
 
 

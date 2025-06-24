@@ -443,6 +443,11 @@
   "7": "Sala CodeLab 2, Tech Hub",
   "8": "Salão Principal, Centro de Convenções de São Tomé",
   "9": "Salão Principal, Centro de Convenções de São Tomé"
+},
+"miniGallery": {
+  "title": "Momentos de Eventos Passados",
+  "description": "Uma visão geral dos nossos workshops, palestras e momentos comunitários.",
+  "viewMore": "Ver Mais"
 }
 
 

@@ -1,18 +1,20 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { images } from "../../data/DummyData";
+import { useTranslation } from "react-i18next";
 
 export default function MiniGallery() {
+  const {t} = useTranslation()
   const showFew = images.slice(0, 3);
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl mb-4 ">
-          Past Event Highlights
+          {t("miniGallery.title")}
         </h2>
         <p className="text-sm sm:text-base text-gray-600 mb-10">
-          A glimpse into our workshops, talks, and community moments.
+       {t("miniGallery.description")}
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -33,7 +35,7 @@ export default function MiniGallery() {
                     to="/gallerypage"
                     className="bg-white text-black font-semibold py-2 px-4 rounded-lg flex items-center gap-2 hover:bg-gray-200 transition"
                   >
-                    <span>View More</span>
+                    <span>{t("miniGallery.viewMore")}</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
