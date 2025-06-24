@@ -1,7 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
+import { use } from "framer-motion/m";
+import { useTranslation } from "react-i18next";
 
 export default function HeroAgendaSection() {
+  const {t} = useTranslation()
   return (
     <section
       className="relative min-h-screen bg-cover bg-center bg-no-repeat"
