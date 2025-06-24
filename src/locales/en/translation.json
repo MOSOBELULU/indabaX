@@ -8,95 +8,453 @@
     "contact": "Contact Us"
   },
   "language": "Language",
-  
   "hero": {
     "title": "IndabaX São Tomé and Príncipe",
-    "subtitle": "Be part of a growing movement shaping the future of AI in Africa through collaboration, community, and cutting-edge discussions."
-},
- "countdown": {
+    "subtitle": "Be part of a growing movement shaping the future of AI in Africa through collaboration, community, and bold conversations."
+  },
+  "countdown": {
     "date": "14 – 16 August",
     "days": "Days",
     "hours": "Hours",
     "minutes": "Minutes",
     "seconds": "Seconds"
   },
-   "register_button": "Register",
-    "about": {
+  "register_button": "Register",
+  "about": {
     "title": "About IndabaX São Tomé and Príncipe",
     "who_title": "Who We Are",
-    "who_desc": "We're a local AI community under the Deep Learning Indaba family, passionate about making artificial intelligence education accessible in São Tomé and Príncipe.",
+    "who_desc": "We are a local AI community from the Deep Learning Indaba family, committed to making artificial intelligence education accessible in São Tomé and Príncipe.",
     "what_title": "What We Do",
-    "what_desc": "We organize workshops, talks, and hands-on sessions to equip students, researchers, and tech lovers with practical AI skills and global connections.",
-    "why_title": "Why You Should Care",
-    "why_desc": "AI will shape the future of Africa. Being part of IndabaX helps you learn, network, and contribute to solutions that matter for our communities.",
+    "what_desc": "We host workshops, talks, and hands-on sessions to empower students, researchers, and tech enthusiasts with practical AI skills and global connections.",
+    "why_title": "Why It Matters",
+    "why_desc": "AI will shape Africa's future. Being part of IndabaX helps you learn, connect, and contribute solutions that matter to our communities.",
     "learn_more": "Learn More About Us"
   },
-    
-    "eventOverview": {
-    "title": "Why Attend this Event",
-    "description": "This event brings together tech enthusiasts, industry leaders, and innovators to explore emerging solutions in tech and connect over meaningful discussions. Whether you're a developer, entrepreneur, or curious learner — there's something here for you!",
+  "eventOverview": {
+    "title": "Why Attend This Event",
+    "description": "This event brings together tech enthusiasts, industry leaders, and innovators to explore emerging solutions and join meaningful conversations. Whether you're a developer, entrepreneur, or curious learner — there's something here for you!",
     "features": {
       "expert_talks": {
         "title": "Expert Talks",
-        "desc": "Learn from leading experts and professionals across tech and innovation spaces."
+        "desc": "Learn from top experts and professionals in tech and innovation."
       },
       "workshops": {
         "title": "Workshops",
-        "desc": "Hands-on sessions to deepen your skills and apply knowledge in real time."
+        "desc": "Hands-on sessions to sharpen your skills and apply knowledge in real time."
       },
       "networking": {
         "title": "Networking",
-        "desc": "Meet founders, developers, and entrepreneurs from all over the region."
+        "desc": "Meet founders, developers, and entrepreneurs from across the region."
       }
     }
   },
   "organisers": {
     "sectionTitle": "Meet the Organisers",
-    "sectionDescription": "Our organisers are a dedicated team of experts and visionaries who work behind the scenes to make this event possible. With diverse skills and passion, they bring creativity, coordination, and care to ensure every detail runs smoothly.",
+    "sectionDescription": "Our organisers are a dedicated team of experts and visionaries working behind the scenes to make this event possible. With diverse skills and lots of heart, they bring creativity, coordination, and attention to detail to make sure everything runs smoothly.",
     "luella": {
-      "role": "Lead Organizer",
+      "role": "Lead Organiser",
       "bio": "South African technologist driving African innovation through AI, finance, and community building."
     },
     "santos": {
       "role": "Local Coordinator – São Tomé",
-      "bio": "Helder ensures the heartbeat of São Tomé is reflected in every part of this event. Logistics, local outreach, and venue magic."
+      "bio": "Helder ensures the heart of São Tomé is felt in every part of the event. Logistics, local reach, and venue magic."
     },
     "france": {
       "role": "Creative Director",
-      "bio": "France turns ideas into visuals — shaping the identity of the event from branding to stage design."
+      "bio": "France turns ideas into visuals — shaping the event identity from branding to stage design."
     },
     "sloane": {
       "role": "Speaker Curator",
-      "bio": "Brings global and African AI voices to the table, curating a speaker lineup that sparks dialogue and impact."
+      "bio": "Bringing African and global AI voices to create a talk lineup that inspires dialogue and impact."
     },
     "zandile": {
       "role": "Community Lead",
-      "bio": "Zanele connects people before, during, and after the event — turning attendees into a community."
+      "bio": "Zanele connects people before, during, and after the event — turning attendees into community."
     },
-    "seeAll": "See all Organisers"
+    "seeAll": "See All Organisers"
   },
   "agenda": {
-  "sectionTitle": "What’s Happening at IndabaX?",
-  "seeFull": "See Full Agenda",
-  "types": {
-    "talk": "Talk",
-    "keynote": "Keynote",
-    "social": "Social",
-    "workshop": "Workshop",
-    "panel": "Panel",
-    "poster": "Poster",
-    "chat": "Fireside Chat",
-    "showcase": "Showcase",
-    "logistics": "Logistics"
-  },
-  "preview": {
+    "sectionTitle": "What’s Happening at IndabaX?",
+    "seeFull": "See Full Agenda",
+    "types": {
+      "talk": "Talk",
+      "keynote": "Keynote",
+      "social": "Social",
+      "workshop": "Workshop",
+      "panel": "Panel",
+      "poster": "Poster",
+      "chat": "Fireside Chat",
+      "showcase": "Showcase",
+      "logistics": "Logistics"
+    },
+    "preview": {
+      "Day1": [
+        {
+          "title": "Welcome Drinks & Registration",
+          "type": "social",
+          "time": "08:00"
+        },
+        {
+          "title": "Opening Remarks by Organisers",
+          "type": "talk",
+          "time": "09:00"
+        },
+        {
+          "title": "AI in Africa: Vision & Strategy",
+          "type": "keynote",
+          "time": "09:30"
+        }
+      ]
+    },
     "Day1": [
-      { "title": "Welcome Drinks & Registration" },
-      { "title": "Opening Remarks by Organizers" },
-      { "title": "AI in Africa: Vision & Strategy" }
+      {
+        "time": "08:00",
+        "title": "Welcome Drinks & Registration",
+        "type": "social"
+      },
+      {
+        "time": "09:00",
+        "title": "Opening Remarks by Organisers",
+        "type": "talk"
+      },
+      {
+        "time": "09:30",
+        "title": "AI in Africa: Vision & Strategy",
+        "type": "keynote"
+      },
+      {
+        "time": "10:30",
+        "title": "Tea Break",
+        "type": "social"
+      },
+      {
+        "time": "11:00",
+        "title": "Workshop: Intro to Machine Learning",
+        "type": "workshop"
+      },
+      {
+        "time": "12:30",
+        "title": "Lunch Break",
+        "type": "social"
+      },
+      {
+        "time": "13:30",
+        "title": "Panel on Data Ethics",
+        "type": "panel"
+      },
+      {
+        "time": "15:00",
+        "title": "Tea & Networking",
+        "type": "social"
+      },
+      {
+        "time": "15:30",
+        "title": "Research Poster Session",
+        "type": "poster"
+      },
+      {
+        "time": "16:30",
+        "title": "Fireside Chat: Women in AI",
+        "type": "chat"
+      },
+      {
+        "time": "17:30",
+        "title": "Closing the Day",
+        "type": "talk"
+      },
+      {
+        "time": "18:00",
+        "title": "Social Meetup with Snacks",
+        "type": "social"
+      },
+      {
+        "time": "19:00",
+        "title": "Community Showcase",
+        "type": "showcase"
+      },
+      {
+        "time": "20:00",
+        "title": "DJ Night & Chill",
+        "type": "social"
+      },
+      {
+        "time": "21:00",
+        "title": "Transport to Hotel",
+        "type": "logistics"
+      }
+    ],
+    "Day2": [
+      {
+        "time": "08:30",
+        "title": "Breakfast & Connection",
+        "type": "social"
+      },
+      {
+        "time": "09:30",
+        "title": "The Role of Local Research in Global AI",
+        "type": "keynote"
+      },
+      {
+        "time": "10:30",
+        "title": "Tea Break",
+        "type": "social"
+      },
+      {
+        "time": "11:00",
+        "title": "AI for Sustainable Agriculture",
+        "type": "talk"
+      },
+      {
+        "time": "12:00",
+        "title": "Lunch Break",
+        "type": "social"
+      },
+      {
+        "time": "13:00",
+        "title": "NLP in Practice: Workshop with Real Datasets",
+        "type": "workshop"
+      },
+      {
+        "time": "14:30",
+        "title": "Youth & AI: School Project Showcase",
+        "type": "showcase"
+      },
+      {
+        "time": "15:30",
+        "title": "Tea Break",
+        "type": "social"
+      },
+      {
+        "time": "16:00",
+        "title": "Tech4Good Panel: AI for Social Impact",
+        "type": "panel"
+      },
+      {
+        "time": "17:30",
+        "title": "Careers in AI: Chat with Engineers",
+        "type": "chat"
+      },
+      {
+        "time": "18:30",
+        "title": "Evening Networking Meetup",
+        "type": "social"
+      },
+      {
+        "time": "20:00",
+        "title": "Beach Braai & Fireside Stories",
+        "type": "social"
+      },
+      {
+        "time": "21:30",
+        "title": "Transport to Hotel",
+        "type": "logistics"
+      }
+    ],
+    "Day3": [
+      {
+        "time": "08:30",
+        "title": "Smoothie Bar to Start the Day",
+        "type": "social"
+      },
+      {
+        "time": "09:30",
+        "title": "Responsible AI: African Perspectives",
+        "type": "talk"
+      },
+      {
+        "time": "10:30",
+        "title": "Tea Break",
+        "type": "social"
+      },
+      {
+        "time": "11:00",
+        "title": "Building Ethical AI Systems",
+        "type": "talk"
+      },
+      {
+        "time": "12:00",
+        "title": "Lunch Break",
+        "type": "social"
+      },
+      {
+        "time": "13:00",
+        "title": "Demo Hour: Local Startups",
+        "type": "showcase"
+      },
+      {
+        "time": "14:00",
+        "title": "Coding Challenge Finals",
+        "type": "showcase"
+      },
+      {
+        "time": "15:30",
+        "title": "Tea & Photos",
+        "type": "social"
+      },
+      {
+        "time": "16:00",
+        "title": "Closing Keynote: The Future is Local",
+        "type": "keynote"
+      },
+      {
+        "time": "17:00",
+        "title": "Awards & Certificates",
+        "type": "talk"
+      },
+      {
+        "time": "18:00",
+        "title": "Farewell Dinner & Reflections",
+        "type": "social"
+      },
+      {
+        "time": "20:00",
+        "title": "Shuttles to Airport & Hotels",
+        "type": "logistics"
+      }
+    ],
+    "agenda": {
+      "day1": "Day 1",
+      "day2": "Day 2",
+      "day3": "Day 3"
+    }
+  },
+  "aiHighlights": {
+    "title": "AI Innovation Highlights",
+    "cards": [
+      {
+        "title": "Smart Agriculture",
+        "description": "How AI is being used to improve crop yields and monitor animal health."
+      },
+      {
+        "title": "Ethical AI",
+        "description": "Creating fair, inclusive AI systems that respect local values and context."
+      },
+      {
+        "title": "Youth in Tech",
+        "description": "Empowering the next generation with AI tools and coding workshops."
+      }
     ]
-  }
+  },
+  "speakers": {
+    "1": {
+      "name": "Dr. Sandra Catarinade",
+      "profession": "AI Researcher at University of Cape Town",
+      "topic": "AI for Sustainable Agriculture in Africa",
+      "background": "Dr. Sandra Catarina is a pioneering AI researcher whose work focuses on using advanced data science and artificial intelligence..."
+    },
+    "2": {
+      "name": "Diago Osvaldo",
+      "profession": "Machine Learning Engineer at Google Ghana",
+      "topic": "Building Ethical AI Systems for Africa",
+      "background": "Diago Osvaldo is an accomplished machine learning engineer working at the forefront of ethical AI development in Ghana..."
+    },
+    "3": {
+      "name": "Dr Rui Sérgio",
+      "profession": "Data Scientist & Tech Educator",
+      "topic": "Demystifying AI for African Classrooms",
+      "background": "Dr. Kenji Tanaka is a visionary educator and data scientist dedicated to bridging the digital divide..."
+    },
+    "4": {
+      "name": "Prof. João Fernandes",
+      "profession": "Dean of Computer Science, São Tomé University",
+      "topic": "The Role of Local Research in Global AI",
+      "background": "Prof. João Fernandes is a trailblazer in the academic AI landscape, advocating for greater inclusion..."
+    },
+    "5": {
+      "name": "Lúcia Vânia",
+      "profession": "Fintech Developer & Startup Mentor",
+      "topic": "AI in Financial Inclusion for Unbanked Communities",
+      "background": "Lúcia Vânia is a highly respected fintech developer whose mission is to extend the reach of financial services..."
+    },
+    "6": {
+      "name": "Dr. Zita Natália",
+      "profession": "AI Ethics Specialist, University of Oxford",
+      "topic": "Responsible AI: Ensuring Fairness in African Tech Solutions",
+      "background": "Dr. Zita Natália is an international AI ethics expert whose work influences how governments, companies..."
+    }
+  },
+  "topic": "Topic",
+  "readMore": "Read More",
+  "showLess": "Show Less",
+  "footer": {
+  "quickLinks": {
+    "title": "Quick Links",
+    "home": "Home",
+    "about": "About",
+    "register": "Register",
+    "contact": "Contact"
+  },
+  "moreInfo": {
+    "title": "More Info",
+    "faqs": "FAQs",
+    "careers": "Careers",
+    "gallery": "Gallery",
+    "codeOfConduct": "Code of Conduct",
+    "privacy": "Privacy Policy"
+  },
+  "newsletter": {
+    "title": "Stay in the Loop",
+    "description": "Subscribe to our newsletter to hear about more events and updates.",
+    "placeholder": "Your email",
+    "subscribe": "Subscribe"
+  },
+  "rights": "All rights reserved."
+},
+"speakersSection": {
+  "title": "Meet the Speakers"
+},
+"speakersPage": {
+  "title": "2025 IndabaX São Tomé and Príncipe Speakers",
+  "description1": "Get the latest insights from AI experts and global IT thought leaders at IndabaX in São Tomé and Príncipe 2025.",
+  "description2": "Our keynotes are the foundation of every IndabaX conference. Meet visionaries and tech innovators who will inspire moments of clarity and address your mission-critical priorities."
+},
+
+  "events": {
+    "title": "Upcoming Events",
+    "defaultType": "Session",
+    "daysLeft": " day left",
+    "daysLeft_plural": " days left",
+    "todayOrPast": "Today or past event",
+    "learnMore": "Learn More",
+    "showMore": "Show More"
+  },
+  "eventTitles": {
+  "1": "Tech & Knowledge Exchange",
+  "2": "Pre-IndabaX Workshop: Intro to AI Ethics",
+  "3": "Post-Conference Networking Dinner",
+  "4": "AI & Climate: Innovation for a Greener Future",
+  "5": "AI Start-up Pitch Hour",
+  "6": "Women in AI Breakfast Forum",
+  "7": "Hands-On ML Model Building Lab",
+  "8": "The Future of AI in Africa Panel",
+  "9": "Youth AI Hackathon Awards Ceremony"
+},
+"eventDescriptions": {
+  "1": "This two-day experience will bring together top researchers, developers, students, and entrepreneurs to explore how AI can transform industries across Africa. Expect keynote presentations, panel discussions, and practical workshops on topics like AI in fintech, ethical data handling, and deploying machine learning in low-resource environments. There will also be a start-up showcase and breakout sessions to promote networking and collaboration.",
+  "2": "This workshop offers a foundational look at AI ethics, covering the importance of fairness, transparency, and accountability in AI systems. Led by Dr. Emily Walsh, the session includes real-world case studies, group exercises, and frameworks for ethical decision-making.",
+  "3": "An elegant close to the IndabaX experience, this dinner offers attendees a chance to unwind, connect, and reflect. Enjoy a curated menu of São Toméan cuisine while mingling with keynote speakers, tech leaders, and fellow participants.",
+  "4": "This workshop dives into the intersection of AI and environmental sustainability. Experts will showcase how machine learning supports conservation, improves energy efficiency, and helps monitor climate change. Participants will engage with tools like satellite imagery analysis, precision agriculture platforms, and AI-powered forecasting models. Interactive demos and group ideation sessions will spark ideas for applying AI to local and continental environmental challenges.",
+  "5": "This high-energy session will feature a curated line-up of early-stage founders showcasing how they're using AI to tackle real-world problems. Each start-up will have a few minutes to pitch their product, followed by rapid Q&A from judges and the audience. Sectors covered include agriculture, financial inclusion, education access, and health tech. Attendees will gain insight into the African innovation landscape and have a chance to vote for the most promising AI idea.",
+  "6": "This intimate morning forum is dedicated to amplifying the voices of women and underrepresented genders in AI. Facilitated by community leaders, the event includes fireside chats, personal storytelling, and group discussions on navigating tech careers. Topics include mentorship, leadership, imposter syndrome, and the future of inclusive AI. Expect a relaxed vibe with good food, meaningful connections, and practical takeaways for empowering diversity in tech.",
+  "7": "Perfect for developers and data enthusiasts, this lab offers a step-by-step guide to creating a working machine learning model using Python. Participants will explore data preprocessing, algorithm selection, model evaluation, and deployment basics. Coaches will be available to assist in real-time, and everyone will leave with a working notebook and project they can build on. Bring your laptop, curiosity, and appetite for learning!",
+  "8": "This thought-provoking panel will feature policymakers, researchers, and entrepreneurs unpacking what AI means for Africa’s future. Topics include data sovereignty, language inclusion, infrastructure limitations, and youth empowerment. Each speaker will share insights from their sector, followed by audience Q&A. The goal is to create a collective vision for equitable and sustainable AI development across the continent. Open to all attendees.",
+  "9": "The ceremony wraps up the youth hackathon with finalist pitches, live demos, and award announcements. Judges will highlight creativity, technical implementation, and real-world impact. Finalist teams will take the stage to showcase how they applied AI to solve problems in areas like education, local transport, and health. This vibrant event will include sponsor remarks, prize handovers, and a call to action for young innovators across Africa."
+},
+"eventLocations": {
+  "1": "São Tomé Convention Center",
+  "2": "Tech Hub, São Tomé",
+  "3": "Oceanview Restaurant",
+  "4": "GreenTech Hall, São Tomé",
+  "5": "Innovation Stage, São Tomé Convention Center",
+  "6": "Sunrise Lounge, Tech Hub",
+  "7": "CodeLab Room 2, Tech Hub",
+  "8": "Main Hall, São Tomé Convention Center",
+  "9": "Main Hall, São Tomé Convention Center"
 }
 
-  }
 
+
+
+
+
+}

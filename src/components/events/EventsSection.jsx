@@ -3,11 +3,20 @@ import { events } from "../../data/DummyData";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import BackBtn from "../reusable/BackBtn";
+import { useTranslation } from "react-i18next";
 
 const categories = ["All", "Hackathon", "Talks", "Workshops"];
 
 export default function EventsSection() {
   const [activeCategory, setActiveCategory] = useState("All");
+  const { t } = useTranslation();
+
+  const translatedCategories = [
+    t("events.categories.all"),
+    t("events.categories.hackathon"),
+    t("events.categories.talks"),
+    t("events.categories.workshops")
+  ];
 
   const filteredEvents = activeCategory === "All"
     ? events
@@ -22,28 +31,25 @@ export default function EventsSection() {
     >
       <BackBtn className="mb-8" />
       <h1 className="text-4xl font-bold mb-8 text-center">
-        <span className="border-b-5 border-[#007847]">Upcoming Events</span>
+        <span className="border-b-5 border-[#007847]">{t("events.title")}</span>
       </h1>
 
-    
- <div className="grid grid-cols-2 gap-4 mb-10 max-w-sm mx-auto md:flex md:justify-center md:items-center md:gap-4 md:max-w-none">
-  {categories.map((category) => (
-    <button
-      key={category}
-      onClick={() => setActiveCategory(category)}
-      className={`px-4 py-2 rounded-full border text-center transition ${
-        activeCategory === category
-          ? "bg-[#007847] text-white border-[#007847]"
-          : "border-gray-300 text-gray-700 hover:bg-gray-100"
-      }`}
-    >
-      {category}
-    </button>
-  ))}
-</div>
+      <div className="grid grid-cols-2 gap-4 mb-10 max-w-sm mx-auto md:flex md:justify-center md:items-center md:gap-4 md:max-w-none">
+        {categories.map((category, idx) => (
+          <button
+            key={category}
+            onClick={() => setActiveCategory(category)}
+            className={`px-4 py-2 rounded-full border text-center transition ${
+              activeCategory === category
+                ? "bg-[#007847] text-white border-[#007847]"
+                : "border-gray-300 text-gray-700 hover:bg-gray-100"
+            }`}
+          >
+            {translatedCategories[idx]}
+          </button>
+        ))}
+      </div>
 
-
-     
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredEvents.map((event) => (
           <motion.div
@@ -58,13 +64,13 @@ export default function EventsSection() {
               className="rounded-t-xl mb-3 h-48 w-full object-cover"
             />
             <div className="p-4">
-              <h3 className="text-lg font-semibold mb-1">{event.title}</h3>
+              <h3 className="text-lg font-semibold mb-1">{t(`eventTitles.${event.id}`)}</h3>
               <p className="text-sm text-gray-700">{event.description}</p>
               <Link
                 to={`/eventdetailpage/${event.id}`}
                 className="inline-block text-sm font-semibold text-[#007847] border border-[#007847] px-4 py-2 mt-5 rounded-lg hover:bg-[#007847] hover:text-white transition"
               >
-                Learn More
+                {t("events.learnMore")}
               </Link>
             </div>
           </motion.div>

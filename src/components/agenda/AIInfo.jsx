@@ -1,19 +1,21 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import {aiInsightsCards} from "../../data/DummyData"
+import { useTranslation } from "react-i18next";
+import { aiInsightsCards } from "../../data/DummyData";
 
 const cardVariants = {
-    hidden: { opacity : 0, y: 40},
-    visible: { opacity: 1, y: 0},
-
-}
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export default function AIInfo() {
-    return (
-    <section className="py-12 px-4 sm:px-6 lg:px-12 ">
+  const { t } = useTranslation();
+
+  return (
+    <section className="py-12 px-4 sm:px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
-          AI Innovation Highlights
+          {t("aiHighlights.title")}
         </h2>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {aiInsightsCards.map((card, index) => (
@@ -33,9 +35,11 @@ export default function AIInfo() {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-black">
-                  {card.title}
+                  {t(`aiHighlights.cards.${index}.title`, card.title)}
                 </h3>
-                <p className="text-gray-600 text-sm">{card.description}</p>
+                <p className="text-gray-600 text-sm">
+                  {t(`aiHighlights.cards.${index}.description`, card.description)}
+                </p>
               </div>
             </motion.div>
           ))}

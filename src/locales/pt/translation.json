@@ -8,7 +8,7 @@
     "contact": "Contate-nos"
   },
   "language": "Idioma",
-   "hero": {
+  "hero": {
     "title": "IndabaX São Tomé e Príncipe",
     "subtitle": "Faça parte de um movimento crescente que molda o futuro da IA em África através de colaboração, comunidade e discussões inovadoras."
   },
@@ -19,8 +19,8 @@
     "minutes": "Minutos",
     "seconds": "Segundos"
   },
-   "register_button": "Registrar",
-   "about": {
+  "register_button": "Registrar",
+  "about": {
     "title": "Sobre o IndabaX São Tomé e Príncipe",
     "who_title": "Quem Somos",
     "who_desc": "Somos uma comunidade local de IA da família Deep Learning Indaba, empenhada em tornar a educação em inteligência artificial acessível em São Tomé e Príncipe.",
@@ -48,7 +48,6 @@
       }
     }
   },
-
   "organisers": {
     "sectionTitle": "Conheça os Organizadores",
     "sectionDescription": "Os nossos organizadores são uma equipa dedicada de especialistas e visionários que trabalham nos bastidores para tornar este evento possível. Com competências diversas e muita paixão, trazem criatividade, coordenação e atenção aos detalhes para garantir que tudo corre bem.",
@@ -72,36 +71,381 @@
       "role": "Líder Comunitária",
       "bio": "Zanele conecta pessoas antes, durante e depois do evento — transformando participantes em comunidade."
     },
-    "seeAll": "Ver todos os organizadores",
-    
-    "agenda": {
-  "sectionTitle": "O que está a acontecer no IndabaX?",
-  "seeFull": "Ver Agenda Completa",
-  "types": {
-    "talk": "Palestra",
-    "keynote": "Palestra principal",
-    "social": "Social",
-    "workshop": "Oficina",
-    "panel": "Painel",
-    "poster": "Apresentação de Poster",
-    "chat": "Conversa informal",
-    "showcase": "Demonstração",
-    "logistics": "Logística"
+    "seeAll": "Ver todos os organizadores"
   },
-  "preview": {
+  "agenda": {
+    "sectionTitle": "O Que Está Acontecendo no IndabaX?",
+    "seeFull": "Ver Agenda Completa",
+    "types": {
+      "talk": "Palestra",
+      "keynote": "Palestra Principal",
+      "social": "Social",
+      "workshop": "Oficina",
+      "panel": "Painel",
+      "poster": "Pôster",
+      "chat": "Conversa à Beira da Lareira",
+      "showcase": "Mostra",
+      "logistics": "Logística"
+    },
+    "preview": {
+      "Day1": [
+        {
+          "title": "Bebidas de Boas-Vindas e Registro",
+          "type": "social",
+          "time": "08:00"
+        },
+        {
+          "title": "Abertura pelos Organizadores",
+          "type": "talk",
+          "time": "09:00"
+        },
+        {
+          "title": "IA na África: Visão e Estratégia",
+          "type": "keynote",
+          "time": "09:30"
+        }
+      ]
+    },
     "Day1": [
-      { "title": "Boas-vindas e Registo" },
-      { "title": "Discurso de Abertura dos Organizadores" },
-      { "title": "IA em África: Visão e Estratégia" }
+      {
+        "time": "08:00",
+        "title": "Bebidas de Boas-Vindas e Registro",
+        "type": "social"
+      },
+      {
+        "time": "09:00",
+        "title": "Abertura pelos Organizadores",
+        "type": "talk"
+      },
+      {
+        "time": "09:30",
+        "title": "IA na África: Visão e Estratégia",
+        "type": "keynote"
+      },
+      {
+        "time": "10:30",
+        "title": "Pausa para Chá",
+        "type": "social"
+      },
+      {
+        "time": "11:00",
+        "title": "Oficina: Introdução ao Aprendizado de Máquina",
+        "type": "workshop"
+      },
+      {
+        "time": "12:30",
+        "title": "Intervalo para Almoço",
+        "type": "social"
+      },
+      {
+        "time": "13:30",
+        "title": "Painel sobre Ética em Dados",
+        "type": "panel"
+      },
+      {
+        "time": "15:00",
+        "title": "Chá & Networking",
+        "type": "social"
+      },
+      {
+        "time": "15:30",
+        "title": "Sessão de Pôsteres de Pesquisa",
+        "type": "poster"
+      },
+      {
+        "time": "16:30",
+        "title": "Conversa à Beira da Lareira: Mulheres na IA",
+        "type": "chat"
+      },
+      {
+        "time": "17:30",
+        "title": "Encerramento do Dia",
+        "type": "talk"
+      },
+      {
+        "time": "18:00",
+        "title": "Encontro Social com Petiscos",
+        "type": "social"
+      },
+      {
+        "time": "19:00",
+        "title": "Mostra da Comunidade",
+        "type": "showcase"
+      },
+      {
+        "time": "20:00",
+        "title": "Noite com DJ & Relaxamento",
+        "type": "social"
+      },
+      {
+        "time": "21:00",
+        "title": "Transporte para o Hotel",
+        "type": "logistics"
+      }
+    ],
+    "Day2": [
+      {
+        "time": "08:30",
+        "title": "Café da Manhã & Conexão",
+        "type": "social"
+      },
+      {
+        "time": "09:30",
+        "title": "O Papel da Pesquisa Local na IA Global",
+        "type": "keynote"
+      },
+      {
+        "time": "10:30",
+        "title": "Pausa para Chá",
+        "type": "social"
+      },
+      {
+        "time": "11:00",
+        "title": "IA para Agricultura Sustentável",
+        "type": "talk"
+      },
+      {
+        "time": "12:00",
+        "title": "Intervalo para Almoço",
+        "type": "social"
+      },
+      {
+        "time": "13:00",
+        "title": "NLP na Prática: Oficina com Conjuntos de Dados Reais",
+        "type": "workshop"
+      },
+      {
+        "time": "14:30",
+        "title": "Juventude & IA: Mostra de Projetos de Escolas",
+        "type": "showcase"
+      },
+      {
+        "time": "15:30",
+        "title": "Pausa para Chá",
+        "type": "social"
+      },
+      {
+        "time": "16:00",
+        "title": "Painel Tech4Good: IA para Impacto Social",
+        "type": "panel"
+      },
+      {
+        "time": "17:30",
+        "title": "Carreiras em IA: Conversa com Engenheiros",
+        "type": "chat"
+      },
+      {
+        "time": "18:30",
+        "title": "Encontro de Networking à Noite",
+        "type": "social"
+      },
+      {
+        "time": "20:00",
+        "title": "Braai na Praia & Histórias na Fogueira",
+        "type": "social"
+      },
+      {
+        "time": "21:30",
+        "title": "Transporte para o Hotel",
+        "type": "logistics"
+      }
+    ],
+    "Day3": [
+      {
+        "time": "08:30",
+        "title": "Smoothie Bar para Começar Bem o Dia",
+        "type": "social"
+      },
+      {
+        "time": "09:30",
+        "title": "IA Responsável: Perspectivas Africanas",
+        "type": "talk"
+      },
+      {
+        "time": "10:30",
+        "title": "Pausa para Chá",
+        "type": "social"
+      },
+      {
+        "time": "11:00",
+        "title": "Construindo Sistemas de IA Éticos",
+        "type": "talk"
+      },
+      {
+        "time": "12:00",
+        "title": "Intervalo para Almoço",
+        "type": "social"
+      },
+      {
+        "time": "13:00",
+        "title": "Hora do Demo: Startups Locais",
+        "type": "showcase"
+      },
+      {
+        "time": "14:00",
+        "title": "Final do Desafio de Programação",
+        "type": "showcase"
+      },
+      {
+        "time": "15:30",
+        "title": "Pausa para Chá & Fotos",
+        "type": "social"
+      },
+      {
+        "time": "16:00",
+        "title": "Palestra de Encerramento: O Futuro é Local",
+        "type": "keynote"
+      },
+      {
+        "time": "17:00",
+        "title": "Premiações & Certificados",
+        "type": "talk"
+      },
+      {
+        "time": "18:00",
+        "title": "Jantar de Despedida & Reflexões",
+        "type": "social"
+      },
+      {
+        "time": "20:00",
+        "title": "Traslados para Aeroporto & Hotéis",
+        "type": "logistics"
+      }
+    ],
+    "day1": "Dia 1",
+    "day2": "Dia 2",
+    "day3": "Dia 3"
+  },
+  "aiHighlights": {
+    "title": "Destaques de Inovação em IA",
+    "cards": [
+      {
+        "title": "Agricultura Inteligente",
+        "description": "Como a IA está sendo usada para melhorar as colheitas e monitorar a saúde animal."
+      },
+      {
+        "title": "IA Ética",
+        "description": "Criando sistemas de IA justos e inclusivos que respeitam os valores locais."
+      },
+      {
+        "title": "Juventude na Tecnologia",
+        "description": "Capacitando a nova geração com ferramentas de IA e oficinas de codificação."
+      }
     ]
-  }
+  },
+  "speakers": {
+    "1": {
+      "name": "Dra. Sandra Catarinade",
+      "profession": "Pesquisadora de IA na Universidade da Cidade do Cabo",
+      "topic": "IA para Agricultura Sustentável em África",
+      "background": "A Dra. Sandra Catarina é uma pesquisadora pioneira em IA, cujo trabalho foca no uso de ciência de dados avançada e inteligência artificial para enfrentar desafios críticos na agricultura africana. Com mais de uma década de experiência, liderou equipes de pesquisa que desenvolveram modelos preditivos para ajudar agricultores a antecipar mudanças climáticas, otimizar plantios e aumentar a produtividade. Seu projeto inovador usando drones e IA para detectar doenças nas plantações já foi adotado em quatro países da África Austral. Além do conhecimento técnico, ela orienta jovens cientistas mulheres e defende uma maior inclusão feminina nas ciências. Participa de conferências internacionais e colabora com grupos globais de agri-tech."
+    },
+    "2": {
+      "name": "Diago Osvaldo",
+      "profession": "Engenheiro de Machine Learning na Google Gana",
+      "topic": "Construindo Sistemas Éticos de IA para África",
+      "background": "Diago Osvaldo é um engenheiro de machine learning reconhecido por seu trabalho com IA ética em Gana. Na Google, lidera iniciativas voltadas para tornar os sistemas de IA mais inclusivos para os usuários africanos. Seu trabalho inclui ferramentas de processamento de línguas africanas, garantindo que dialetos sejam representados corretamente. É também fundador do Ethical AI Lab Africa, promovendo fóruns sobre viés algorítmico, dados responsáveis e justiça nos sistemas automatizados. Detém várias patentes e colabora com universidades locais para fomentar pesquisa em IA. Seu objetivo é criar soluções tecnológicas que empoderem, e não explorem."
+    },
+    "3": {
+      "name": "Dr. Rui Sérgio",
+      "profession": "Cientista de Dados & Educador Tecnológico",
+      "topic": "Desmistificando a IA nas Escolas Africanas",
+      "background": "O Dr. Rui Sérgio é um educador visionário e cientista de dados que luta por reduzir a lacuna digital na educação africana. Atualmente baseado em Nairobi, viajou por todo o continente levando literacia em IA para salas de aula. Por meio da sua ONG, Code4AfricaEd, já formou milhares de professores e estudantes em IA, robótica e programação. Foca em tornar conceitos complexos acessíveis, com uso de histórias locais e exercícios práticos. Seu currículo está presente em programas nacionais do Quénia e Uganda. Acredita que toda criança merece entender as tecnologias que moldam seu futuro."
+    },
+    "4": {
+      "name": "Prof. João Fernandes",
+      "profession": "Reitor de Ciência da Computação, Universidade de São Tomé",
+      "topic": "O Papel da Pesquisa Local na IA Global",
+      "background": "O Prof. João Fernandes é uma figura de destaque na IA académica africana, defendendo a inclusão de pesquisas locais no cenário global. Como Reitor da Universidade de São Tomé, transformou-a num centro regional de inovação em IA. Seu trabalho foca no uso ético de dados locais, respeitando contextos culturais e ambientais. Publicou extensamente sobre soberania de dados e liderou colaborações com países lusófonos para criar bases de dados partilhadas. Defende sistemas que refletem realidades africanas e desafia modelos ocidentais em fóruns internacionais."
+    },
+    "5": {
+      "name": "Lúcia Vânia",
+      "profession": "Desenvolvedora Fintech & Mentora de Startups",
+      "topic": "IA para Inclusão Financeira em Comunidades Não Bancarizadas",
+      "background": "Lúcia Vânia é uma desenvolvedora fintech de destaque que utiliza IA para levar serviços financeiros às comunidades africanas sem acesso bancário. Cria apps móveis intuitivos que usam machine learning para oferecer conselhos personalizados, micro-empréstimos e educação financeira. Suas soluções já impactam áreas rurais no Botsuana, Namíbia e Zimbábue. Trabalha lado a lado com comunidades para entender barreiras culturais ao uso de tecnologia financeira. É mentora de jovens mulheres africanas em tecnologia e defende regulamentações que apoiem startups locais."
+    },
+    "6": {
+      "name": "Dra. Zita Natália",
+      "profession": "Especialista em Ética de IA, Universidade de Oxford",
+      "topic": "IA Responsável: Garantindo Justiça nas Soluções Africanas",
+      "background": "A Dra. Zita Natália é uma especialista internacional em ética de IA cujo trabalho influencia políticas e práticas globais. Na Universidade de Oxford, lidera o Consórcio Global de Ética em IA, analisando o impacto da IA em comunidades marginalizadas. Seus projetos recentes envolvem colaborações com governos e universidades africanas para criar padrões éticos de IA adaptados à realidade local. Pesquisa transparência algorítmica, responsabilidade em decisões automatizadas e viés nos dados de treino. Contribuiu para legislações sobre IA em países como Quénia, Nigéria e Ruanda, defendendo que a IA deve servir a todos."
+    }
+  },
+  "topic": "Tema",
+  "readMore": "Ler mais",
+  "showLess": "Mostrar menos",
+  "showmore": "Ver Mais",
+  "footer": {
+  "quickLinks": {
+    "title": "Links Rápidos",
+    "home": "Início",
+    "about": "Sobre",
+    "register": "Registar",
+    "contact": "Contato"
+  },
+  "moreInfo": {
+    "title": "Mais Informações",
+    "faqs": "FAQs",
+    "careers": "Carreiras",
+    "gallery": "Galeria",
+    "codeOfConduct": "Código de Conduta",
+    "privacy": "Política de Privacidade"
+  },
+  "newsletter": {
+    "title": "Fique Atualizado",
+    "description": "Inscreva-se na nossa newsletter para receber novidades e eventos.",
+    "placeholder": "Seu e-mail",
+    "subscribe": "Inscrever-se"
+  },
+  "rights": "Todos os direitos reservados."
+},
+"speakersSection": {
+  "title": "Conheça os Palestrantes"
+},
+"speakersPage": {
+  "title": "Palestrantes do IndabaX São Tomé e Príncipe 2025",
+  "description1": "Obtenha os insights mais recentes de especialistas em IA e líderes globais de TI no IndabaX em São Tomé e Príncipe 2025.",
+  "description2": "Nossos keynotes são a base de cada conferência IndabaX. Conheça visionários e inovadores que irão inspirar momentos de clareza e abordar prioridades críticas para sua missão."
+},
+
+  "events": {
+    "title": "Próximos Eventos",
+    "categories": {
+      "All": "Todos",
+      "Hackathon": "Hackathon",
+      "Talks": "Palestras",
+      "Workshops": "Oficinas"
+    },
+    "learnMore": "Saiba Mais",
+    "showMore": "Mostrar Mais",
+    "daysLeft": "dia restante",
+    "daysLeft_plural": "dias restantes",
+    "todayOrPast": "Hoje ou evento passado"
+  },
+"eventDescriptions": {
+  "1": "Esta experiência de dois dias reunirá os melhores pesquisadores, desenvolvedores, estudantes e empreendedores para explorar como a IA pode transformar indústrias em toda a África. Espere apresentações principais, painéis de discussão e workshops práticos sobre temas como IA em fintech, manuseio ético de dados e implantação de machine learning em ambientes com poucos recursos. Haverá também uma exposição de startups e sessões de networking.",
+  "2": "Este workshop oferece uma introdução à ética da IA, cobrindo a importância da justiça, transparência e responsabilidade nos sistemas de IA. Liderado pela Dra. Emily Walsh, inclui estudos de caso reais, exercícios em grupo e estruturas para tomada de decisão ética.",
+  "3": "Um encerramento elegante da experiência IndabaX, este jantar oferece aos participantes a chance de relaxar, conectar-se e refletir. Desfrute de um menu selecionado da culinária são-tomense enquanto interage com palestrantes, líderes tecnológicos e colegas participantes.",
+  "4": "Este workshop mergulha na interseção entre IA e sustentabilidade ambiental. Especialistas mostrarão como o machine learning apoia a conservação, melhora a eficiência energética e ajuda a monitorar as mudanças climáticas. Os participantes terão contato com ferramentas como análise de imagens de satélite, plataformas de agricultura de precisão e modelos de previsão baseados em IA. Demonstrações interativas e sessões de ideação em grupo incentivarão novas ideias para enfrentar desafios ambientais locais e continentais.",
+  "5": "Esta sessão dinâmica apresentará uma seleção de fundadores em estágio inicial mostrando como estão usando a IA para resolver problemas do mundo real. Cada startup terá alguns minutos para apresentar seu produto, seguidos de perguntas e respostas rápidas de juízes e da plateia. Os setores abordados incluem agricultura, inclusão financeira, acesso à educação e tecnologia para a saúde. Os participantes terão uma visão do cenário de inovação africano e poderão votar na ideia de IA mais promissora.",
+  "6": "Este fórum matinal é dedicado a amplificar as vozes de mulheres e gêneros sub-representados na IA. Facilitado por líderes comunitários, o evento inclui conversas abertas, histórias pessoais e discussões em grupo sobre carreiras em tecnologia. Os temas incluem mentoria, liderança, síndrome do impostor e o futuro da IA inclusiva. Espere um ambiente descontraído com boa comida, conexões significativas e lições práticas para promover a diversidade na tecnologia.",
+  "7": "Perfeito para desenvolvedores e entusiastas de dados, este laboratório oferece um guia passo a passo para criar um modelo de machine learning funcional usando Python. Os participantes explorarão pré-processamento de dados, seleção de algoritmos, avaliação de modelos e noções básicas de implantação. Mentores estarão disponíveis para ajudar em tempo real, e todos sairão com um projeto funcional para aprimorar. Traga seu laptop, curiosidade e vontade de aprender!",
+  "8": "Este painel instigante contará com formuladores de políticas, pesquisadores e empreendedores discutindo o que a IA significa para o futuro da África. Os tópicos incluem soberania de dados, inclusão linguística, limitações de infraestrutura e empoderamento da juventude. Cada orador compartilhará insights de seu setor, seguido de perguntas do público. O objetivo é criar uma visão coletiva para o desenvolvimento de IA equitativo e sustentável no continente. Aberto a todos os participantes.",
+  "9": "A cerimônia encerra o hackathon juvenil com apresentações finais, demonstrações ao vivo e entrega de prêmios. Os juízes destacarão criatividade, implementação técnica e impacto real. As equipes finalistas mostrarão como aplicaram IA para resolver problemas em áreas como educação, transporte local e saúde. Este evento vibrante contará com discursos de patrocinadores, premiações e um chamado à ação para jovens inovadores em toda a África."
+},
+"eventLocations": {
+  "1": "Centro de Convenções de São Tomé",
+  "2": "Tech Hub, São Tomé",
+  "3": "Restaurante Oceanview",
+  "4": "Salão GreenTech, São Tomé",
+  "5": "Palco Inovação, Centro de Convenções de São Tomé",
+  "6": "Lounge Sunrise, Tech Hub",
+  "7": "Sala CodeLab 2, Tech Hub",
+  "8": "Salão Principal, Centro de Convenções de São Tomé",
+  "9": "Salão Principal, Centro de Convenções de São Tomé"
 }
 
-  
-  
-  
-  
-}
+
 
 
 

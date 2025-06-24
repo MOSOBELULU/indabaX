@@ -1,15 +1,16 @@
-import { agenda } from "../../data/DummyData";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function AgendaSection() {
-  const previewItems = agenda.Day1.slice(0, 3);
+  const { t } = useTranslation();
+  const previewItems = t("agenda.preview.Day1", { returnObjects: true });
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-black">
-            What’s Happening at IndabaX?
+            {t("agenda.sectionTitle")}
           </h2>
 
           <div className="space-y-4 mb-6">
@@ -18,7 +19,7 @@ export default function AgendaSection() {
                 <p className="text-sm text-gray-500">{item.time}</p>
                 <h4 className="text-lg font-semibold">{item.title}</h4>
                 <span className="text-xs uppercase text-[#007847] font-bold">
-                  {item.type}
+                  {t(`agenda.types.${item.type}`)}
                 </span>
               </div>
             ))}
@@ -28,7 +29,7 @@ export default function AgendaSection() {
             href="/agenda"
             className="inline-flex items-center text-[#007847] font-semibold hover:underline"
           >
-            See Full Agenda
+            {t("agenda.seeFull")}
             <ArrowRight className="ml-2 w-4 h-4" />
           </a>
         </div>

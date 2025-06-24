@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function SpeakerCard({ speaker }) {
+  const { t } = useTranslation();
+
   return (
     <div className="relative w-full max-w-xs mx-auto rounded-xl overflow-hidden shadow-lg group">
       <div className="relative">
@@ -17,9 +20,9 @@ export default function SpeakerCard({ speaker }) {
           <div className="text-left">
             <Link to={`/speakerdetail/${speaker.id}`}>
               <h3 className="text-white text-lg font-bold">{speaker.name}</h3>
-              <p className="text-gray-200 text-sm">{speaker.profession}</p>
+              <p className="text-gray-200 text-sm">  {t(`speakers.${speaker.id}.profession`)}</p>
               <p className="text-sm italic text-gray-300 mt-1">
-                “{speaker.topic}”
+                “{t(`speakers.${speaker.id}.topic`)}”
               </p>
             </Link>
 
