@@ -51,7 +51,7 @@ export default function Footer() {
             </form>
           </div>
 
-          {/* Social + Copyright */}
+          
           <div className="text-white flex flex-col gap-4">
             <p className="text-sm">
               &copy; {new Date().getFullYear()} IndabaX São Tomé. {t("footer.rights")}

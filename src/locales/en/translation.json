@@ -547,7 +547,18 @@
       "question": "Can I volunteer or speak at the event?",
       "answer": "Absolutely! We're always open to volunteers, partners, and speakers. Fill out the form on our website or contact the organizing team directly."
     }
-  }
+  },
+  
+  "contactTitle": "We Love to hear from you, Get in Touch",
+  "contactSubtitle": "Reach out for questions, collaborations, or event details.",
+  "contactLocation": "University of Sao Tome and Principe",
+  "contactFormTitle": "Send us a Message",
+  "contactFullName": "Full Names",
+  "contactEmail": "Email",
+  "contactMessageLabel": "Leave a message for us",
+  "contactSubmit": "Submit"
+
+
 
 
 

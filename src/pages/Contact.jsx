@@ -2,8 +2,10 @@
 "use client";
 import { Mail, Phone, User, MessageCircle, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const {t} = useTranslation()
   return (
     <section className="py-20 bg-gray-50  sm:py-24">
       <div className="max-w-6xl  px-4 mx-auto sm:px-6 lg:px-8">
@@ -14,9 +16,9 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">We Love to hear from you, Get in Touch</h2>
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">{t("contactTitle")}</h2>
           <p className="max-w-2xl mx-auto mt-4 text-base text-gray-600">
-            Reach out for questions, collaborations, or event details.
+             {t("contactSubtitle")}
           </p>
         </motion.div>
 
@@ -40,7 +42,7 @@ export default function Contact() {
           <div className="bg-white rounded-xl shadow p-6 text-center">
             <MapPin className="w-8 h-8 mx-auto text-green-700" />
             <p className="mt-4 text-lg font-medium text-gray-900 leading-relaxed">
-            University of Sao Tome and Principe
+           {t("contactLocation")}
             </p>
           </div>
         </motion.div>
@@ -52,15 +54,15 @@ export default function Contact() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="bg-white rounded-lg shadow-lg p-8 mb-12"
         >
-          <h3 className="text-2xl font-semibold text-gray-900 mb-6"> Send us a Message</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-6">  {t("contactFormTitle")}</h3>
           <form
             action="https://formsubmit.co/mosobelulu@gmail.com"
             method="POST"
             className="space-y-5"
           >
-            {[
-              { id: "name", label: "Full Names", icon: <User />, type: "text" },
-              { id: "email", label: "Email", icon: <Mail />, type: "email" },
+           {[
+              { id: "name", label: t("contactFullName"), icon: <User />, type: "text" },
+              { id: "email", label: t("contactEmail"), icon: <Mail />, type: "email" },
             ].map(({ id, label, icon, type }) => (
               <div key={id}>
                 <label htmlFor={id} className="flex items-center gap-2 font-medium text-gray-700">
@@ -78,7 +80,7 @@ export default function Contact() {
 
             <div>
               <label htmlFor="message" className="flex items-center gap-2 font-medium text-gray-700">
-                <MessageCircle /> Leave a message for us
+                <MessageCircle /> {t("contactMessageLabel")}
               </label>
               <textarea
                 id="message"
@@ -94,13 +96,13 @@ export default function Contact() {
                 type="submit"
                 className="px-6 py-2 bg-[#007847] text-white font-semibold rounded-md hover:bg-[#FCD116] hover:text-black transition duration-300"
               >
-                Submit
+                  {t("contactSubmit")}
               </button>
             </motion.div>
           </form>
         </motion.div>
 
-        {/* Map Section */}
+        
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}

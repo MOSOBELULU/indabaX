@@ -572,7 +572,17 @@
       "question": "Posso ser voluntário ou palestrante no evento?",
       "answer": "Claro! Estamos abertos a voluntários, parceiros e palestrantes. Preencha o formulário no nosso site ou entre em contato diretamente com a equipe organizadora."
     }
-  }
+  },
+
+  "contactTitle": "Adoramos ouvir você, entre em contato",
+  "contactSubtitle": "Entre em contato para dúvidas, colaborações ou detalhes do evento.",
+  "contactLocation": "Universidade de São Tomé e Príncipe",
+  "contactFormTitle": "Envie-nos uma mensagem",
+  "contactFullName": "Nome completo",
+  "contactEmail": "Email",
+  "contactMessageLabel": "Deixe uma mensagem para nós",
+  "contactSubmit": "Enviar"
+
 
 
 
