@@ -7,9 +7,9 @@ export default function MiniFaqs() {
   const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState(null);
 
-  
   const faqObject = t("miniFaqs", { returnObjects: true });
-  const faqList = Object.values(faqObject);
+const faqList = Object.values(faqObject).slice(0, 4);
+
 
   const toggleOpen = (index) => {
     setOpenIndex(openIndex === index ? null : index);
