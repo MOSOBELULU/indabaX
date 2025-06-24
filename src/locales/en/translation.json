@@ -508,7 +508,49 @@
     "button": "Become a Volunteer",
     "altDecorativeLines": "Decorative lines",
     "altVolunteerImage": "Volunteer"
+  },
+ "sponsors": {
+    "title": "Sponsors"
+  },
+  
+  
+  "miniFaqsTitle": "Frequently Asked Questions",
+  "miniFaqsSubtitle": "Explore the common questions and answers about IndabaX Sao Tome and Principe",
+  "miniFaqsNoAnswer": "Didn’t find the answer you are looking for?",
+  "miniFaqsLinkText": "See more FAQs",
+  "miniFaqs": {
+    "q1": {
+      "question": "What is the indabaX São Tomé AI Event about?",
+      "answer": "It's a community-driven event focused on exploring how artificial intelligence can empower African innovation. Expect talks, panels, workshops, and networking with developers, researchers, entrepreneurs, and enthusiasts."
+    },
+    "q2": {
+      "question": "Who can attend the event?",
+      "answer": "Anyone interested in AI — whether you're a student, developer, startup founder, researcher, or just curious about technology. Beginners are welcome!"
+    },
+    "q3": {
+      "question": "Where will the event take place?",
+      "answer": "The event will be held in São Tomé City. The exact venue details will be announced soon on our official channels and via email to registered attendees."
+    },
+    "q4": {
+      "question": "Is there an entry fee?",
+      "answer": "Nope! Entry is completely free, but spots are limited. Registration is required to reserve your seat and access exclusive sessions."
+    },
+    "q5": {
+      "question": "Will the event be streamed online?",
+      "answer": "Yes! We’ll offer a live stream for selected talks and panels. Remote participants can register online to get the access link."
+    },
+    "q6": {
+      "question": "What language will the sessions be in?",
+      "answer": "The main language is English. However, some sessions and materials will include Portuguese support for local attendees."
+    },
+    "q7": {
+      "question": "Can I volunteer or speak at the event?",
+      "answer": "Absolutely! We're always open to volunteers, partners, and speakers. Fill out the form on our website or contact the organizing team directly."
+    }
   }
+
+
+
 
 
 

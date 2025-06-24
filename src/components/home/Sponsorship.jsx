@@ -2,8 +2,10 @@
 import { sponsors } from "../../data/DummyData";
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Sponsorship() {
+  const {t} = useTranslation()
   return (
     <section className="px-4 mt-30 sm:px-8 md:px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row min-h-[280px]">
@@ -19,7 +21,7 @@ export default function Sponsorship() {
           md:-rotate-90 rotate-0 
           md:whitespace-nowrap text-center"
           >
-            Sponsors
+          {t("sponsors.title")}
           </h2>
         </div>
 

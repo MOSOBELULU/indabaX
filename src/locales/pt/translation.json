@@ -501,9 +501,90 @@
     "button": "Torne-se um Voluntário",
     "altDecorativeLines": "Linhas decorativas",
     "altVolunteerImage": "Voluntário"
+  },
+"sponsors": {
+    "title": "Patrocinadores"
+  },
+ 
+  "faqsTitle": "Perguntas Frequentes",
+  "faqs": {
+    "q1": {
+      "question": "Sobre o que é o evento IndabaX São Tomé AI?",
+      "answer": "É um evento impulsionado pela comunidade que explora como a inteligência artificial pode impulsionar a inovação africana. Espere palestras, painéis, workshops e networking com desenvolvedores, pesquisadores, empreendedores e entusiastas."
+    },
+    "q2": {
+      "question": "Quem pode participar do evento?",
+      "answer": "Qualquer pessoa interessada em IA — seja estudante, desenvolvedor, fundador de startup, pesquisador ou apenas curioso sobre tecnologia. Iniciantes são bem-vindos!"
+    },
+    "q3": {
+      "question": "Onde será realizado o evento?",
+      "answer": "O evento acontecerá na cidade de São Tomé. Os detalhes exatos do local serão anunciados em breve nos nossos canais oficiais e por e-mail aos inscritos."
+    },
+    "q4": {
+      "question": "Há alguma taxa de inscrição?",
+      "answer": "Não! A entrada é totalmente gratuita, mas as vagas são limitadas. É necessário se inscrever para garantir sua vaga e ter acesso a sessões exclusivas."
+    },
+    "q5": {
+      "question": "O evento será transmitido online?",
+      "answer": "Sim! Faremos transmissão ao vivo de palestras e painéis selecionados. Participantes remotos poderão se inscrever online para receber o link de acesso."
+    },
+    "q6": {
+      "question": "Em que idioma serão realizadas as sessões?",
+      "answer": "O idioma principal será o inglês. No entanto, algumas sessões e materiais terão suporte em português para os participantes locais."
+    },
+    "q7": {
+      "question": "Posso ser voluntário ou palestrante no evento?",
+      "answer": "Claro! Estamos abertos a voluntários, parceiros e palestrantes. Preencha o formulário no nosso site ou entre em contato diretamente com a equipe organizadora."
+    }
+  },
+  
+
+  "miniFaqsTitle": "Perguntas Frequentes",
+  "miniFaqsSubtitle": "Explore as perguntas e respostas comuns sobre o IndabaX São Tomé e Príncipe",
+  "miniFaqsNoAnswer": "Não encontrou a resposta que procura?",
+  "miniFaqsLinkText": "Veja mais Perguntas Frequentes",
+  "miniFaqs": {
+    "q1": {
+      "question": "Sobre o que é o evento IndabaX São Tomé AI?",
+      "answer": "É um evento impulsionado pela comunidade que explora como a inteligência artificial pode impulsionar a inovação africana. Espere palestras, painéis, workshops e networking com desenvolvedores, pesquisadores, empreendedores e entusiastas."
+    },
+    "q2": {
+      "question": "Quem pode participar do evento?",
+      "answer": "Qualquer pessoa interessada em IA — seja estudante, desenvolvedor, fundador de startup, pesquisador ou apenas curioso sobre tecnologia. Iniciantes são bem-vindos!"
+    },
+    "q3": {
+      "question": "Onde será realizado o evento?",
+      "answer": "O evento acontecerá na cidade de São Tomé. Os detalhes exatos do local serão anunciados em breve nos nossos canais oficiais e por e-mail aos inscritos."
+    },
+    "q4": {
+      "question": "Há alguma taxa de inscrição?",
+      "answer": "Não! A entrada é totalmente gratuita, mas as vagas são limitadas. É necessário se inscrever para garantir sua vaga e ter acesso a sessões exclusivas."
+    },
+    "q5": {
+      "question": "O evento será transmitido online?",
+      "answer": "Sim! Faremos transmissão ao vivo de palestras e painéis selecionados. Participantes remotos poderão se inscrever online para receber o link de acesso."
+    },
+    "q6": {
+      "question": "Em que idioma serão realizadas as sessões?",
+      "answer": "O idioma principal será o inglês. No entanto, algumas sessões e materiais terão suporte em português para os participantes locais."
+    },
+    "q7": {
+      "question": "Posso ser voluntário ou palestrante no evento?",
+      "answer": "Claro! Estamos abertos a voluntários, parceiros e palestrantes. Preencha o formulário no nosso site ou entre em contato diretamente com a equipe organizadora."
+    }
   }
 
 
 
 
+
+  
 }
+
+ 
+
+
+
+
+
+

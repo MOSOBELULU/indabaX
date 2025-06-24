@@ -1,11 +1,15 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { faqs } from "../../data/DummyData";
+import { useTranslation } from "react-i18next";
 
 export default function MiniFaqs() {
-  const showFew = faqs.slice(0, 4);
-  const [openIndex, setOpenIndex] = useState();
+  const { t } = useTranslation();
+  const [openIndex, setOpenIndex] = useState(null);
+
+  
+  const faqObject = t("miniFaqs", { returnObjects: true });
+  const faqList = Object.values(faqObject);
 
   const toggleOpen = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -32,10 +36,10 @@ export default function MiniFaqs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left space-y-6">
         <div className="max-w-2xl mx-auto text-center mb-10">
           <h2 className="text-3xl font-bold leading-tight  sm:text-4xl lg:text-5xl py-3">
-            Frequently Asked Questions
+            {t("miniFaqsTitle")}
           </h2>
           <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-700">
-            Explore the common questions and answers about IndabaX Sao Tome and Principe
+            {t("miniFaqsSubtitle")}
           </p>
         </div>
 
@@ -45,7 +49,7 @@ export default function MiniFaqs() {
           initial="hidden"
           animate="visible"
         >
-          {showFew.map(({ question, answer }, index) => {
+          {faqList.map(({ question, answer }, index) => {
             const isOpen = openIndex === index;
             return (
               <motion.div
@@ -91,12 +95,12 @@ export default function MiniFaqs() {
         <div className="flex items-center justify-center mt-12">
           <div className="px-8 py-4 text-center bg-[#007847] rounded-full">
             <p className="text-white">
-              Didn’t find the answer you are looking for?{" "}
+              {t("miniFaqsNoAnswer")}{" "}
               <a
                 href="/faqspage"
                 className="text-yellow-300 transition-all duration-200 hover:underline"
               >
-                See more FAQs
+                {t("miniFaqsLinkText")}
               </a>
             </p>
           </div>
