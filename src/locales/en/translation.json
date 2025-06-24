@@ -556,7 +556,10 @@
   "contactFullName": "Full Names",
   "contactEmail": "Email",
   "contactMessageLabel": "Leave a message for us",
-  "contactSubmit": "Submit"
+  "contactSubmit": "Submit",
+   "registerHeroTitle": "Be Part of IndabaX AI",
+  "registerHeroSubtitle": "Engage. Learn. Network. Join Africa's leading AI community.",
+  "registerHeroButton": "Register Now"
 
 
 
