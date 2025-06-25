@@ -416,7 +416,13 @@
     "daysLeft_plural": " days left",
     "todayOrPast": "Today or past event",
     "learnMore": "Learn More",
-    "showMore": "Show More"
+    "showMore": "Show More",
+    "categories": {
+    "all": "All",
+    "hackathon": "Hackathon",
+    "talks": "Talks",
+    "workshops": "Workshops"
+  }
   },
   "eventTitles": {
   "1": "Tech & Knowledge Exchange",
@@ -596,7 +602,11 @@
     "title": "Ready to be part of the AI movement in <0/> São Tomé and Príncipe?",
     "description": "Whether you're a student, developer, researcher, or just curious, <br /> there's a place for you in our community.",
     "button": "Register"
-  }
+  },
+"eventPageHero": {
+  "title": "Explore the Future of <br/> AI & Tech",
+  "description": "Join leading minds and innovators in AI and technology at top events designed to inspire and connect."
+}
 
 
 

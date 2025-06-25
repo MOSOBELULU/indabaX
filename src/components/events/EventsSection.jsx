@@ -64,8 +64,9 @@ export default function EventsSection() {
               className="rounded-t-xl mb-3 h-48 w-full object-cover"
             />
             <div className="p-4">
-              <h3 className="text-lg font-semibold mb-1">{t(`eventTitles.${event.id}`)}</h3>
-              <p className="text-sm text-gray-700">{event.description}</p>
+             <h3 className="text-lg font-semibold mb-1">{t(`eventTitles.${event.id}`)}</h3>
+<p className="text-sm text-gray-700">{t(`eventDescriptions.${event.id}`)}</p>
+
               <Link
                 to={`/eventdetailpage/${event.id}`}
                 className="inline-block text-sm font-semibold text-[#007847] border border-[#007847] px-4 py-2 mt-5 rounded-lg hover:bg-[#007847] hover:text-white transition"

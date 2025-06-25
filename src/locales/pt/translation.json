@@ -409,19 +409,32 @@
 },
 
   "events": {
-    "title": "Próximos Eventos",
-    "categories": {
-      "All": "Todos",
-      "Hackathon": "Hackathon",
-      "Talks": "Palestras",
-      "Workshops": "Oficinas"
-    },
-    "learnMore": "Saiba Mais",
-    "showMore": "Mostrar Mais",
-    "daysLeft": "dia restante",
-    "daysLeft_plural": "dias restantes",
-    "todayOrPast": "Hoje ou evento passado"
+  "title": "Próximos Eventos",
+  "categories": {
+    "all": "Todos",
+    "hackathon": "Hackathon",
+    "talks": "Palestras",
+    "workshops": "Oficinas"
   },
+  "learnMore": "Saiba Mais",
+  "showMore": "Mostrar Mais",
+  "daysLeft": "dia restante",
+  "daysLeft_plural": "dias restantes",
+  "todayOrPast": "Hoje ou evento passado"
+},
+
+  "eventTitles": {
+  "1": "Troca de Conhecimentos e Tecnologia",
+  "2": "Pré-IndabaX: Introdução à Ética em IA",
+  "3": "Jantar de Networking Pós-Conferência",
+  "4": "IA & Clima: Inovação para um Futuro Sustentável",
+  "5": "Hora do Pitch de Start-ups de IA",
+  "6": "Café da Manhã Fórum Mulheres na IA",
+  "7": "Laboratório Prático de Construção de Modelos de ML",
+  "8": "Painel: O Futuro da IA em África",
+  "9": "Cerimónia de Premiação do Hackathon Juvenil de IA"
+},
+
 "eventDescriptions": {
   "1": "Esta experiência de dois dias reunirá os melhores pesquisadores, desenvolvedores, estudantes e empreendedores para explorar como a IA pode transformar indústrias em toda a África. Espere apresentações principais, painéis de discussão e workshops práticos sobre temas como IA em fintech, manuseio ético de dados e implantação de machine learning em ambientes com poucos recursos. Haverá também uma exposição de startups e sessões de networking.",
   "2": "Este workshop oferece uma introdução à ética da IA, cobrindo a importância da justiça, transparência e responsabilidade nos sistemas de IA. Liderado pela Dra. Emily Walsh, inclui estudos de caso reais, exercícios em grupo e estruturas para tomada de decisão ética.",
@@ -620,7 +633,11 @@
     "title": "Pronto para fazer parte do movimento de IA em <0/> São Tomé e Príncipe?",
     "description": "Seja você estudante, desenvolvedor, pesquisador ou apenas curioso, <0/> há um espaço para você em nossa comunidade.",
     "button": "Inscreva-se"
-  }
+  },
+"eventPageHero": {
+  "title": "Explore o Futuro da <br/> IA e Tecnologia",
+  "description": "Junte-se a mentes brilhantes e inovadores em IA e tecnologia em eventos criados para inspirar e conectar."
+}
 
 
 
