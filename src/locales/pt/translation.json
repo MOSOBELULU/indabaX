@@ -615,8 +615,12 @@
     "title": "Descubra o que vem por aí",
     "description": "Mergulhe em três dias impactantes de workshops práticos, palestras inspiradoras, exposições de pesquisas e momentos de comunidade. Explore a agenda completa e planeje sua experiência no IndabaX.",
     "button": "Ver Agenda Completa"
+  },
+"joinUs": {
+    "title": "Pronto para fazer parte do movimento de IA em <0/> São Tomé e Príncipe?",
+    "description": "Seja você estudante, desenvolvedor, pesquisador ou apenas curioso, <0/> há um espaço para você em nossa comunidade.",
+    "button": "Inscreva-se"
   }
-
 
 
 

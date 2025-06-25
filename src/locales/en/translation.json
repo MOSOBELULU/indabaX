@@ -591,8 +591,12 @@
     "title": "Discover What’s Coming",
     "description": "Dive into three impactful days of hands-on workshops, inspiring talks, research showcases, and community moments. Explore the full agenda and plan your IndabaX experience.",
     "button": "View Full Schedule"
+  },
+"joinUs": {
+    "title": "Ready to be part of the AI movement in <0/> São Tomé and Príncipe?",
+    "description": "Whether you're a student, developer, researcher, or just curious, <br /> there's a place for you in our community.",
+    "button": "Register"
   }
-
 
 
 

@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { Trans, useTranslation } from "react-i18next";
 
 export default function JoinUs() {
+  const {t} = useTranslation()
   return (
     <section className="relative px-4 sm:px-6 lg:px-0 py-10 sm:py-16 lg:py-20">
       <div className="relative max-w-6xl mx-auto rounded-2xl overflow-hidden shadow-xl">
@@ -29,7 +31,7 @@ export default function JoinUs() {
     viewport={{ once: true }}
     className="text-3xl sm:text-4xl font-bold"
   >
-    Ready to be part of the AI movement in <br></br> São Tomé and Príncipe?
+            <Trans i18nKey="joinUs.title" components={[<br /> ]} />
   </motion.h2>
 
   <motion.p
@@ -37,10 +39,10 @@ export default function JoinUs() {
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.6, delay: 0.2 }}
     viewport={{ once: true }}
-    className="mt-4 text-base sm:text-lg"
+    className="mt-4 text-base sm:text-lg word-break"
   >
-    Whether you're a student, developer, researcher, or just curious <br></br>
-    there's a place for you in our community.
+    
+     <Trans i18nKey="joinUs.description" components={[<br /> ]} />
   </motion.p>
 
   <motion.div
@@ -54,7 +56,7 @@ export default function JoinUs() {
       href="/register"
       className="inline-flex items-center gap-2 bg-[#007847] text-white font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-gray-100 hover:text-black transition"
     >
-      Register <ArrowRight className="w-5 h-5" />
+       {t("joinUs.button")}  <ArrowRight className="w-5 h-5" />
     </a>
   </motion.div>
 </div>
@@ -64,3 +66,5 @@ export default function JoinUs() {
     </section>
   );
 }
+
+
